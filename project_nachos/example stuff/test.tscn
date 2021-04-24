@@ -5,7 +5,7 @@
 
 [sub_resource type="CubeMesh" id=1]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=2]
 resource_name = "New Anim"
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rotation_degrees")
@@ -20,7 +20,7 @@ tracks/0/keys = {
 "values": [ Vector3( 0.162, 0, 0 ), Vector3( 90, 0, 0 ) ]
 }
 
-[sub_resource type="CapsuleShape" id=4]
+[sub_resource type="CapsuleShape" id=3]
 radius = 2.85019
 height = 5.46695
 
@@ -44,13 +44,13 @@ enabled = true
 cast_to = Vector3( 0, 0, 5.381 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="MeshInstance"]
-"anims/New Anim" = SubResource( 5 )
+"anims/New Anim" = SubResource( 2 )
 
 [node name="Area" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
 
 [node name="Capsule" type="CollisionShape" parent="Area"]
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( -0.25607, -0.18794, 0.948212, 0, 0.980918, 0.194423, -0.966658, 0.0497858, -0.251184, 17.6257, 6.89115, 0 )

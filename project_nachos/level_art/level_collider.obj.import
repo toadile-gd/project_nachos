@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/level_collider.obj-099800561f7a678828998cd8ad042893.mesh"
+
+[deps]
+
+files=[ "res://.import/level_collider.obj-099800561f7a678828998cd8ad042893.mesh" ]
+
+source_file="res://level_art/level_collider.obj"
+dest_files=[ "res://.import/level_collider.obj-099800561f7a678828998cd8ad042893.mesh", "res://.import/level_collider.obj-099800561f7a678828998cd8ad042893.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

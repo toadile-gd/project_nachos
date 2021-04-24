@@ -11,7 +11,7 @@ Game Mechanics
 		Timed Events
 		- 5 minutes til the end, ground starts tilting
 		- Lights start flickering X minutes til end and get dimmer
-		- Giant squid attacks, must be repelled with torpedo (possibly triggered when entering 
+		- Giant squid attacks, must be repelled with torpedo (possibly triggered when entering observation room)
 
 	Level Design
 	- find keys to captain's cabin/other rooms, lock doors to enclose enemies
@@ -38,9 +38,13 @@ Game Mechanics
 
 	Player Actions
 	- flashlight (always on)
-	- altimeter (skull indicator for death submersion level)
-	- wrench for repairing pipes
-	- fill foam for leaks
+	- altimeter (skull indicator for death submersion level, left hand)
+	- wrench for repairing pipes 1
+	- fill foam for leaks 2
 	- pistol to repel enemies (work on last)
-	- fire extinguisher to put out flames
-	- soldering iron to repair electronics
+	- fire extinguisher to put out flames 3
+	- soldering iron to repair electronics 4
+	- Mouse 1 activates items
+	- E to interact with buttons and doors
+	- mouse look
+	- ASWD move
