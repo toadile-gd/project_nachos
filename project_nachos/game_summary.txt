@@ -1,0 +1,46 @@
+Project Submarine
+Submortem
+
+- save enemies for last
+
+Game Mechanics
+	Story
+	- Awake on a submarine, no one is there, and it is sinking
+	- You have limited time until the submarine loses pressure entirely
+
+		Timed Events
+		- 5 minutes til the end, ground starts tilting
+		- Lights start flickering X minutes til end and get dimmer
+		- Giant squid attacks, must be repelled with torpedo (possibly triggered when entering 
+
+	Level Design
+	- find keys to captain's cabin/other rooms, lock doors to enclose enemies
+	- time triggers to close off rooms
+	- some rooms fill with water, slowing movement speed?
+	- electrical hazards
+	- timer in the captain's helm
+
+		Rooms
+		- Starting cabin (bunch of bunks)
+		- chow hall
+		- captains quarters
+		- boiler/engine room
+		- torpedo bay (used to blow up giant squid)
+		- bridge/helm
+		- another bunk room
+		- cargo hold
+		- observation deck
+
+	Manual
+	- would indicate wrench for pipes, other items
+	- order of events to repair sub
+	- rough map of the sub
+
+	Player Actions
+	- flashlight (always on)
+	- altimeter (skull indicator for death submersion level)
+	- wrench for repairing pipes
+	- fill foam for leaks
+	- pistol to repel enemies (work on last)
+	- fire extinguisher to put out flames
+	- soldering iron to repair electronics
