@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Buttons/menu_button.gd" type="Script" id=1]
+
+[node name="menu_button" type="Button"]
+margin_right = 540.0
+margin_bottom = 20.0
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 540.0
+margin_bottom = 14.0
+custom_colors/font_color_shadow = Color( 0.054902, 0.0470588, 0.0470588, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+text = "LABEL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
