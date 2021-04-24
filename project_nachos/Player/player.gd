@@ -7,8 +7,18 @@ export var look_speed : float = 10.0
 var gravity = Vector3.DOWN * 9.8
 var velocity = Vector3.ZERO
 
+enum items {
+	none,
+	wrench,
+	fire,
+	foam,
+	iron
+}
+var item = items.none
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$aim/cam/arms/right_arm.visible = false
 	pass
 
 func _physics_process(delta):
@@ -19,6 +29,69 @@ func _physics_process(delta):
 				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	# INVENTORY
+	var switch = false
+	if Input.is_action_just_pressed("1"):
+		item = items.none if item == items.wrench else items.wrench
+		switch = true
+	elif Input.is_action_just_pressed("2"):
+		item = items.none if item == items.fire else items.fire
+		switch = true
+	elif Input.is_action_just_pressed("3"):
+		item = items.none if item == items.foam else items.foam
+		switch = true
+	elif Input.is_action_just_pressed("4"):
+		item = items.none if item == items.iron else items.iron
+		switch = true
+	if (switch):
+		print(item)
+		$aim/cam/arms/right_arm/anim.play("switch")
+		match item:
+			items.none:
+				$aim/cam/arms/right_arm.visible = false
+			items.wrench:
+				$aim/cam/arms/right_arm.visible = true
+				hide_objects($aim/cam/arms/right_arm.get_children())
+				$aim/cam/arms/right_arm/wrench.visible = true
+			items.fire:
+				$aim/cam/arms/right_arm.visible = true
+				hide_objects($aim/cam/arms/right_arm.get_children())
+				$aim/cam/arms/right_arm/fire.visible = true
+			items.foam:
+				$aim/cam/arms/right_arm.visible = true
+				hide_objects($aim/cam/arms/right_arm.get_children())
+				$aim/cam/arms/right_arm/foam.visible = true
+			items.iron:
+				$aim/cam/arms/right_arm.visible = true
+				hide_objects($aim/cam/arms/right_arm.get_children())
+				$aim/cam/arms/right_arm/iron.visible = true
+			_:
+				pass
+	
+	# INTERACT
+	if Input.is_action_just_pressed("interact"):
+		print("interact!")
+	if Input.is_action_pressed("click"):
+		match item:
+			items.none:
+				pass
+			items.wrench:
+				print("crank")
+				$aim/cam/arms/right_arm/anim.play("wrench")
+			items.fire:
+				print("splash")
+				$aim/cam/arms/right_arm/anim.play("reach")
+			items.foam:
+				print("fwwwooop")
+				$aim/cam/arms/right_arm/anim.play("reach")
+			items.iron:
+				print("zipzap")
+				$aim/cam/arms/right_arm/anim.play("reach")
+			_:
+				pass
+	else:
+		$aim/cam/arms/right_arm/anim.play("default")
 	
 	# MOVEMENT
 	var mov_vec : Vector3 = Vector3.ZERO
@@ -37,6 +110,12 @@ func _physics_process(delta):
 	if Input.is_action_pressed("run"):
 		mov_vec *= 1.5
 	
+	if mov_vec.length_squared() > 0 and not $aim/cam/cam_anim.current_animation == "walk":
+		print("les go")
+		$aim/cam/cam_anim.play("walk", 0.5, 0.2*mov_vec.length_squared())
+	elif mov_vec.length_squared() < 0.1:
+		$aim/cam/cam_anim.play("idle", 0.5, 0.5)
+	
 	move_and_slide(mov_vec)
 	if $ground_ray.is_colliding():
 		move_and_slide(-3*$ground_ray.get_collision_normal())
@@ -50,3 +129,10 @@ func _unhandled_input(event):
 		$aim.rotate_x(-event.relative.y*look_speed/1000)
 		$aim.rotation_degrees.x = clamp($aim.rotation_degrees.x, -90, 90)
 	pass
+
+## CUSTOM FUNCTIONS
+
+func hide_objects(array):
+	for obj in array:
+		if obj is VisualInstance:
+			obj.visible = false
