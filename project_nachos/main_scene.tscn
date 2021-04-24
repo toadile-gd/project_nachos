@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -33,10 +33,19 @@
 [ext_resource path="res://GameObjects/Static/Crate (large).tscn" type="PackedScene" id=31]
 [ext_resource path="res://GameObjects/Static/Create (xlarge).tscn" type="PackedScene" id=32]
 [ext_resource path="res://GameObjects/Static/Barrel.tscn" type="PackedScene" id=33]
+[ext_resource path="res://GameObjects/Static/Crate (long).tscn" type="PackedScene" id=34]
+[ext_resource path="res://GameObjects/Static/Crate (medium).tscn" type="PackedScene" id=35]
+[ext_resource path="res://GameObjects/Static/Mechanical Arm.tscn" type="PackedScene" id=36]
+[ext_resource path="res://GameObjects/Static/Oar.tscn" type="PackedScene" id=37]
+[ext_resource path="res://GameObjects/Static/Engine (body).tscn" type="PackedScene" id=38]
+[ext_resource path="res://GameObjects/Static/Engine (rotary).tscn" type="PackedScene" id=39]
+[ext_resource path="res://GameObjects/Static/Engine Console.tscn" type="PackedScene" id=40]
+[ext_resource path="res://GameObjects/Static/Engine Ladder.tscn" type="PackedScene" id=41]
 
 [node name="main_scene" type="Spatial"]
 
 [node name="Level" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000570297, 0, 0.0145578 )
 
 [node name="Bubbles" type="Node" parent="."]
 
@@ -322,18 +331,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.854, -3.587, -3.55345 )
 
 [node name="Cargo Bay" type="Node" parent="Static Objects"]
 
-[node name="Crate (small) 1" parent="Static Objects/Cargo Bay" instance=ExtResource( 26 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0615, -4.28883, -6.50144 )
-
-[node name="Crate (small) 2" parent="Static Objects/Cargo Bay" instance=ExtResource( 26 )]
-transform = Transform( 0.902826, 0, 0.430007, 0, 1, 0, -0.430007, 0, 0.902826, 0.462194, -4.28883, 5.24903 )
-
-[node name="Crate (large)" parent="Static Objects/Cargo Bay" instance=ExtResource( 31 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9124, -3.92838, -6.90384 )
-
-[node name="Create (xlarge)" parent="Static Objects/Cargo Bay" instance=ExtResource( 32 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2439, -3.63709, 0.0264206 )
-
 [node name="Barrels" type="Node" parent="Static Objects/Cargo Bay"]
 
 [node name="Barrel Group 1" type="Node" parent="Static Objects/Cargo Bay/Barrels"]
@@ -383,6 +380,147 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 4.57663
 [node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 4" instance=ExtResource( 33 )]
 transform = Transform( -0.192436, -4.28944e-08, 0.981309, -0.981309, 8.41166e-09, -0.192436, 0, -1, -4.37114e-08, 3.63937, -3.14988, 5.47265 )
 
+[node name="Barrel 1" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.26709, -4.43153, 4.43958 )
+
+[node name="Barrel 4" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 33 )]
+transform = Transform( 0.112284, 0, 0.993676, 0, 1, 0, -0.993676, 0, 0.112284, 11.1751, -4.43153, 4.70327 )
+
+[node name="Barrel 3" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8525, -4.43153, -5.30064 )
+
+[node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 33 )]
+transform = Transform( 0.843026, 0.360103, -0.399542, 0, 0.742818, 0.669494, 0.537874, -0.5644, 0.626214, 7.89974, -4.34131, 5.4218 )
+
+[node name="Barrel (Oil)" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26336, -4.57162, -5.25062 )
+
+[node name="Misc" type="Node" parent="Static Objects/Cargo Bay"]
+
+[node name="Mechanical Arm" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.77577, -4.90465, 1.70299 )
+
+[node name="Oar 1" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 37 )]
+transform = Transform( 0.573116, -0.80921, -0.129294, 0.798311, 0.515697, 0.311055, -0.185032, -0.281488, 0.941556, 8.98668, -4.32424, 5.18302 )
+
+[node name="Oar 2" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 37 )]
+transform = Transform( 0.972687, -0.232121, 0, 0.232121, 0.972687, 0, 0, 0, 1, -0.924555, -3.75432, -6.39686 )
+
+[node name="Crates" type="Node" parent="Static Objects/Cargo Bay"]
+
+[node name="Crate (medium) 1" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.396163, -3.92838, -1.3817 )
+
+[node name="Crate (medium) 2" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.37829, -3.92838, -6.97782 )
+
+[node name="Crate (small) 1" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0615, -4.28883, -6.50144 )
+
+[node name="Crate (small) 4" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.124867, -4.28883, -5.02358 )
+
+[node name="Crate (small) 5" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.970359, 0, 0.241668, 0, 1, 0, -0.241668, 0, 0.970359, -0.124867, -4.28883, -3.38902 )
+
+[node name="Crate (small) 6" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -4.28883, -0.476528 )
+
+[node name="Crate (small) 8" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -2.84755, -0.476528 )
+
+[node name="Crate (small) 9" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -4.28883, -2.00137 )
+
+[node name="Crate (small) 10" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -2.84755, -2.00137 )
+
+[node name="Crate (small) 11" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -4.28883, -3.39582 )
+
+[node name="Crate (small) 13" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 2.9542, -4.28883, -3.39582 )
+
+[node name="Crate (small) 12" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -2.84755, -3.39582 )
+
+[node name="Crate (small) 7" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.991565, 0, 0.129609, 0, 1, 0, -0.129609, 0, 0.991565, 4.51474, -2.87216, 1.3207 )
+
+[node name="Crate (small) 3" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.977769, 0, 0.209687, 0, 1, 0, -0.209687, 0, 0.977769, 12.3313, -4.28883, -2.44623 )
+
+[node name="Crate (small) 2" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.902826, 0, 0.430007, 0, 1, 0, -0.430007, 0, 0.902826, 0.462194, -4.28883, 5.24903 )
+
+[node name="Crate (large)" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9124, -3.92838, -6.90384 )
+
+[node name="Create (xlarge)" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2439, -3.63709, 0.0264206 )
+
+[node name="Crate (long) 1" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.73923, -3.96999, -7.24341 )
+
+[node name="Crate (long) 4" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40536, -3.96999, -7.24341 )
+
+[node name="Crate (long) 2" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 0.471689, 0.881765, -3.85432e-08, 0, -4.37114e-08, -1, -0.881765, 0.471689, -2.06182e-08, 8.33145, -4.33024, -2.29463 )
+
+[node name="Crate (long) 3" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, -0.00734788, 0.999973, -4.37102e-08, -0.297384, -2.861, -4.67107 )
+
+[node name="Crate (long) 5" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, -0.00734788, 0.999973, -4.37102e-08, 4.47271, -4.26796, 1.41637 )
+
+[node name="Crate (long) 6" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
+transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, -0.00734788, 0.999973, -4.37102e-08, 3.10407, -4.26796, 1.41637 )
+
 [node name="Clutter" type="Node" parent="Static Objects"]
 
 [node name="Pipes" type="Node" parent="Static Objects"]
+
+[node name="Engine Room" type="Node" parent="Static Objects"]
+
+[node name="Engine (body)" parent="Static Objects/Engine Room" instance=ExtResource( 38 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74883, -3.53255, -5.10327 )
+
+[node name="Engine (rotary)" parent="Static Objects/Engine Room" instance=ExtResource( 39 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.55678, -3.52295, -5.07613 )
+
+[node name="Engine Console" parent="Static Objects/Engine Room" instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.649, -4.57173, -3.22921 )
+
+[node name="Engine Ladder" parent="Static Objects/Engine Room" instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.40727, -4.6514, -3.00506 )
+
+[node name="Barrel (Oil) 1" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.99714, -4.57162, -1.31466 )
+
+[node name="Barrel (Oil) 2" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17723, -4.57162, -2.87295 )
+
+[node name="Barrel (Oil) 3" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52921, -4.57162, -2.22437 )
+
+[node name="Barrel (Oil) 5" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 0.954932, 0, 0.296825, 0, 1, 0, -0.296825, 0, 0.954932, -2.39903, -4.57162, -1.38574 )
+
+[node name="Barrel (Oil) 6" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 0.460324, 0, 0.887751, 0, 1, 0, -0.887751, 0, 0.460324, -2.17794, -4.57162, -3.03929 )
+
+[node name="Barrel (Oil) 4" parent="Static Objects/Engine Room" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31347, -3.71153, -2.22437 )
+
+[node name="Terminal" parent="Static Objects/Engine Room" instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.3616, -3.74213, -2.50129 )
+
+[node name="Mechanical Arm" parent="Static Objects/Engine Room" instance=ExtResource( 36 )]
+transform = Transform( 0.480331, 0, 0.877087, 0, 1, 0, -0.877087, 0, 0.480331, -13.2108, -4.96302, -3.04755 )
+
+[node name="Console 1" parent="Static Objects/Engine Room" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.7956, -3.587, 0.0209945 )
+
+[node name="Console 2" parent="Static Objects/Engine Room" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.21942, -3.587, 0.0209945 )
