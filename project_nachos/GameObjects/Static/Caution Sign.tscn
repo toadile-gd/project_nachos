@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=21]
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ArrayMesh" id=22]
+resource_name = "Caution Sign"
+surfaces/0 = {
+"aabb": AABB( -0.224124, -6.59298e-10, -0.163084, 0.406903, 1e-05, 0.377371 ),
+"array_data": PoolByteArray( 209, 88, 41, 61, 246, 57, 53, 176, 69, 107, 91, 62, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 188, 128, 101, 190, 246, 57, 53, 176, 168, 174, 81, 189, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60, 134, 42, 59, 62, 245, 57, 181, 48, 155, 255, 38, 190, 0, 129, 0, 0, 127, 0, 0, 127, 0, 0, 0, 60 ),
+"array_index_data": PoolByteArray( 1, 0, 0, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 3,
+"material": SubResource( 21 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 3
+}
+
+[node name="Caution Sign" type="MeshInstance"]
+mesh = SubResource( 22 )
+material/0 = null
