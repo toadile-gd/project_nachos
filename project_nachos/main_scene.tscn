@@ -1,7 +1,43 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
 
 [node name="main_scene" type="Spatial"]
 
 [node name="Level" parent="." instance=ExtResource( 1 )]
+
+[node name="Bubbles" type="Node" parent="."]
+
+[node name="bubbles" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.996333, 0.085556, 0, -0.085556, 0.996333, 0, 0, 0, 1, 33.9533, -15.6014, -3.31634 )
+
+[node name="bubbles2" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 31.7428, -15.6014, -15.9476 )
+
+[node name="bubbles3" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 36.7428, -15.6014, 11.0524 )
+
+[node name="bubbles4" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, -3.993, -15.6014, 17.5259 )
+
+[node name="bubbles5" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 18.9011, -15.6014, 21.4732 )
+
+[node name="bubbles6" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 7.05935, -15.6014, -18.631 )
+
+[node name="bubbles7" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, -15.8348, -15.6014, -39.1568 )
+
+[node name="bubbles8" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 31.21, -53.0065, 13.4183 )
+
+[node name="bubbles10" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 63.4263, -15.6014, 32.9992 )
+
+[node name="bubbles11" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 55.8475, -24.9842, -23.8414 )
+
+[node name="bubbles9" parent="Bubbles" instance=ExtResource( 2 )]
+transform = Transform( 0.999067, 0.0431835, 0, -0.0431835, 0.999067, 0, 0, 0, 1, -9.84166, -16.3723, -18.9253 )
