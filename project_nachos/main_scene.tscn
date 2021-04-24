@@ -1,8 +1,38 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameObjects/Static/Bed 2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GameObjects/Static/Bed 1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GameObjects/Static/Locker.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GameObjects/Static/Lockbox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://GameObjects/Static/Cabin Ladder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://GameObjects/Static/Table.tscn" type="PackedScene" id=9]
+[ext_resource path="res://GameObjects/Static/Bar.tscn" type="PackedScene" id=10]
+[ext_resource path="res://GameObjects/Static/Sink.tscn" type="PackedScene" id=11]
+[ext_resource path="res://GameObjects/Static/Oven.tscn" type="PackedScene" id=12]
+[ext_resource path="res://GameObjects/Static/Fridge.tscn" type="PackedScene" id=13]
+[ext_resource path="res://GameObjects/Static/Boiler.tscn" type="PackedScene" id=14]
+[ext_resource path="res://GameObjects/Static/Dial (small).tscn" type="PackedScene" id=15]
+[ext_resource path="res://GameObjects/Static/Dial (large).tscn" type="PackedScene" id=16]
+[ext_resource path="res://GameObjects/Static/Pipe (Cut).tscn" type="PackedScene" id=17]
+[ext_resource path="res://GameObjects/Static/Helm Chair.tscn" type="PackedScene" id=18]
+[ext_resource path="res://GameObjects/Static/Captains Desk.tscn" type="PackedScene" id=19]
+[ext_resource path="res://GameObjects/Static/Captains Journal.tscn" type="PackedScene" id=20]
+[ext_resource path="res://GameObjects/Static/Terminal.tscn" type="PackedScene" id=21]
+[ext_resource path="res://GameObjects/Static/Picture Frame.tscn" type="PackedScene" id=22]
+[ext_resource path="res://GameObjects/Static/Console.tscn" type="PackedScene" id=23]
+[ext_resource path="res://GameObjects/Static/Floor Hatch.tscn" type="PackedScene" id=24]
+[ext_resource path="res://GameObjects/Static/Console (corner).tscn" type="PackedScene" id=25]
+[ext_resource path="res://GameObjects/Static/Crate (small).tscn" type="PackedScene" id=26]
+[ext_resource path="res://GameObjects/Static/Barrel (Oil).tscn" type="PackedScene" id=27]
+[ext_resource path="res://GameObjects/Static/Pipe Group (Straight).tscn" type="PackedScene" id=28]
+[ext_resource path="res://GameObjects/Static/Torpedo Tube.tscn" type="PackedScene" id=29]
+[ext_resource path="res://GameObjects/Static/Caution Sign.tscn" type="PackedScene" id=30]
+[ext_resource path="res://GameObjects/Static/Crate (large).tscn" type="PackedScene" id=31]
+[ext_resource path="res://GameObjects/Static/Create (xlarge).tscn" type="PackedScene" id=32]
+[ext_resource path="res://GameObjects/Static/Barrel.tscn" type="PackedScene" id=33]
 
 [node name="main_scene" type="Spatial"]
 
@@ -44,3 +74,315 @@ transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 5
 transform = Transform( 0.999067, 0.0431835, 0, -0.0431835, 0.999067, 0, 0, 0, 1, -9.84166, -16.3723, -18.9253 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
+
+[node name="Static Objects" type="Node" parent="."]
+
+[node name="Cabin 1" type="Node" parent="Static Objects"]
+
+[node name="Bed 1" parent="Static Objects/Cabin 1" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73431, 0.891372, -1.84041 )
+
+[node name="Bed 2" parent="Static Objects/Cabin 1" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.702, 1.96951, -1.87446 )
+
+[node name="Bed 3" parent="Static Objects/Cabin 1" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.68907, 0.891372, 2.01087 )
+
+[node name="Bed 4" parent="Static Objects/Cabin 1" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.72138, 1.96951, 1.97682 )
+
+[node name="Locker 1" parent="Static Objects/Cabin 1" instance=ExtResource( 6 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.70731, 0.837688, -1.75018 )
+
+[node name="Locker 2" parent="Static Objects/Cabin 1" instance=ExtResource( 6 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -1.70023, 0.837688, -2.81099 )
+
+[node name="Locker 3" parent="Static Objects/Cabin 1" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.67132, 0.837688, 2.24005 )
+
+[node name="Locker 4" parent="Static Objects/Cabin 1" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.66424, 0.837688, 3.30086 )
+
+[node name="Locker 5" parent="Static Objects/Cabin 1" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.66424, 0.837688, 3.30086 )
+
+[node name="Lockbox1" parent="Static Objects/Cabin 1" instance=ExtResource( 7 )]
+transform = Transform( 0.784809, 0, -0.619738, 0, 1, 0, 0.619738, 0, 0.784809, 1.35956, 0.16877, -1.72552 )
+
+[node name="Lockbox2" parent="Static Objects/Cabin 1" instance=ExtResource( 7 )]
+transform = Transform( 0.997803, 0, -0.0662565, 0, 1, 0, 0.0662565, 0, 0.997803, -1.55433, 0.16877, 1.46329 )
+
+[node name="Lockbox3" parent="Static Objects/Cabin 1" instance=ExtResource( 7 )]
+transform = Transform( 0.999966, 0, -0.00820297, 0, 1, 0, 0.00820297, 0, 0.999966, -1.71359, 2.18559, -2.0316 )
+
+[node name="Cabin Ladder 1" parent="Static Objects/Cabin 1" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14896, 1.35445, 0.224277 )
+
+[node name="Cabin Ladder 2" parent="Static Objects/Cabin 1" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.14591, 1.35999, -0.0697708 )
+
+[node name="Cabin 2" type="Node" parent="Static Objects"]
+
+[node name="Bed 1" parent="Static Objects/Cabin 2" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.72512, 0.891372, -1.84041 )
+
+[node name="Bed 2" parent="Static Objects/Cabin 2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.69281, 1.96951, -1.87446 )
+
+[node name="Bed 3" parent="Static Objects/Cabin 2" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.30174, 0.891372, 2.01087 )
+
+[node name="Bed 4" parent="Static Objects/Cabin 2" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.26943, 1.96951, 1.97682 )
+
+[node name="Locker 1" parent="Static Objects/Cabin 2" instance=ExtResource( 6 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 3.2835, 0.837688, -1.75018 )
+
+[node name="Locker 2" parent="Static Objects/Cabin 2" instance=ExtResource( 6 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 3.29058, 0.837688, -2.81099 )
+
+[node name="Locker 3" parent="Static Objects/Cabin 2" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.66213, 0.837688, 2.24005 )
+
+[node name="Locker 4" parent="Static Objects/Cabin 2" instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.65505, 0.837688, 3.30086 )
+
+[node name="Lockbox1" parent="Static Objects/Cabin 2" instance=ExtResource( 7 )]
+transform = Transform( 0.784809, 0, -0.619738, 0, 1, 0, 0.619738, 0, 0.784809, 6.35037, 0.16877, 1.37321 )
+
+[node name="Lockbox2" parent="Static Objects/Cabin 2" instance=ExtResource( 7 )]
+transform = Transform( 0.997803, 0, -0.0662565, 0, 1, 0, 0.0662565, 0, 0.997803, 3.25333, 2.25196, 1.92175 )
+
+[node name="Lockbox3" parent="Static Objects/Cabin 2" instance=ExtResource( 7 )]
+transform = Transform( 0.996047, 0, -0.0888248, 0, 1, 0, 0.0888248, 0, 0.996047, 3.99072, 0.161536, -2.0316 )
+
+[node name="Lockbox4" parent="Static Objects/Cabin 2" instance=ExtResource( 7 )]
+transform = Transform( 0.0638007, 0, 0.997963, 0, 1, 0, -0.997963, 0, 0.0638007, 4.92954, 0.161536, 3.63398 )
+
+[node name="Cabin Ladder 1" parent="Static Objects/Cabin 2" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.13977, 1.35445, 0.224277 )
+
+[node name="Cabin Ladder 2" parent="Static Objects/Cabin 2" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.8449, 1.35999, -0.0697708 )
+
+[node name="Captain\'s Quarters" type="Node" parent="Static Objects"]
+
+[node name="Captains Bed" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7283, 0.647818, -2.09432 )
+
+[node name="Captains Desk" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.07601, 0.820574, -2.61464 )
+
+[node name="Captains Journal" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 20 )]
+transform = Transform( 0.294424, 0, 0.955675, 0, 1, 0, -0.955675, 0, 0.294424, 8.16886, 1.1623, -2.14152 )
+
+[node name="Terminal" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.23095, 1.25787, -1.0793 )
+
+[node name="Picture Frame 1" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 22 )]
+transform = Transform( -2, 0, -1.50996e-07, 0, 2, 0, 3.01992e-07, 0, -1, 10.5926, 1.63852, -0.420236 )
+
+[node name="Picture Frame 2" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.81104, 1.63852, -2.73215 )
+
+[node name="Lockbox" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1438, 0.16877, -2.37191 )
+
+[node name="Kitchen Dining" type="Node" parent="Static Objects"]
+
+[node name="Tables" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="Table 1" parent="Static Objects/Kitchen Dining/Tables" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4527, 0.444906, -3.7865 )
+
+[node name="Table 2" parent="Static Objects/Kitchen Dining/Tables" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4527, 0.444906, -0.466759 )
+
+[node name="Table 3" parent="Static Objects/Kitchen Dining/Tables" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.7106, 0.376227, 3.37556 )
+
+[node name="Chairs" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="Chair 1" parent="Static Objects/Kitchen Dining/Chairs" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1168, 0.240498, 3.47565 )
+
+[node name="Chair 2" parent="Static Objects/Kitchen Dining/Chairs" instance=ExtResource( 18 )]
+transform = Transform( -0.835587, 0, 0.549358, 0, 1, 0, -0.549358, 0, -0.835587, 16.3607, 0.240498, 3.413 )
+
+[node name="Kitchen" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="Bar" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6858, 0.972674, 3.51559 )
+
+[node name="Pipe (Cut)" parent="Static Objects/Kitchen Dining/Kitchen/Bar" instance=ExtResource( 17 )]
+transform = Transform( -1, 8.74228e-08, 4.37114e-08, -4.37114e-08, 1.91069e-15, -1, -8.74228e-08, -1, 1.91069e-15, 1.56203, 0.920777, 0.204382 )
+
+[node name="Sink" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6918, 0.659943, 3.78672 )
+
+[node name="Oven" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.24228, 1.15868, 3.85728 )
+
+[node name="Fridge" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.52839, 1.31102, 1.68947 )
+
+[node name="Boiler" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9649, 0.987755, 0.21288 )
+
+[node name="Dial (small)" parent="Static Objects/Kitchen Dining/Kitchen/Boiler" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.439 )
+
+[node name="Dial (large)" parent="Static Objects/Kitchen Dining/Kitchen/Boiler" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490377, 0.430972 )
+
+[node name="Booths" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="Helm" type="Node" parent="Static Objects"]
+
+[node name="Terminal 1" parent="Static Objects/Helm" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6588, 1.25787, -0.368579 )
+
+[node name="Terminal 2" parent="Static Objects/Helm" instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.69394, 1.22818, -1.12184 )
+
+[node name="Console 1" parent="Static Objects/Helm" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.63877, 1.32548, -4.13959 )
+
+[node name="Console 2" parent="Static Objects/Helm" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3348, 1.32548, -2.35539 )
+
+[node name="Floor Hatch" parent="Static Objects/Helm" instance=ExtResource( 24 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9796, 0.086198, -3.51948 )
+
+[node name="Console (corner) 1" parent="Static Objects/Helm" instance=ExtResource( 25 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.08023, 0.798629, -7.53964 )
+
+[node name="Console (corner) 2" parent="Static Objects/Helm" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.4173, 0.798629, -7.24593 )
+
+[node name="Helm Chair 1" parent="Static Objects/Helm" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0008, 0.251975, -2.45509 )
+
+[node name="Helm Chair 2" parent="Static Objects/Helm" instance=ExtResource( 18 )]
+transform = Transform( 0.705179, 0, 0.709029, 0, 1, 0, -0.709029, 0, 0.705179, -12.4529, 0.251975, -5.77319 )
+
+[node name="Helm Chair 3" parent="Static Objects/Helm" instance=ExtResource( 18 )]
+transform = Transform( 0.705179, 0, 0.709029, 0, 1, 0, -0.709029, 0, 0.705179, -14.3822, 0.251975, -5.77319 )
+
+[node name="Helm Chair 4" parent="Static Objects/Helm" instance=ExtResource( 18 )]
+transform = Transform( 0.249113, 0, -0.968475, 0, 1, 0, 0.968475, 0, 0.249113, -8.75613, 0.251975, -2.52035 )
+
+[node name="Observation Deck" type="Node" parent="Static Objects"]
+
+[node name="Crate (small) 1" parent="Static Objects/Observation Deck" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4704, -4.28883, 0.424642 )
+
+[node name="Crate (small) 2" parent="Static Objects/Observation Deck" instance=ExtResource( 26 )]
+transform = Transform( 0.9807, 0, 0.195518, 0, 1, 0, -0.195518, 0, 0.9807, 29.1244, -4.28883, 0.355267 )
+
+[node name="Barrel (Oil) 1" parent="Static Objects/Observation Deck" instance=ExtResource( 27 )]
+transform = Transform( 0.9807, 0, 0.195518, 0, 1, 0, -0.195518, 0, 0.9807, 30.1534, -4.57162, -0.870723 )
+
+[node name="Barrel (Oil) 2" parent="Static Objects/Observation Deck" instance=ExtResource( 27 )]
+transform = Transform( 0.9807, 0, 0.195518, 0, 1, 0, -0.195518, 0, 0.9807, 25.7663, -4.57162, -7.23236 )
+
+[node name="Pipe Group 1" type="Node" parent="Static Objects/Observation Deck"]
+
+[node name="Pipe Group (Straight) 1" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -4.43125, -7.60775 )
+
+[node name="Pipe Group (Straight) 2" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -3.30407, -7.60775 )
+
+[node name="Pipe Group (Straight) 3" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -2.18808, -7.60775 )
+
+[node name="Pipe Group (Straight) 4" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -1.0775, -7.60775 )
+
+[node name="Pipe Group (Straight) 5" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 0.0307548, -7.60775 )
+
+[node name="Pipe Group (Straight) 6" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 1.14895, -7.60775 )
+
+[node name="Pipe Group (Straight) 7" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 2.27556, -7.60775 )
+
+[node name="Torpedo Bay" type="Node" parent="Static Objects"]
+
+[node name="Torpedo Tube" parent="Static Objects/Torpedo Bay" instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1882, -4.1801, -6.5948 )
+
+[node name="Caution Sign" parent="Static Objects/Torpedo Bay" instance=ExtResource( 30 )]
+transform = Transform( -0.700822, 7.43453e-08, -0.713336, 0.713336, -3.11809e-08, -0.700822, -7.43453e-08, -1, -3.11809e-08, 17.408, -3.87459, 1.81499 )
+
+[node name="Console" parent="Static Objects/Torpedo Bay" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.854, -3.587, -3.55345 )
+
+[node name="Cargo Bay" type="Node" parent="Static Objects"]
+
+[node name="Crate (small) 1" parent="Static Objects/Cargo Bay" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0615, -4.28883, -6.50144 )
+
+[node name="Crate (small) 2" parent="Static Objects/Cargo Bay" instance=ExtResource( 26 )]
+transform = Transform( 0.902826, 0, 0.430007, 0, 1, 0, -0.430007, 0, 0.902826, 0.462194, -4.28883, 5.24903 )
+
+[node name="Crate (large)" parent="Static Objects/Cargo Bay" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9124, -3.92838, -6.90384 )
+
+[node name="Create (xlarge)" parent="Static Objects/Cargo Bay" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2439, -3.63709, 0.0264206 )
+
+[node name="Barrels" type="Node" parent="Static Objects/Cargo Bay"]
+
+[node name="Barrel Group 1" type="Node" parent="Static Objects/Cargo Bay/Barrels"]
+
+[node name="Barrel 1" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 1" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 6.43604, -4.60205, 5.47265 )
+
+[node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 1" instance=ExtResource( 33 )]
+transform = Transform( -0.192436, -4.28944e-08, 0.981309, -0.981309, 8.41166e-09, -0.192436, 0, -1, -4.37114e-08, 5.49878, -4.60205, 5.47265 )
+
+[node name="Barrel 3" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 1" instance=ExtResource( 33 )]
+transform = Transform( 0.719025, 3.03787e-08, -0.694985, 0.694985, -3.14296e-08, 0.719025, 0, -1, -4.37114e-08, 5.95397, -3.81352, 5.47265 )
+
+[node name="Barrel 4" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 1" instance=ExtResource( 33 )]
+transform = Transform( 0.997011, -3.37708e-09, 0.0772585, -0.0772585, -4.35807e-08, 0.997011, 0, -1, -4.37114e-08, 4.99926, -3.81352, 5.47265 )
+
+[node name="Barrel Group 2" type="Node" parent="Static Objects/Cargo Bay/Barrels"]
+
+[node name="Barrel 1" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 2" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 4.57334, -4.60205, 5.47265 )
+
+[node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 2" instance=ExtResource( 33 )]
+transform = Transform( -0.192436, -4.28944e-08, 0.981309, -0.981309, 8.41166e-09, -0.192436, 0, -1, -4.37114e-08, 3.63608, -4.60205, 5.47265 )
+
+[node name="Barrel 3" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 2" instance=ExtResource( 33 )]
+transform = Transform( 0.719025, 3.03787e-08, -0.694985, 0.694985, -3.14296e-08, 0.719025, 0, -1, -4.37114e-08, 4.09127, -3.81352, 5.47265 )
+
+[node name="Barrel 4" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 2" instance=ExtResource( 33 )]
+transform = Transform( 0.997011, -3.37708e-09, 0.0772585, -0.0772585, -4.35807e-08, 0.997011, 0, -1, -4.37114e-08, 3.13656, -3.81352, 5.47265 )
+
+[node name="Barrel Group 3" type="Node" parent="Static Objects/Cargo Bay/Barrels"]
+
+[node name="Barrel 1" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 3" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.6909, -4.60205, 5.47265 )
+
+[node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 3" instance=ExtResource( 33 )]
+transform = Transform( -0.192436, -4.28944e-08, 0.981309, -0.981309, 8.41166e-09, -0.192436, 0, -1, -4.37114e-08, 1.75364, -4.60205, 5.47265 )
+
+[node name="Barrel 3" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 3" instance=ExtResource( 33 )]
+transform = Transform( 0.719025, 3.03787e-08, -0.694985, 0.694985, -3.14296e-08, 0.719025, 0, -1, -4.37114e-08, 2.20883, -3.81352, 5.47265 )
+
+[node name="Barrel Group 4" type="Node" parent="Static Objects/Cargo Bay/Barrels"]
+
+[node name="Barrel 1" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 4" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 4.57663, -3.14988, 5.47265 )
+
+[node name="Barrel 2" parent="Static Objects/Cargo Bay/Barrels/Barrel Group 4" instance=ExtResource( 33 )]
+transform = Transform( -0.192436, -4.28944e-08, 0.981309, -0.981309, 8.41166e-09, -0.192436, 0, -1, -4.37114e-08, 3.63937, -3.14988, 5.47265 )
+
+[node name="Clutter" type="Node" parent="Static Objects"]
+
+[node name="Pipes" type="Node" parent="Static Objects"]
