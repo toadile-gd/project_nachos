@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameManager.tscn" type="PackedScene" id=4]
 
 [node name="main_scene" type="Spatial"]
 
@@ -44,3 +45,5 @@ transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 5
 transform = Transform( 0.999067, 0.0431835, 0, -0.0431835, 0.999067, 0, 0, 0, 1, -9.84166, -16.3723, -18.9253 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
+
+[node name="GameManager" parent="." instance=ExtResource( 4 )]
