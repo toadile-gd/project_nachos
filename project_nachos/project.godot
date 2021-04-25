@@ -29,6 +29,7 @@ config/icon="res://icon.png"
 GameManager="*res://GameManager.tscn"
 GlobalLightingUtils="*res://Scripts/Management/GlobalLightingUtils.gd"
 AudioManager="*res://Scripts/Management/AudioManager.gd"
+Tooltip="*res://Player/ui/Tooltip.tscn"
 
 [display]
 

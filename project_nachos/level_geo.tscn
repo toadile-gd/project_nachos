@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://level_art/rusty_metal.material" type="Material" id=1]
 [ext_resource path="res://level_art/metal_diamond.material" type="Material" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://level_art/grey.material" type="Material" id=5]
 [ext_resource path="res://level_art/floor.material" type="Material" id=6]
 [ext_resource path="res://level_art/window2.material" type="Material" id=7]
+[ext_resource path="res://Environment/exit/SubExit.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "floor"
@@ -1444,6 +1445,9 @@ shape = SubResource( 15 )
 transform = Transform( 24.3992, 0, 0, 0, 1, 0, 0, 0, 5.94834, -0.808182, -5.1045, -1.79373 )
 mesh = SubResource( 16 )
 material/0 = SubResource( 17 )
+
+[node name="SubExit" parent="sub_layout" instance=ExtResource( 8 )]
+transform = Transform( -0.424264, 0, 0.424264, 0, 0.8, 0, -0.424264, 0, -0.424264, -10.4096, 0, 3.40147 )
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3694, -1.46445, -2.4547 )

@@ -66,11 +66,15 @@ tracks/0/keys = {
 [sub_resource type="GDScript" id=4]
 script/source = "extends StaticBody
 
+export var interactible_name = \"door\"
+
 func activate():
 	if GameManager.check_item(get_parent().key_name):
 		print(\"bingo\")
 		get_parent().activate()
 		queue_free()
+	else:
+		Tooltip.uprintb(\"You are missing a key for this door\", 3)
 "
 
 [sub_resource type="BoxShape" id=5]
@@ -355,12 +359,12 @@ material/2 = null
 [node name="anim" type="AnimationPlayer" parent="Door/sub_door"]
 anims/open = SubResource( 3 )
 
-[node name="bleh" type="StaticBody" parent="Door"]
+[node name="Door" type="StaticBody" parent="Door"]
 collision_layer = 3
 collision_mask = 3
 script = SubResource( 4 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Door/bleh"]
+[node name="CollisionShape" type="CollisionShape" parent="Door/Door"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
 shape = SubResource( 5 )
 
@@ -393,12 +397,12 @@ material/2 = null
 [node name="anim" type="AnimationPlayer" parent="Door2/sub_door"]
 anims/open = SubResource( 3 )
 
-[node name="bleh" type="StaticBody" parent="Door2"]
+[node name="Door" type="StaticBody" parent="Door2"]
 collision_layer = 3
 collision_mask = 3
 script = SubResource( 4 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Door2/bleh"]
+[node name="CollisionShape" type="CollisionShape" parent="Door2/Door"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
 shape = SubResource( 5 )
 
@@ -431,12 +435,12 @@ material/2 = null
 [node name="anim" type="AnimationPlayer" parent="Door3/sub_door"]
 anims/open = SubResource( 3 )
 
-[node name="bleh" type="StaticBody" parent="Door3"]
+[node name="Door" type="StaticBody" parent="Door3"]
 collision_layer = 3
 collision_mask = 3
 script = SubResource( 4 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Door3/bleh"]
+[node name="CollisionShape" type="CollisionShape" parent="Door3/Door"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
 shape = SubResource( 5 )
 
@@ -468,12 +472,12 @@ material/2 = null
 [node name="anim" type="AnimationPlayer" parent="Door4/sub_door"]
 anims/open = SubResource( 3 )
 
-[node name="bleh" type="StaticBody" parent="Door4"]
+[node name="Door" type="StaticBody" parent="Door4"]
 collision_layer = 3
 collision_mask = 3
 script = SubResource( 4 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Door4/bleh"]
+[node name="CollisionShape" type="CollisionShape" parent="Door4/Door"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
 shape = SubResource( 5 )
 
@@ -580,11 +584,11 @@ material/2 = null
 [node name="anim" type="AnimationPlayer" parent="Door7/sub_door"]
 anims/open = SubResource( 3 )
 
-[node name="bleh" type="StaticBody" parent="Door7"]
+[node name="Door" type="StaticBody" parent="Door7"]
 collision_layer = 3
 collision_mask = 3
 script = SubResource( 4 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Door7/bleh"]
+[node name="CollisionShape" type="CollisionShape" parent="Door7/Door"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
 shape = SubResource( 5 )

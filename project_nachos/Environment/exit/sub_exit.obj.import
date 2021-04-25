@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/sub_exit.obj-c0de5d62ca0bc3fd4585ee68e3a85d0f.mesh"
+
+[deps]
+
+files=[ "res://.import/sub_exit.obj-c0de5d62ca0bc3fd4585ee68e3a85d0f.mesh" ]
+
+source_file="res://Environment/exit/sub_exit.obj"
+dest_files=[ "res://.import/sub_exit.obj-c0de5d62ca0bc3fd4585ee68e3a85d0f.mesh", "res://.import/sub_exit.obj-c0de5d62ca0bc3fd4585ee68e3a85d0f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
