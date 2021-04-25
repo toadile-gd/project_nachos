@@ -116,11 +116,13 @@ func _physics_process(delta):
 	mov_vec = mov_vec.rotated(Vector3.UP, rotation.y)
 	mov_vec *= mov_speed
 	
+	var mov_offset = 0
 	if Input.is_action_pressed("run"):
-		mov_vec *= 1.5
+		mov_offset = 1
+		mov_vec *= 1.75
 	
-	if mov_vec.length_squared() > 0 and not $aim/cam/cam_anim.current_animation == "walk":
-		$aim/cam/cam_anim.play("walk", 0.5, 0.2*mov_vec.length_squared())
+	if mov_vec.length_squared() > 0.1 and not $aim/cam/cam_anim.current_animation == "walk":
+		$aim/cam/cam_anim.play("walk", 0.1, 1.5+mov_offset)
 	elif mov_vec.length_squared() < 0.1:
 		$aim/cam/cam_anim.play("idle", 0.5, 0.5)
 	

@@ -14,6 +14,6 @@ func _physics_process(delta):
 		# DEATH
 		pass
 	else:
-		rotate_object_local(Vector3.BACK, 0.5*delta)
+		rotate_object_local(Vector3.BACK, 0.001*delta)
 		val += 0.5*delta
 	pass
