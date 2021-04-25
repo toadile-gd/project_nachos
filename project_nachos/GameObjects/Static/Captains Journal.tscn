@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="SpatialMaterial" id=19]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=20]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Captains Journal"
 surfaces/0 = {
 "aabb": AABB( -0.105893, -0.0329241, -0.12291, 0.221649, 0.0673709, 0.245831 ),
@@ -12,12 +12,12 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 84,
-"material": SubResource( 19 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 52
 }
 
 [node name="Captains Journal" type="MeshInstance"]
-mesh = SubResource( 20 )
+mesh = SubResource( 2 )
 material/0 = null
