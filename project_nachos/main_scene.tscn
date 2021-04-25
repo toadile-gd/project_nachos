@@ -436,9 +436,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0461, 0.572557, -6.88647 )
 [node name="Wheel2" parent="Static Objects/Helm" instance=ExtResource( 64 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1152, 0.572557, -6.88647 )
 
-[node name="Steering" parent="Static Objects/Helm" instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0545, 1.62647, -8.17941 )
-
 [node name="Observation Deck" type="Node" parent="Static Objects"]
 
 [node name="Crate (small) 1" parent="Static Objects/Observation Deck" instance=ExtResource( 26 )]
@@ -1179,84 +1176,64 @@ transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.0358
 [node name="Light Fixture 7" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.95304, 2.63873, -2.35572 )
 
+[node name="Vents" type="Node" parent="Static Objects"]
+
+[node name="Vent" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.95886, 0.0329205, 3.01525 )
+
+[node name="Vent2" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89936, 0.0329205, 3.01525 )
+
+[node name="Vent3" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89936, 0.0329205, -7.08356 )
+
+[node name="Vent4" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.0329205, -7.08356 )
+
+[node name="Vent5" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3079, 0.0329205, 1.42455 )
+
+[node name="Vent6" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3079, -4.95065, 3.01308 )
+
+[node name="Vent7" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0045, -4.95065, -0.813478 )
+
+[node name="Vent8" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97477, -4.95065, -0.813478 )
+
+[node name="Vent9" parent="Static Objects/Vents" instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37164, -4.95065, 3.09289 )
+
 [node name="interactable Objects" type="Node" parent="."]
 
-[node name="Torpedo" type="Node" parent="interactable Objects"]
+[node name="Consoles" type="Node" parent="interactable Objects"]
 
-[node name="Torpedo Rack" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -4.51983, -5.07698 )
-
-[node name="Torpedo Rack2" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -3.54127, -5.07698 )
-
-[node name="Torpedo Rack3" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -4.51983, -2.63577 )
-
-[node name="Torpedo Rack4" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -3.54127, -2.63577 )
-
-[node name="Torpedo Hatch" parent="interactable Objects/Torpedo" instance=ExtResource( 56 )]
-transform = Transform( -0.336142, 0, 0.941811, 0, 1, 0, -0.941811, 0, -0.336142, 17.891, -4.5038, -5.82466 )
-
-[node name="Torpedo Hatch2" parent="interactable Objects/Torpedo" instance=ExtResource( 56 )]
-transform = Transform( 0.898878, 0, 0.438199, 0, 1, 0, -0.438199, 0, 0.898878, 17.5692, -4.09105, -5.69252 )
-
-[node name="Torpedo Button" parent="interactable Objects/Torpedo" instance=ExtResource( 57 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5071, -4.56201, -5.4333 )
+[node name="Steering" parent="interactable Objects/Consoles" instance=ExtResource( 58 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0545, 1.62647, -8.17941 )
 
 [node name="Electrical" type="Node" parent="interactable Objects"]
 
-[node name="Eletrical Locker" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 1" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 12.9181, 1.35334, -1.31263 )
 
-[node name="Eletrical Locker2" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 2" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 2.90633, 1.35334, -0.796969 )
 
-[node name="Eletrical Locker3" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 3" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, -5.08276, 1.35334, -0.796969 )
 
-[node name="Eletrical Locker4" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 4" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( -0.999999, 0, 0.00111701, 0, 1, 0, -0.00111701, 0, -0.999999, -3.76569, -3.7809, 4.08897 )
 
-[node name="Eletrical Locker5" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 5" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.038597, 0, 0.999255, 0, 1, 0, -0.999255, 0, 0.038597, -1.08642, -3.7809, -7.31972 )
 
-[node name="Eletrical Locker6" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 6" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.999793, 0, -0.0203316, 0, 1, 0, 0.0203316, 0, 0.999793, 7.22103, -3.7809, -8.10727 )
 
-[node name="Eletrical Locker7" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
+[node name="Eletrical Box 7" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
 transform = Transform( 0.0050439, 0, 0.999987, 0, 1, 0, -0.999987, 0, 0.0050439, 23.0975, -3.7809, -0.595448 )
-
-[node name="Pipes" type="Node" parent="interactable Objects"]
-
-[node name="Vents" type="Node" parent="interactable Objects"]
-
-[node name="Vent" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.95886, 0.0329205, 3.01525 )
-
-[node name="Vent2" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89936, 0.0329205, 3.01525 )
-
-[node name="Vent3" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89936, 0.0329205, -7.08356 )
-
-[node name="Vent4" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.0329205, -7.08356 )
-
-[node name="Vent5" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3079, 0.0329205, 1.42455 )
-
-[node name="Vent6" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3079, -4.95065, 3.01308 )
-
-[node name="Vent7" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0045, -4.95065, -0.813478 )
-
-[node name="Vent8" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97477, -4.95065, -0.813478 )
-
-[node name="Vent9" parent="interactable Objects/Vents" instance=ExtResource( 59 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37164, -4.95065, 3.09289 )
 
 [node name="Valves" type="Node" parent="interactable Objects"]
 
@@ -1319,6 +1296,51 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5985, -4, -0.82 )
 
 [node name="Valve 20" parent="interactable Objects/Valves" instance=ExtResource( 61 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6681, -3.44, -0.82 )
+
+[node name="Keys" type="Node" parent="interactable Objects"]
+
+[node name="Keyboards" type="Node" parent="interactable Objects"]
+
+[node name="Keyboard" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6489, 0.9509, -0.818203 )
+
+[node name="Keyboard3" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.0152, 0.9509, -7.21496 )
+
+[node name="Keyboard4" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.0559, 0.9509, -7.21496 )
+
+[node name="Keyboard5" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.9272, -4.04483, -2.5002 )
+
+[node name="Keyboard6" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( 0.00158821, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00158821, 8.67918, 0.962476, -1.06714 )
+
+[node name="Keyboard2" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.13941, 0.928193, -1.12773 )
+
+[node name="Torpedo" type="Node" parent="interactable Objects"]
+
+[node name="Torpedo Rack" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -4.51983, -5.07698 )
+
+[node name="Torpedo Rack2" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -3.54127, -5.07698 )
+
+[node name="Torpedo Rack3" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -4.51983, -2.63577 )
+
+[node name="Torpedo Rack4" parent="interactable Objects/Torpedo" instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6066, -3.54127, -2.63577 )
+
+[node name="Torpedo Hatch" parent="interactable Objects/Torpedo" instance=ExtResource( 56 )]
+transform = Transform( -0.336142, 0, 0.941811, 0, 1, 0, -0.941811, 0, -0.336142, 17.891, -4.5038, -5.82466 )
+
+[node name="Torpedo Hatch2" parent="interactable Objects/Torpedo" instance=ExtResource( 56 )]
+transform = Transform( 0.898878, 0, 0.438199, 0, 1, 0, -0.438199, 0, 0.898878, 17.5692, -4.09105, -5.69252 )
+
+[node name="Torpedo Button" parent="interactable Objects/Torpedo" instance=ExtResource( 57 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5071, -4.56201, -5.4333 )
 
 [node name="Misc" type="Node" parent="interactable Objects"]
 
@@ -1417,30 +1439,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.46648, 0.832705, 3.73445 )
 
 [node name="Tomato4" parent="interactable Objects/Misc/Tomato" instance=ExtResource( 71 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5066, 0.065395, 3.27855 )
-
-[node name="Keys" type="Node" parent="interactable Objects"]
-
-[node name="Keyboards" type="Node" parent="interactable Objects"]
-
-[node name="Keyboard" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6489, 0.9509, -0.818203 )
-
-[node name="Keyboard3" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.0152, 0.9509, -7.21496 )
-
-[node name="Keyboard4" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.0559, 0.9509, -7.21496 )
-
-[node name="Keyboard5" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13.9272, -4.04483, -2.5002 )
-
-[node name="Keyboard6" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( 0.00158821, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00158821, 8.67918, 0.962476, -1.06714 )
-
-[node name="Keyboard2" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.13941, 0.928193, -1.12773 )
-
-[node name="Consoles" type="Node" parent="interactable Objects"]
 
 [node name="Pipes" type="Node" parent="."]
 
