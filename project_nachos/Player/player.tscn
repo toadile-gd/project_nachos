@@ -364,7 +364,6 @@ extents = Vector3( 0.271382, 0.342395, 0.691181 )
 
 [node name="player" type="KinematicBody"]
 script = ExtResource( 1 )
-mov_speed = 3.0
 
 [node name="col" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.875, 0 )
