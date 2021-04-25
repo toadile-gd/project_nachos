@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -76,6 +76,12 @@
 [ext_resource path="res://GameObjects/Static/Light Fixture.tscn" type="PackedScene" id=74]
 [ext_resource path="res://GameObjects/Static/Mug.tscn" type="PackedScene" id=75]
 [ext_resource path="res://Environment/default_env.tres" type="Environment" id=76]
+[ext_resource path="res://GameObjects/interactable/Key.tscn" type="PackedScene" id=77]
+[ext_resource path="res://GameObjects/interactable/FireExtinguisher.tscn" type="PackedScene" id=78]
+[ext_resource path="res://GameObjects/interactable/Wrench.tscn" type="PackedScene" id=79]
+[ext_resource path="res://GameObjects/interactable/Foam.tscn" type="PackedScene" id=80]
+[ext_resource path="res://GameObjects/interactable/Iron.tscn" type="PackedScene" id=81]
+[ext_resource path="res://Environment/Flooding/electric_water.tscn" type="PackedScene" id=82]
 
 [node name="main_scene" type="Spatial"]
 
@@ -1310,6 +1316,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6681, -3.44, -0.82 )
 
 [node name="Keys" type="Node" parent="interactable Objects"]
 
+[node name="Key_a" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18411, 1.16897, -0.699623 )
+
+[node name="Key_b" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
+transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 17.2445, 0.598522, 0.82804 )
+item_name = "KEY_B"
+
+[node name="Key_c" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
+transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 8.58414, 1.14072, -2.4708 )
+item_name = "KEY_C"
+
 [node name="Keyboards" type="Node" parent="interactable Objects"]
 
 [node name="Keyboard" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
@@ -1450,6 +1467,23 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.46648, 0.832705, 3.73445 )
 
 [node name="Tomato4" parent="interactable Objects/Misc/Tomato" instance=ExtResource( 71 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5066, 0.065395, 3.27855 )
+
+[node name="Tools" type="Node" parent="interactable Objects"]
+
+[node name="fire_exinguisher" parent="interactable Objects/Tools" instance=ExtResource( 78 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7447, 0, 2.05787 )
+
+[node name="wrench" parent="interactable Objects/Tools" instance=ExtResource( 79 )]
+transform = Transform( 0.519206, 0, 0.854649, 0, 1, 0, -0.854649, 0, 0.519206, -1, 0.0101809, -1 )
+
+[node name="iron" parent="interactable Objects/Tools" instance=ExtResource( 81 )]
+transform = Transform( 1, 0, 0, 0, 0.945944, -0.32433, 0, 0.32433, 0.945944, -10.4451, -4.19559, -3.03373 )
+
+[node name="foam" parent="interactable Objects/Tools" instance=ExtResource( 80 )]
+transform = Transform( 0.133208, 0, 0.991088, 0, 1, 0, -0.991088, 0, 0.133208, 9.58831, -4.93477, 1.59325 )
+
+[node name="electric_water" parent="interactable Objects" instance=ExtResource( 82 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9462, -5, -3.98604 )
 
 [node name="Pipes" type="Node" parent="."]
 

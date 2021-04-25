@@ -67,8 +67,10 @@ tracks/0/keys = {
 script/source = "extends StaticBody
 
 func activate():
-	get_parent().activate()
-	queue_free()
+	if GameManager.check_item(get_parent().key_name):
+		print(\"bingo\")
+		get_parent().activate()
+		queue_free()
 "
 
 [sub_resource type="BoxShape" id=5]
@@ -158,7 +160,7 @@ surfaces/2 = {
 "vertex_count": 28
 }
 
-[sub_resource type="ArrayMesh" id=12]
+[sub_resource type="ArrayMesh" id=8]
 blend_shape_mode = 0
 blend_shape/names = PoolStringArray( "open", "closed" )
 blend_shape/mode = 0
@@ -328,6 +330,7 @@ surfaces/2 = {
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -0.107117, 0.0358744, -3.83899 )
 script = ExtResource( 1 )
 door_name = "cabin_a"
+key_name = "KEY_A"
 
 [node name="StaticBody" type="StaticBody" parent="Door"]
 
@@ -365,6 +368,7 @@ shape = SubResource( 5 )
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 4.89288, 0.0358744, -3.83899 )
 script = ExtResource( 1 )
 door_name = "cabin_b"
+key_name = "KEY_A"
 
 [node name="StaticBody" type="StaticBody" parent="Door2"]
 
@@ -402,6 +406,7 @@ shape = SubResource( 5 )
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 9.99288, 0.0358744, -3.839 )
 script = ExtResource( 1 )
 door_name = "cabin_c"
+key_name = "KEY_B"
 
 [node name="StaticBody" type="StaticBody" parent="Door3"]
 
@@ -453,7 +458,7 @@ shape = SubResource( 1 )
 [node name="sub_door" type="Spatial" parent="Door4"]
 
 [node name="sub_door" type="MeshInstance" parent="Door4/sub_door"]
-mesh = SubResource( 12 )
+mesh = SubResource( 8 )
 blend_shapes/closed = 0.0
 blend_shapes/open = 0.0
 material/0 = null

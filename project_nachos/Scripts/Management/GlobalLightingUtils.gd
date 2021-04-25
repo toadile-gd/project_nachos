@@ -5,10 +5,12 @@ extends WorldEnvironment
 # var a = 2
 # var b = "text"
 var base_env = preload("res://Environment/default_env.tres")
+var base_color
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_environment(base_env)
+	base_color = get_skybox_color()
 
 func get_skybox_color():
 	return environment.get_bg_color()

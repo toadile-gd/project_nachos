@@ -5,13 +5,7 @@ extends Node
 # var a = 2
 # var b = "text"
 
-enum inventory {
-	KEYA = 0,
-	KEYB = 0,
-	KEYC = 0,
-	MANUAL = 0,
-	TORPEDO = 0
-	}
+var inventory = []
 
 enum win_conditions {
 	VICTORY,
@@ -25,7 +19,7 @@ var skybox_color
 
 var ambient_light_intensity
 
-var global_lighting_offset = 0.001
+var global_lighting_offset = 0.02
 
 var current_time = 0
 
@@ -62,6 +56,7 @@ func _on_depth_timer_timeout():
 	 
 
 func increment_depth_percentage():
+	if (depth_percentage <= 1):
 		current_time += 1
 		depth_percentage = float (current_time) / total_time
 		print("Depth percentage: ", depth_percentage)
@@ -71,10 +66,10 @@ func get_depth_precentage():
 
 func darken_skybox():
 	if(skybox_color == null):
-		skybox_color = GlobalLightingUtils.get_skybox_color()
-	skybox_color = Color(skybox_color.r - global_lighting_offset,
-		skybox_color.g - global_lighting_offset,
-		skybox_color.b - global_lighting_offset)
+		skybox_color = GlobalLightingUtils.base_color
+	skybox_color = Color(skybox_color.r - global_lighting_offset*depth_percentage,
+		skybox_color.g - global_lighting_offset*depth_percentage,
+		skybox_color.b - global_lighting_offset*depth_percentage)
 	GlobalLightingUtils.set_skybox_color(skybox_color)
 	
 	if (ambient_light_intensity == null):
@@ -83,17 +78,13 @@ func darken_skybox():
 	GlobalLightingUtils.set_ambient_light_intensity(ambient_light_intensity)
 	
 func add_item(item):
-	for name in inventory.values():
-		if (str(name) == item):
-			inventory.name = 1
-			
-			## update UI
+	print(item)
+	if not inventory.has(item):
+		inventory.append(item)
 
 func check_item(item):
-	for name in inventory.values():
-		if ((str(name) == item) and (name == true)):
-			return true
-	return false
+	print(item, " ", inventory.has(item))
+	return inventory.has(item)
 
 func end_game(condition):
 	if (condition == win_conditions.VICTORY):

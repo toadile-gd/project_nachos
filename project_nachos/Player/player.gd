@@ -54,31 +54,44 @@ func _physics_process(delta):
 			items.none:
 				$aim/cam/arms/right_arm.visible = false
 			items.wrench:
-				$aim/cam/arms/right_arm.visible = true
-				hide_objects($aim/cam/arms/right_arm.get_children())
-				$aim/cam/arms/right_arm/wrench.visible = true
+				if GameManager.check_item("WRENCH"):
+					$aim/cam/arms/right_arm.visible = true
+					hide_objects($aim/cam/arms/right_arm.get_children())
+					$aim/cam/arms/right_arm/wrench.visible = true
+				else:
+					item = items.none
 			items.fire:
-				$aim/cam/arms/right_arm.visible = true
-				hide_objects($aim/cam/arms/right_arm.get_children())
-				$aim/cam/arms/right_arm/fire.visible = true
+				if GameManager.check_item("FIRE_EXTINGUISHER"):
+					$aim/cam/arms/right_arm.visible = true
+					hide_objects($aim/cam/arms/right_arm.get_children())
+					$aim/cam/arms/right_arm/fire.visible = true
+				else:
+					item = items.none
 			items.foam:
-				$aim/cam/arms/right_arm.visible = true
-				hide_objects($aim/cam/arms/right_arm.get_children())
-				$aim/cam/arms/right_arm/foam.visible = true
+				if GameManager.check_item("FOAM"):
+					$aim/cam/arms/right_arm.visible = true
+					hide_objects($aim/cam/arms/right_arm.get_children())
+					$aim/cam/arms/right_arm/foam.visible = true
+				else:
+					item = items.none
 			items.iron:
-				$aim/cam/arms/right_arm.visible = true
-				hide_objects($aim/cam/arms/right_arm.get_children())
-				$aim/cam/arms/right_arm/iron.visible = true
+				if GameManager.check_item("IRON"):
+					$aim/cam/arms/right_arm.visible = true
+					hide_objects($aim/cam/arms/right_arm.get_children())
+					$aim/cam/arms/right_arm/iron.visible = true
+				else:
+					item = items.none
 			_:
 				pass
 	
 	# INTERACT
 	if Input.is_action_just_pressed("interact"):
 		print("interact!")
-		if $aim/look_ray.is_colliding():
-			print("bingo")
-			print($aim/look_ray.get_collider())
-			$aim/look_ray.get_collider().activate()
+		if $aim/cam/look_ray.is_colliding():
+			print($aim/cam/look_ray.get_collider())
+			$aim/cam/look_ray.get_collider().activate()
+	
+	# TOOLS
 	if Input.is_action_pressed("click"):
 		match item:
 			items.none:
