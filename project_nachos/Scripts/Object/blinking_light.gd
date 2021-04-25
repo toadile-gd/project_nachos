@@ -9,6 +9,7 @@ onready var light = get_node("SpotLight")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	light.hide()
 	start_blink_timer()
 
 
@@ -22,6 +23,5 @@ func start_blink_timer():
 
 func blink_light():
 	light.show()
-	print("hello")
 	yield(get_tree().create_timer(2), "timeout")
 	light.hide()
