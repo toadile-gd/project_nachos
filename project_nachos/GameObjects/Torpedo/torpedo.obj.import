@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/torpedo.obj-f1073669509fffdb91f6d8b6a5757892.mesh"
+
+[deps]
+
+files=[ "res://.import/torpedo.obj-f1073669509fffdb91f6d8b6a5757892.mesh" ]
+
+source_file="res://GameObjects/Torpedo/torpedo.obj"
+dest_files=[ "res://.import/torpedo.obj-f1073669509fffdb91f6d8b6a5757892.mesh", "res://.import/torpedo.obj-f1073669509fffdb91f6d8b6a5757892.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
