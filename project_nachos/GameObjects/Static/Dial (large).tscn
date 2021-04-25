@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="SpatialMaterial" id=41]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=42]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Dial (large)"
 surfaces/0 = {
 "aabb": AABB( -0.137731, -0.144819, -0.0340548, 0.275462, 0.289648, 0.0485255 ),
@@ -12,12 +12,12 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 288,
-"material": SubResource( 41 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 180
 }
 
 [node name="Dial (large)" type="MeshInstance"]
-mesh = SubResource( 42 )
+mesh = SubResource( 2 )
 material/0 = null
