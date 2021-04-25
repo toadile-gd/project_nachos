@@ -85,15 +85,19 @@ func _physics_process(delta):
 				pass
 			items.wrench:
 				$aim/cam/arms/right_arm/anim.play("wrench")
+				action("steam")
 			items.fire:
 				$aim/cam/arms/right_arm/anim.play("reach")
 				$aim/cam/arms/right_arm/fire/particle.emitting = true
+				action("fire")
 			items.foam:
 				$aim/cam/arms/right_arm/anim.play("reach")
 				$aim/cam/arms/right_arm/foam/particle.emitting = true
+				action("leak")
 			items.iron:
 				$aim/cam/arms/right_arm/anim.play("reach")
 				$aim/cam/arms/right_arm/iron/particle.emitting = true
+				action("circuit")
 			_:
 				pass
 	else:
@@ -141,6 +145,11 @@ func _unhandled_input(event):
 	pass
 
 ## CUSTOM FUNCTIONS
+
+func action(type):
+	for obj in $aim/effect.get_overlapping_areas():
+		if type in obj.name:
+			obj.activate()
 
 func hide_objects(array):
 	for obj in array:
