@@ -39,7 +39,7 @@ albedo_texture = ExtResource( 1 )
 material = SubResource( 5 )
 
 [sub_resource type="BoxShape" id=7]
-extents = Vector3( 0.3, 0.3, 0.3 )
+extents = Vector3( 0.132331, 0.185168, 0.152922 )
 
 [node name="fire" type="Area"]
 collision_layer = 8
@@ -50,6 +50,7 @@ script = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Particles" type="Particles" parent="."]
+visibility_aabb = AABB( -0.565352, -0.704109, -0.488263, 1.1307, 1.92189, 0.976527 )
 local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )
