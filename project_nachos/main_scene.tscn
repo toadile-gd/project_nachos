@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -41,6 +41,8 @@
 [ext_resource path="res://GameObjects/Static/Engine (rotary).tscn" type="PackedScene" id=39]
 [ext_resource path="res://GameObjects/Static/Engine Console.tscn" type="PackedScene" id=40]
 [ext_resource path="res://GameObjects/Static/Engine Ladder.tscn" type="PackedScene" id=41]
+[ext_resource path="res://GameObjects/Squid/Squid.tscn" type="PackedScene" id=42]
+[ext_resource path="res://GameObjects/fishies/fishies.tscn" type="PackedScene" id=43]
 
 [node name="main_scene" type="Spatial"]
 
@@ -81,6 +83,15 @@ transform = Transform( 0.993733, 0.111781, 0, -0.111781, 0.993733, 0, 0, 0, 1, 5
 
 [node name="bubbles9" parent="Bubbles" instance=ExtResource( 2 )]
 transform = Transform( 0.999067, 0.0431835, 0, -0.0431835, 0.999067, 0, 0, 0, 1, -9.84166, -16.3723, -18.9253 )
+
+[node name="fishies" parent="Bubbles" instance=ExtResource( 43 )]
+transform = Transform( -0.607723, 0, 0.794149, 0, 1, 0, -0.794149, 0, -0.607723, 35.6554, -7.26312, -9.99275 )
+
+[node name="fishies2" parent="Bubbles" instance=ExtResource( 43 )]
+transform = Transform( -0.60414, 0, -0.796878, 0, 1, 0, 0.796878, 0, -0.60414, 40.2364, -7.71887, 2.74932 )
+
+[node name="fishies3" parent="Bubbles" instance=ExtResource( 43 )]
+transform = Transform( -0.999969, 0, -0.00792391, 0, 1, 0, 0.00792391, 0, -0.999969, 7.41323, -7.26312, 11.1092 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 
@@ -524,3 +535,7 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.795
 
 [node name="Console 2" parent="Static Objects/Engine Room" instance=ExtResource( 23 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.21942, -3.587, 0.0209945 )
+
+[node name="Squid" parent="." instance=ExtResource( 42 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 110.67, -4.21704, 0.611972 )
+speed = 0.25

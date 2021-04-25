@@ -46,7 +46,10 @@ func _physics_process(delta):
 		switch = true
 	if (switch):
 		print(item)
-		$aim/cam/arms/right_arm/anim.play("switch")
+		$aim/cam/arms/right_arm/fire/particle.restart()
+		$aim/cam/arms/right_arm/foam/particle.restart()
+		$aim/cam/arms/right_arm/iron/particle.restart()
+		$aim/cam/arms/right_arm/anim.play("switch", -1)
 		match item:
 			items.none:
 				$aim/cam/arms/right_arm.visible = false
@@ -77,21 +80,23 @@ func _physics_process(delta):
 			items.none:
 				pass
 			items.wrench:
-				print("crank")
 				$aim/cam/arms/right_arm/anim.play("wrench")
 			items.fire:
-				print("splash")
 				$aim/cam/arms/right_arm/anim.play("reach")
+				$aim/cam/arms/right_arm/fire/particle.emitting = true
 			items.foam:
-				print("fwwwooop")
 				$aim/cam/arms/right_arm/anim.play("reach")
+				$aim/cam/arms/right_arm/foam/particle.emitting = true
 			items.iron:
-				print("zipzap")
 				$aim/cam/arms/right_arm/anim.play("reach")
+				$aim/cam/arms/right_arm/iron/particle.emitting = true
 			_:
 				pass
 	else:
 		$aim/cam/arms/right_arm/anim.play("default")
+		$aim/cam/arms/right_arm/fire/particle.emitting = false
+		$aim/cam/arms/right_arm/foam/particle.emitting = false
+		$aim/cam/arms/right_arm/iron/particle.emitting = false
 	
 	# MOVEMENT
 	var mov_vec : Vector3 = Vector3.ZERO
@@ -111,7 +116,6 @@ func _physics_process(delta):
 		mov_vec *= 1.5
 	
 	if mov_vec.length_squared() > 0 and not $aim/cam/cam_anim.current_animation == "walk":
-		print("les go")
 		$aim/cam/cam_anim.play("walk", 0.5, 0.2*mov_vec.length_squared())
 	elif mov_vec.length_squared() < 0.1:
 		$aim/cam/cam_anim.play("idle", 0.5, 0.5)

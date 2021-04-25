@@ -32,5 +32,6 @@ amount = 50
 lifetime = 20.0
 preprocess = 20.0
 randomness = 0.1
+visibility_aabb = AABB( -4, -19, -4, 8, 38, 8 )
 process_material = SubResource( 1 )
 draw_pass_1 = SubResource( 3 )
