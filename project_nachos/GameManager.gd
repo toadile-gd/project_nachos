@@ -73,8 +73,9 @@ func darken_skybox():
 	GlobalLightingUtils.set_skybox_color(skybox_color)
 	
 	if (ambient_light_intensity == null):
-		ambient_light_intensity = GlobalLightingUtils.get_ambient_light_intensity()
-	ambient_light_intensity -= global_lighting_offset
+		ambient_light_intensity = GlobalLightingUtils.base_ambient_light_intensity
+	ambient_light_intensity = (1-depth_percentage)
+	print(ambient_light_intensity)
 	GlobalLightingUtils.set_ambient_light_intensity(ambient_light_intensity)
 	
 func add_item(item):
