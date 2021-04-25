@@ -17,6 +17,8 @@ config/icon="res://icon.png"
 [autoload]
 
 GameManager="*res://GameManager.tscn"
+GlobalLightingUtils="*res://Scripts/Management/GlobalLightingUtils.gd"
+AudioManager="*res://Scripts/Management/AudioManager.gd"
 
 [display]
 

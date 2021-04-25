@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -75,6 +75,7 @@
 [ext_resource path="res://GameObjects/Static/NewsPaper.tscn" type="PackedScene" id=73]
 [ext_resource path="res://GameObjects/Static/Light Fixture.tscn" type="PackedScene" id=74]
 [ext_resource path="res://GameObjects/Static/Mug.tscn" type="PackedScene" id=75]
+[ext_resource path="res://Environment/default_env.tres" type="Environment" id=76]
 
 [node name="main_scene" type="Spatial"]
 
@@ -128,6 +129,115 @@ transform = Transform( -0.60414, 0, -0.796878, 0, 1, 0, 0.796878, 0, -0.60414, 4
 transform = Transform( -0.999969, 0, -0.00792391, 0, 1, 0, 0.00792391, 0, -0.999969, 7.41323, -7.26312, 11.1092 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
+
+[node name="Lighting" type="Node" parent="."]
+
+[node name="Warning" type="Node" parent="Lighting"]
+
+[node name="Warning Light 1" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -11.15, 2.09798, 2.82825 )
+
+[node name="Warning Light 2" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, 2.82825 )
+
+[node name="Warning Light 3" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, -5.03997 )
+
+[node name="Warning Light 4" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0.134362, 2.09798, -8.176 )
+
+[node name="Warning Light 5" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 5.18611, 2.09798, -8.176 )
+
+[node name="Warning Light 6" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 10.0009, 2.09798, -8.176 )
+
+[node name="Warning Light 7" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 19.1736, 2.09798, -2.05176 )
+
+[node name="Warning Light 8" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14.367, 2.09798, 4.16599 )
+
+[node name="Warning Light 9" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 21.8558, 2.09798, 4.16599 )
+
+[node name="Warning Light 10" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 23.0374, -1.33312, -2.47767 )
+
+[node name="Warning Light 11" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 19.0362, -2.93629, 4.17015 )
+
+[node name="Warning Light 12" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 9.66617, -2.93629, 6.1422 )
+
+[node name="Warning Light 14" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 13.1783, -2.93629, -4.48332 )
+
+[node name="Warning Light 15" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -1.86667, -2.93629, -2.19614 )
+
+[node name="Warning Light 16" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -11.1662, -2.93629, 2.79232 )
+
+[node name="Warning Light 13" parent="Lighting/Warning" instance=ExtResource( 72 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.725217, -2.93629, 6.15212 )
+
+[node name="Default" type="Node" parent="Lighting"]
+
+[node name="Light Fixture 1" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.2459, 2.63873, -1.99877 )
+light_type = 1
+
+[node name="Light Fixture 15" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( -4.37114e-08, 8.74228e-08, -1, 0, -1, -8.74228e-08, -1, -3.82137e-15, 4.37114e-08, 25.0433, 2.37332, -1.98107 )
+light_type = 2
+
+[node name="Light Fixture 10" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 18.9492, -2.33107, -1.99877 )
+
+[node name="Light Fixture 11" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 6.27434, -2.33107, -3.07846 )
+light_type = 3
+
+[node name="Light Fixture 12" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, 2.96926 )
+light_type = 2
+
+[node name="Light Fixture 14" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 19.0434, -2.33107, 2.96926 )
+
+[node name="Light Fixture 13" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, -1.68581 )
+light_type = 3
+
+[node name="Light Fixture 2" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.52569, 2.63873, 2.48675 )
+light_type = 3
+
+[node name="Light Fixture 3" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 4.90896, 2.63873, 0.114963 )
+light_type = 1
+
+[node name="Light Fixture 4" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -0.0552677, 2.63873, 0.114963 )
+
+[node name="Light Fixture 5" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, -7.02871 )
+
+[node name="Light Fixture 8" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, 3.15026 )
+
+[node name="Light Fixture 9" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -12.6018, 2.63873, -3.10353 )
+light_type = 2
+
+[node name="Light Fixture 6" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.0358, 2.63873, -7.02871 )
+light_type = 2
+
+[node name="Light Fixture 7" parent="Lighting/Default" instance=ExtResource( 74 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.95304, 2.63873, -2.35572 )
+light_type = 3
 
 [node name="Static Objects" type="Node" parent="."]
 
@@ -1077,105 +1187,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3187, -4.30533, -2.7667 )
 [node name="Screwdriver2" parent="Static Objects/Engine Room" instance=ExtResource( 49 )]
 transform = Transform( 0.0884423, 0, 0.996081, 0, 1, 0, -0.996081, 0, 0.0884423, -4.11875, -4.11685, -1.44347 )
 
-[node name="Lighting" type="Node" parent="Static Objects"]
-
-[node name="Warning" type="Node" parent="Static Objects/Lighting"]
-
-[node name="Warning Light 1" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -11.15, 2.09798, 2.82825 )
-
-[node name="Warning Light 2" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, 2.82825 )
-
-[node name="Warning Light 3" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, -5.03997 )
-
-[node name="Warning Light 4" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0.134362, 2.09798, -8.176 )
-
-[node name="Warning Light 5" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 5.18611, 2.09798, -8.176 )
-
-[node name="Warning Light 6" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 10.0009, 2.09798, -8.176 )
-
-[node name="Warning Light 7" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 19.1736, 2.09798, -2.05176 )
-
-[node name="Warning Light 8" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14.367, 2.09798, 4.16599 )
-
-[node name="Warning Light 9" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 21.8558, 2.09798, 4.16599 )
-
-[node name="Warning Light 10" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 23.0374, -1.33312, -2.47767 )
-
-[node name="Warning Light 11" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 19.0362, -2.93629, 4.17015 )
-
-[node name="Warning Light 12" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 9.66617, -2.93629, 6.1422 )
-
-[node name="Warning Light 14" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 13.1783, -2.93629, -4.48332 )
-
-[node name="Warning Light 15" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -1.86667, -2.93629, -2.19614 )
-
-[node name="Warning Light 16" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -11.1662, -2.93629, 2.79232 )
-
-[node name="Warning Light 13" parent="Static Objects/Lighting/Warning" instance=ExtResource( 72 )]
-transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.725217, -2.93629, 6.15212 )
-
-[node name="Default" type="Node" parent="Static Objects/Lighting"]
-
-[node name="Light Fixture 1" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.2459, 2.63873, -1.99877 )
-
-[node name="Light Fixture 15" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( -4.37114e-08, 8.74228e-08, -1, 0, -1, -8.74228e-08, -1, -3.82137e-15, 4.37114e-08, 25.0433, 2.37332, -1.98107 )
-
-[node name="Light Fixture 10" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 18.9492, -2.33107, -1.99877 )
-
-[node name="Light Fixture 11" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 6.27434, -2.33107, -3.07846 )
-
-[node name="Light Fixture 12" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, 2.96926 )
-
-[node name="Light Fixture 14" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 19.0434, -2.33107, 2.96926 )
-
-[node name="Light Fixture 13" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, -1.68581 )
-
-[node name="Light Fixture 2" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.52569, 2.63873, 2.48675 )
-
-[node name="Light Fixture 3" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 4.90896, 2.63873, 0.114963 )
-
-[node name="Light Fixture 4" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -0.0552677, 2.63873, 0.114963 )
-
-[node name="Light Fixture 5" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, -7.02871 )
-
-[node name="Light Fixture 8" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, 3.15026 )
-
-[node name="Light Fixture 9" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -12.6018, 2.63873, -3.10353 )
-
-[node name="Light Fixture 6" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.0358, 2.63873, -7.02871 )
-
-[node name="Light Fixture 7" parent="Static Objects/Lighting/Default" instance=ExtResource( 74 )]
-transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.95304, 2.63873, -2.35572 )
-
 [node name="Vents" type="Node" parent="Static Objects"]
 
 [node name="Vent" parent="Static Objects/Vents" instance=ExtResource( 59 )]
@@ -1205,35 +1216,35 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97477, -4.95065, -0.813478 )
 [node name="Vent9" parent="Static Objects/Vents" instance=ExtResource( 59 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.37164, -4.95065, 3.09289 )
 
+[node name="Electrical" type="Node" parent="Static Objects"]
+
+[node name="Eletrical Box 1" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 12.9181, 1.35334, -1.31263 )
+
+[node name="Eletrical Box 2" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 2.90633, 1.35334, -0.796969 )
+
+[node name="Eletrical Box 3" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, -5.08276, 1.35334, -0.796969 )
+
+[node name="Eletrical Box 4" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( -0.999999, 0, 0.00111701, 0, 1, 0, -0.00111701, 0, -0.999999, -3.76569, -3.7809, 4.08897 )
+
+[node name="Eletrical Box 5" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.038597, 0, 0.999255, 0, 1, 0, -0.999255, 0, 0.038597, -1.08642, -3.7809, -7.31972 )
+
+[node name="Eletrical Box 6" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.999793, 0, -0.0203316, 0, 1, 0, 0.0203316, 0, 0.999793, 7.22103, -3.7809, -8.10727 )
+
+[node name="Eletrical Box 7" parent="Static Objects/Electrical" instance=ExtResource( 67 )]
+transform = Transform( 0.0050439, 0, 0.999987, 0, 1, 0, -0.999987, 0, 0.0050439, 23.0975, -3.7809, -0.595448 )
+
 [node name="interactable Objects" type="Node" parent="."]
 
 [node name="Consoles" type="Node" parent="interactable Objects"]
 
 [node name="Steering" parent="interactable Objects/Consoles" instance=ExtResource( 58 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0545, 1.62647, -8.17941 )
-
-[node name="Electrical" type="Node" parent="interactable Objects"]
-
-[node name="Eletrical Box 1" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 12.9181, 1.35334, -1.31263 )
-
-[node name="Eletrical Box 2" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, 2.90633, 1.35334, -0.796969 )
-
-[node name="Eletrical Box 3" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.0228967, 0, 0.999738, 0, 1, 0, -0.999738, 0, 0.0228967, -5.08276, 1.35334, -0.796969 )
-
-[node name="Eletrical Box 4" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( -0.999999, 0, 0.00111701, 0, 1, 0, -0.00111701, 0, -0.999999, -3.76569, -3.7809, 4.08897 )
-
-[node name="Eletrical Box 5" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.038597, 0, 0.999255, 0, 1, 0, -0.999255, 0, 0.038597, -1.08642, -3.7809, -7.31972 )
-
-[node name="Eletrical Box 6" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.999793, 0, -0.0203316, 0, 1, 0, 0.0203316, 0, 0.999793, 7.22103, -3.7809, -8.10727 )
-
-[node name="Eletrical Box 7" parent="interactable Objects/Electrical" instance=ExtResource( 67 )]
-transform = Transform( 0.0050439, 0, 0.999987, 0, 1, 0, -0.999987, 0, 0.0050439, 23.0975, -3.7809, -0.595448 )
 
 [node name="Valves" type="Node" parent="interactable Objects"]
 
@@ -1532,3 +1543,6 @@ speed = 0.25
 
 [node name="torpedo" parent="." instance=ExtResource( 44 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19, -6.03478, -7 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 76 )

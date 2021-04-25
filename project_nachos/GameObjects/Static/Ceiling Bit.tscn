@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=23]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=24]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Ceiling Bit"
 surfaces/0 = {
 "aabb": AABB( -0.377272, -0.102797, -0.377272, 0.754543, 0.211874, 0.754543 ),
@@ -12,12 +12,15 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 180,
-"material": SubResource( 23 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 106
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.0392157, 0.305882, 0.231373, 1 )
+
 [node name="Ceiling Bit" type="MeshInstance"]
-mesh = SubResource( 24 )
-material/0 = null
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
