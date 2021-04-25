@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="SpatialMaterial" id=63]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=64]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Light Fixture"
 surfaces/0 = {
 "aabb": AABB( -0.549856, -0.126018, -0.423202, 1.09971, 0.271445, 0.863531 ),
@@ -12,12 +12,18 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 1620,
-"material": SubResource( 63 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 1068
 }
 
 [node name="Light Fixture" type="MeshInstance"]
-mesh = SubResource( 64 )
+mesh = SubResource( 2 )
 material/0 = null
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+light_color = Color( 0.788235, 0.827451, 0.490196, 1 )
+light_energy = 4.0
+shadow_enabled = true

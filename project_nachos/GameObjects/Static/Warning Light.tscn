@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=119]
+[ext_resource path="res://Scripts/Object/blinking_light.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=120]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Warning Light"
 surfaces/0 = {
 "aabb": AABB( -0.0494714, -0.0274245, -0.0571247, 0.0989428, 0.0689316, 0.114249 ),
@@ -12,12 +14,21 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 264,
-"material": SubResource( 119 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 170
 }
 
 [node name="Warning Light" type="MeshInstance"]
-mesh = SubResource( 120 )
+mesh = SubResource( 2 )
 material/0 = null
+script = ExtResource( 1 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+light_color = Color( 1, 0, 0, 1 )
+light_energy = 0.5
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0

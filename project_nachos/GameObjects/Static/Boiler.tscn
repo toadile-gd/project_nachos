@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=9]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=10]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Boiler"
 surfaces/0 = {
 "aabb": AABB( -0.656718, -1, -0.446383, 1.31345, 2, 0.888614 ),
@@ -12,12 +12,20 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 51,
-"material": SubResource( 9 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 35
 }
 
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( 0.6567, -1, -0.4464, 0.6567, 1, -0.1374, 0.6567, 1, -0.4464, 0.6567, -1, -0.4464, 0.6567, -1, -0.1374, 0.6567, 1, -0.1374, 0.6567, -1, -0.1374, 0.4059, 1, 0.3626, 0.6567, 1, -0.1374, 0.6567, -1, -0.1374, 0.4059, -1, 0.3626, 0.4059, 1, 0.3626, 0.4059, -1, 0.3626, 0, 1, 0.4422, 0.4059, 1, 0.3626, 0.4059, -1, 0.3626, 0, -1, 0.4422, 0, 1, 0.4422, 0, -1, 0.4422, -0.4059, 1, 0.3626, 0, 1, 0.4422, 0, -1, 0.4422, -0.4059, -1, 0.3626, -0.4059, 1, 0.3626, -0.4059, -1, 0.3626, -0.6567, 1, -0.1374, -0.4059, 1, 0.3626, -0.4059, -1, 0.3626, -0.6567, -1, -0.1374, -0.6567, 1, -0.1374, -0.6567, -1, -0.1374, -0.6567, 1, -0.4464, -0.6567, 1, -0.1374, -0.6567, -1, -0.1374, -0.6567, -1, -0.4464, -0.6567, 1, -0.4464, -0.6567, 1, -0.4464, 0.6567, 1, -0.1374, -0.6567, 1, -0.1374, -0.6567, 1, -0.4464, 0.6567, 1, -0.4464, 0.6567, 1, -0.1374, 0.4059, 1, 0.3626, -0.6567, 1, -0.1374, 0.6567, 1, -0.1374, 0.4059, 1, 0.3626, -0.4059, 1, 0.3626, -0.6567, 1, -0.1374, 0, 1, 0.4422, -0.4059, 1, 0.3626, 0.4059, 1, 0.3626 )
+
 [node name="Boiler" type="MeshInstance"]
-mesh = SubResource( 10 )
+mesh = SubResource( 2 )
 material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 3 )
