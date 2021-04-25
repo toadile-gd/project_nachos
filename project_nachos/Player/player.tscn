@@ -497,3 +497,31 @@ spot_angle = 45.9215
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0 )
 enabled = true
 cast_to = Vector3( 0, -0.3, 0 )
+
+[node name="pointer" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="pointer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="pointer/CenterContainer"]
+margin_left = 318.0
+margin_top = 178.0
+margin_right = 322.0
+margin_bottom = 182.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 2, 2 )
+mouse_filter = 2
+color = Color( 1, 1, 1, 0.576471 )

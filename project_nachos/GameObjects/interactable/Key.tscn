@@ -39,6 +39,8 @@ collision_layer = 2
 collision_mask = 2
 script = ExtResource( 1 )
 item_name = "KEY_A"
+interactible_name = "key"
+pickup_message = "You picked up a cabin key"
 
 [node name="Key" type="MeshInstance" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )

@@ -73,6 +73,8 @@ func activate():
 		print(\"bingo\")
 		get_parent().activate()
 		queue_free()
+	else:
+		Tooltip.uprintb(\"You are missing a key for this door\", 3)
 "
 
 [sub_resource type="BoxShape" id=5]

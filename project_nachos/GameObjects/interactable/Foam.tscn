@@ -26,6 +26,7 @@ collision_mask = 2
 script = ExtResource( 2 )
 item_name = "FOAM"
 interactible_name = "cementing foam"
+pickup_message = "You picked up some cementing foam"
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.285823, -0.00430195 )

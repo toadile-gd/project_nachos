@@ -26,6 +26,7 @@ collision_mask = 2
 script = ExtResource( 2 )
 item_name = "FIRE_EXTINGUISHER"
 interactible_name = "fire extinguisher"
+pickup_message = "You picked up a fire extinguisher"
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.408772, -0.0400879 )
