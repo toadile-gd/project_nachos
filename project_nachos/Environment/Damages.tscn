@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://GameObjects/Damages/fire.gd" type="Script" id=1]
 [ext_resource path="res://GameObjects/Damages/fire.tscn" type="PackedScene" id=2]
 [ext_resource path="res://GameObjects/Damages/leak.tscn" type="PackedScene" id=3]
 [ext_resource path="res://GameObjects/Damages/circuit.tscn" type="PackedScene" id=4]
@@ -10,698 +9,353 @@
 
 [node name="circuits" type="Node" parent="."]
 
-[node name="circuit" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.08996, 1.64275, -0.801361 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit15" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit15" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, -0.999045, -0.0436891, 0, 0.0436891, -0.999045, 9.08681, 1.64275, 3.4237 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit16" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit16" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.261161, 0.965112, 0.0188196, 0.964338, 0.261721, -0.0394279, -0.0429778, 0.00785138, -0.999045, 23.1348, -3.65409, -0.606881 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit17" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit17" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.661533, 0.749576, -0.0225676, 0.748683, -0.661872, -0.0374091, -0.0429778, 0.00785138, -0.999045, 23.1348, -4.15449, -0.606881 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit18" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit18" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.650936, -0.758812, 0.0220391, -0.757915, 0.651262, 0.0377228, -0.0429778, 0.00785138, -0.999045, 21.0873, -3.44029, -2.6418 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit19" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit19" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.650936, -0.758812, 0.0220391, -0.757915, 0.651262, 0.0377228, -0.0429778, 0.00785138, -0.999045, 21.0873, -3.16632, -5.32905 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit20" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit20" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.650936, -0.758812, 0.0220391, -0.757915, 0.651262, 0.0377228, -0.0429778, 0.00785138, -0.999045, 21.0873, -4.25909, -3.87228 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit21" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit21" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.0429778, 0.00785141, -0.999045, -0.757915, 0.651262, 0.0377228, 0.650936, 0.758812, -0.0220391, 18.3901, -4.25909, -5.27615 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit22" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit22" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.0429778, 0.00785141, -0.999045, -0.757915, 0.651262, 0.0377228, 0.650936, 0.758812, -0.0220391, 7.1568, -3.79445, -8.06305 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit23" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit23" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.628933, 0.744837, -0.222849, -0.757915, 0.651262, 0.0377228, 0.17323, 0.145175, 0.974123, -0.8509, -3.79445, -7.20681 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit24" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit24" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -3.71913, -3.79445, 3.94944 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit25" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit25" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -7.21289, -3.44913, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit26" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit26" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -5.13488, -3.03485, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit27" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit27" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -6.13283, -4.75588, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit28" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit28" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -13.1691, -4.75588, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit29" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit29" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -14.4138, -3.97747, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit31" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit31" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.866844, 0.498578, 0, -0.498578, 0.866844, 0, 0, 0, 1, -14.2059, -4.17639, -2.4311 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit33" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit33" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.997551, -0.069948, 0, 0.0665181, 0.948636, -0.309299, 0.0216349, 0.308542, 0.950965, -11.5462, -4.17639, -3.30557 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit32" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit32" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.12031, 0.992736, 0, -0.992736, 0.12031, 0, 0, 0, 1, -14.2059, -3.58697, -2.4311 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit30" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit30" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 0.905746, 0.42382, 0, -0.42382, 0.905746, -13.6989, -3.33167, -0.486444 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit13" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit13" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 0.809878, 0.586599, 0, -0.586599, 0.809878, 0, 0, 0, 1, 13.0495, 1.58855, -1.47825 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit14" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit14" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.797068, 0.540682, -0.26897, -0.432145, -0.821797, -0.37135, -0.421821, -0.179757, 0.888681, 12.9503, 1.45157, -1.15044 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit2" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit2" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.08996, 0.985787, -0.749276 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit3" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit3" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.62718, 1.43836, -1.06153 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit4" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit4" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.14234, 0.192428, -1.06153 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit10" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit10" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8055, 0.854356, -0.946216 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit11" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit11" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4607, 1.47628, -0.668942 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit12" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit12" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0508, 1.75109, -0.668942 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit5" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit5" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.81618, 0.6273, -7.36726 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit6" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit6" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2924, 1.26924, -7.36726 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit7" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit7" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6895, 1.74286, -7.73267 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit8" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit8" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0769, 2.31509, -7.36726 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="circuit9" type="Area" parent="circuits" instance=ExtResource( 4 )]
+[node name="circuit9" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0555, 1.14163, -7.36726 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
 [node name="fires" type="Node" parent="."]
 
-[node name="fire" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.72003, 0.133335, -2.44992 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire39" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire39" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.32896, -4.96082, 3.05758 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire40" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire40" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9921, -4.96082, -0.74949 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire33" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire33" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -0.0380739, -0.999275, 0, 0.999275, -0.0380739, -7.8614, -4.04355, -3.40117 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire35" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire35" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -0.0380739, -0.999275, 0, 0.999275, -0.0380739, -8.52308, -3.69171, -3.40117 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire36" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire36" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, -0.0380739, -0.999275, 0, 0.999275, -0.0380739, -8.12189, -3.69171, -3.42463 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire37" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire37" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.929789, -0.367825, 0.0140147, 0, -0.0380739, -0.999275, 0.368092, 0.929115, -0.0354007, -12.7146, -3.69171, -4.01324 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire38" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire38" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.929789, -0.367825, 0.0140147, 0, -0.0380739, -0.999275, 0.368092, 0.929115, -0.0354007, -12.7146, -3.20368, -4.07918 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire34" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire34" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.943315, -0.331657, 0.0126366, 0, -0.0380739, -0.999275, 0.331898, 0.942631, -0.0359157, -6.25238, -3.41455, -3.82358 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire18" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire18" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0145977, -0.348872, 0.937057, 0.999126, 0.0418059, 0, -0.0391745, 0.936237, 0.349177, 6.83559, -3.19003, 1.24438 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire19" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire19" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0145977, -0.348872, 0.937057, 0.999126, 0.0418059, 0, -0.0391745, 0.936237, 0.349177, 4.36715, -3.19003, 1.85856 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire20" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire20" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0145977, -0.348872, 0.937057, 0.999126, 0.0418059, 0, -0.0391745, 0.936237, 0.349177, 4.19062, -2.7527, 2.02856 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire21" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire21" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1185, -4.99511, 3.12637 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire22" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire22" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3277, -4.99511, 2.89861 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire23" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire23" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1278, -4.99511, 2.71725 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire24" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire24" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 0.925963, 0.377615, 0, -0.377615, 0.925963, 21.0301, -4.87507, 2.21191 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire29" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire29" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1185, -4.47262, 3.46035 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire30" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire30" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3277, -4.47262, 3.23258 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire31" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire31" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1278, -4.47262, 3.05123 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire32" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire32" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0301, -4.47262, 2.78973 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire25" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire25" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8008, -4.99511, 3.966 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire26" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire26" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0099, -4.99511, 3.73824 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire27" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire27" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8101, -4.99511, 3.55688 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire28" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire28" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.7124, -4.99511, 3.29539 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire11" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire11" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9341, 0.133334, 3.04154 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire12" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire12" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.93893, 0.133334, 3.04154 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire13" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire13" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0127231, -0.999919, 0, 0.999919, 0.0127231, 0, 0, 0, 1, -7.48266, 0.918866, -6.36772 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire14" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire14" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0127231, -0.999919, 0, 0.999919, 0.0127231, 0, 0, 0, 1, -7.48266, 1.34396, -6.14701 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire15" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire15" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 0.0127231, -0.999919, 0, 0.999919, 0.0127231, 0, 0, 0, 1, -7.48266, 0.46367, -6.19028 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire16" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire16" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( -0.0876252, -0.996154, 0, 0.996154, -0.0876252, 0, 0, 0, 1, 11.6697, 0.383204, 1.93246 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire17" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire17" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( -0.0876252, -0.996154, 0, 0.996154, -0.0876252, 0, 0, 0, 1, 11.6697, 0.383204, 2.13494 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire2" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire2" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.45097, 0.133335, -2.69362 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire3" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire3" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.22418, 0.133335, -2.4983 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire4" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire4" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.07991, 0.133335, -2.76984 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire5" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire5" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.87625, 0.133335, -2.5515 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire6" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire6" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.802, 0.133335, -2.7356 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire7" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire7" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.49343, 0.133335, -2.54352 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire8" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire8" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.22541, 0.0538294, -2.54352 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire9" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire9" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.44032, 0.0538294, -2.76188 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="fire10" type="Area" parent="fires" instance=ExtResource( 2 )]
+[node name="fire10" parent="fires" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.94137, 0.366049, -2.44181 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
 [node name="steams" type="Node" parent="."]
 
-[node name="steam" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, -0.46867, 0.883373, 0, -0.883373, -0.46867, 11.3205, 2.45323, -6.01131 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam9" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam9" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( -0.484395, 0.868783, 0.102847, -0.0110276, -0.123614, 0.992269, 0.87478, 0.479516, 0.0694585, 23.1874, -3.70883, -6.19698 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam10" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam10" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( -0.0793549, 0.989308, 0.122363, -0.0110276, -0.123614, 0.992269, 0.996785, 0.0773921, 0.020719, 23.3494, -4.27303, -7.61449 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam11" type="Area" parent="steams" instance=ExtResource( 5 )]
-transform = Transform( -0.0793549, 0.989308, 0.122363, -0.0110276, -0.123614, 0.992269, 0.996785, 0.0773921, 0.020719, 23.3494, -2.43875, -7.61449 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
+[node name="steam11" parent="steams" instance=ExtResource( 5 )]
+transform = Transform( -0.0793549, 0.989308, 0.122363, -0.0110276, -0.123614, 0.992269, 0.996785, 0.0773921, 0.020719, 23.3494, -2.92562, -7.61449 )
 
-[node name="steam12" type="Area" parent="steams" instance=ExtResource( 5 )]
-transform = Transform( -0.757812, 0.648448, 0.0723596, -0.0110276, -0.123614, 0.992269, 0.652379, 0.751156, 0.100827, 23.3383, -2.43875, 1.14502 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
+[node name="steam12" parent="steams" instance=ExtResource( 5 )]
+transform = Transform( -0.757812, 0.648448, 0.0723596, -0.0110276, -0.123614, 0.992269, 0.652379, 0.751156, 0.100827, 23.3383, -2.8119, 1.14502 )
 
-[node name="steam13" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam13" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 0.704879, 0.702883, 0.0953967, -0.0110276, -0.123614, 0.992269, 0.709242, -0.700482, -0.0793816, 23.2881, -4.41405, 0.631238 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam5" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam5" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 0.32504, -0.9457, 0, 0.9457, 0.32504, -11.2643, -3.59801, -3.73236 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam6" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam6" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, -0.347378, -0.937725, 0, 0.937725, -0.347378, -6.77697, -4.17657, -4.01307 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam7" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam7" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 0.363479, -0.931602, 0, 0.931602, 0.363479, 16.2973, -3.13552, -6.91276 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam8" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam8" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, -0.288781, -0.957395, 0, 0.957395, -0.288781, 16.578, -4.3144, -6.91276 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam3" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam3" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 0.236228, 0.858372, 0.455406, 0, -0.46867, 0.883373, 0.971698, -0.208677, -0.110713, 13.1758, 2.45323, -4.66587 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam4" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam4" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( -0.708512, 0.623395, 0.33074, 0, -0.46867, 0.883373, 0.705699, 0.625881, 0.332058, 12.9292, 2.45323, -0.0505778 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="steam2" type="Area" parent="steams" instance=ExtResource( 5 )]
+[node name="steam2" parent="steams" instance=ExtResource( 5 )]
 transform = Transform( 0.535149, -0.746237, -0.395913, 0, -0.46867, 0.883373, -0.844758, -0.472736, -0.250808, 11.1689, 2.45323, -4.4248 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
 [node name="leaks" type="Node" parent="."]
 
-[node name="leak" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.0817769, 0.0409723, 0.995808, 0.447946, -0.89406, 7.81612e-08, 0.890313, 0.446069, -0.0914669, 2.23243, 2.60351, -8.17462 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak29" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak29" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.0817769, 0.0409723, 0.995808, 0.995501, -0.0513389, -0.0796393, 0.0478607, 0.99784, -0.0449863, 16.7328, 1.3043, -8.17462 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak2" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak2" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 0.742385, -0.669973, 0, 0.669973, 0.742385, -2.66339, 0.116506, -8.114 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak3" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak3" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.119322, 0.978658, -0.167303, 0, -0.168507, -0.9857, -0.992856, -0.117616, 0.0201066, -5.2173, 2.44547, -5.6474 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak4" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak4" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.0641119, -0.66795, -0.74144, 0.100635, -0.734854, 0.670718, -0.992856, -0.117616, 0.0201066, -2.78448, 2.43926, 2.48273 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak5" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak5" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.173149, 0.0263115, 0.984544, 0.483148, 0.873367, 0.0616298, -0.858247, 0.486352, -0.163935, -6.28742, 0.127737, 1.87249 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak6" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak6" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.0329114, 0.978976, -0.201303, 0.170006, -0.203961, -0.964105, -0.984893, -0.00249273, -0.173144, -11.0676, 2.42441, 1.87249 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak7" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak7" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, -0.999446, -0.0332773, 0, 0.0332773, -0.999446, -9.16613, 2.77149, -1.1259 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak9" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak9" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, -0.999446, -0.0332773, 0, 0.0332773, -0.999446, 17.7627, 2.77149, 1.56541 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak10" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak10" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, -0.764831, 0.64423, 0, -0.64423, -0.764831, 21.2368, 2.72618, 4.3191 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak11" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak11" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.849433, -0.526132, -0.040613, 0, 0.0769627, -0.997034, 0.527697, 0.846913, 0.0653746, 28.1162, -3.45542, -7.77846 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak28" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak28" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.411955, -0.758619, -0.504768, -0.20464, 0.462781, -0.862529, 0.887928, 0.458619, 0.0354015, 30.4771, -4.07494, -5.40062 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak27" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak27" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.962918, -0.0907045, -0.254089, 0.269341, -0.268689, -0.924803, 0.0156128, -0.958947, 0.283156, 23.6601, 1.94733, 4.25065 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak12" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak12" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.105045, 0.3583, 0.927678, -0.271916, 0.907639, -0.31977, -0.956571, -0.21866, 0.19277, 23.2495, -4.84488, -2.75457 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak13" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak13" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.759373, 0.650655, 0, -0.650655, 0.759373, 0, 0, 0, 1, 17.8968, -4.65375, 1.67433 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak14" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak14" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.91383, 0.00307375, -0.406086, -0.367945, 0.429426, -0.824748, 0.171849, 0.903097, 0.393553, 19.066, -4.76483, -0.412486 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak20" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak20" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 13.2, -3.3, 0 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak21" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak21" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10.2, -2.2, 1 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak22" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak22" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 9.17608, -2.2, 2.07 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak23" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak23" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10.0728, -2.2, 1.91939 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak24" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak24" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, 0, -1.20944e-08, -0.138343, 0.990384, 8.65821e-08, 0.990384, 0.138343, -1.88508, -3.37415, 1.91939 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak25" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak25" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 0.172221, 0.975586, 0.136276, -1.20944e-08, -0.138343, 0.990384, 0.985058, -0.170565, -0.0238257, -11.1001, -3.37415, 2.48334 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak26" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak26" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 4.56633e-09, 0.138343, -0.990384, 0.172221, 0.975586, 0.136276, 0.985058, -0.170565, -0.0238257, -9.31558, -5.06857, -0.855328 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak15" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak15" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.262153, -0.0269526, -0.96465, 0.0434555, -0.998926, 0.0161008, -0.964047, -0.0376985, 0.263043, 17.3373, -2.2022, -1.69387 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak16" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak16" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.262153, -0.0269526, -0.96465, 0.0434555, -0.998926, 0.0161008, -0.964047, -0.0376985, 0.263043, 18.2091, -2.2022, -3.38907 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak17" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak17" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.262153, -0.0269526, -0.96465, 0.0434555, -0.998926, 0.0161008, -0.964047, -0.0376985, 0.263043, 20.0337, -2.2022, -1.94968 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak18" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak18" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.262153, -0.0269526, -0.96465, 0.0434555, -0.998926, 0.0161008, -0.964047, -0.0376985, 0.263043, 19.7036, -2.2022, -4.34755 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak19" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak19" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -0.262153, -0.0269526, -0.96465, -0.604334, 0.783915, 0.142331, 0.752367, 0.620283, -0.221794, 19.7036, -3.86533, -6.76667 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
 
-[node name="leak8" type="Area" parent="leaks" instance=ExtResource( 3 )]
+[node name="leak8" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, -0.999446, -0.0332773, 0, 0.0332773, -0.999446, -12.6136, 2.77149, -4.78249 )
-collision_layer = 8
-collision_mask = 8
-script = ExtResource( 1 )
