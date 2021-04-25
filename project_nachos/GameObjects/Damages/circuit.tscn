@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://GameObjects/Damages/fire.gd" type="Script" id=2]
+
+[sub_resource type="SphereShape" id=1]
+radius = 0.2
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0.535354, 1 ), 0.0, 0.1725, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+width = 32
+curve = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+direction = Vector3( 0, 1, 0 )
+spread = 120.0
+initial_velocity = 3.0
+angular_velocity = -300.0
+angular_velocity_random = 1.0
+scale = 0.05
+scale_random = 0.1
+scale_curve = SubResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=5]
+flags_unshaded = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_color = Color( 0.729412, 0.992157, 1, 0.462745 )
+
+[sub_resource type="QuadMesh" id=6]
+material = SubResource( 5 )
+
+[node name="circuit" type="Area"]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="Particles" type="Particles" parent="."]
+amount = 10
+lifetime = 0.8
+explosiveness = 0.9
+local_coords = false
+process_material = SubResource( 4 )
+draw_pass_1 = SubResource( 6 )
