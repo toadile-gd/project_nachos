@@ -43,7 +43,7 @@ func convert_time_to_minutes():
 func increment_depth_percentage():
 		current_time += 1
 		depth_percentage = float (current_time) / total_time
-		print("Depth percentage: " + depth_percentage)
+		print("Depth percentage: ", depth_percentage)
 
 func get_depth_precentage():
 	return depth_percentage

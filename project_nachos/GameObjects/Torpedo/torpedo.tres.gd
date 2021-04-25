@@ -1,7 +1,7 @@
 extends Spatial
 
 export var speed = 5.0
-var enabled = false
+export var enabled = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
