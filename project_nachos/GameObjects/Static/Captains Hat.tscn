@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[sub_resource type="SpatialMaterial" id=17]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=18]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Captains Hat"
 surfaces/0 = {
 "aabb": AABB( -0.144216, -0.0517061, -0.109363, 0.296934, 0.113326, 0.218291 ),
@@ -12,12 +12,12 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 300,
-"material": SubResource( 17 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 196
 }
 
 [node name="Captains Hat" type="MeshInstance"]
-mesh = SubResource( 18 )
+mesh = SubResource( 2 )
 material/0 = null

@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -41,11 +41,24 @@
 [ext_resource path="res://GameObjects/Static/Engine (rotary).tscn" type="PackedScene" id=39]
 [ext_resource path="res://GameObjects/Static/Engine Console.tscn" type="PackedScene" id=40]
 [ext_resource path="res://GameObjects/Static/Engine Ladder.tscn" type="PackedScene" id=41]
+[ext_resource path="res://GameObjects/Static/Mug.tscn" type="PackedScene" id=42]
+[ext_resource path="res://GameObjects/Static/NewsPaper.tscn" type="PackedScene" id=43]
+[ext_resource path="res://GameObjects/Static/Light Fixture.tscn" type="PackedScene" id=44]
+[ext_resource path="res://GameObjects/Static/Warning Light.tscn" type="PackedScene" id=45]
+[ext_resource path="res://GameObjects/Static/Power Sign.tscn" type="PackedScene" id=46]
+[ext_resource path="res://GameObjects/Static/Ceiling Bit.tscn" type="PackedScene" id=47]
+[ext_resource path="res://GameObjects/Static/Paper.tscn" type="PackedScene" id=48]
+[ext_resource path="res://GameObjects/Static/Screwdriver.tscn" type="PackedScene" id=49]
+[ext_resource path="res://GameObjects/Static/Torus.tscn" type="PackedScene" id=50]
+[ext_resource path="res://GameObjects/Static/Captains Hat.tscn" type="PackedScene" id=51]
+[ext_resource path="res://GameObjects/Static/Pillow (large).tscn" type="PackedScene" id=52]
+[ext_resource path="res://GameObjects/Static/Pillow (small).tscn" type="PackedScene" id=53]
+[ext_resource path="res://GameObjects/Static/Booth Seat.tscn" type="PackedScene" id=54]
 
 [node name="main_scene" type="Spatial"]
 
 [node name="Level" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000570297, 0, 0.0145578 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00441456, 0.00946379, -0.00859217 )
 
 [node name="Bubbles" type="Node" parent="."]
 
@@ -91,11 +104,29 @@ transform = Transform( 0.999067, 0.0431835, 0, -0.0431835, 0.999067, 0, 0, 0, 1,
 [node name="Bed 1" parent="Static Objects/Cabin 1" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73431, 0.891372, -1.84041 )
 
+[node name="Pillow (small)" parent="Static Objects/Cabin 1/Bed 1" instance=ExtResource( 53 )]
+transform = Transform( 0.984926, 0, 0.172978, 0, 1, 0, -0.172978, 0, 0.984926, -0.234341, -0.792228, -0.828649 )
+
+[node name="Pillow (large)" parent="Static Objects/Cabin 1/Bed 1" instance=ExtResource( 52 )]
+transform = Transform( 0.984926, 0, 0.172978, 0, 1, 0, -0.172978, 0, 0.984926, -0.249684, 0.18329, -1.02007 )
+
 [node name="Bed 2" parent="Static Objects/Cabin 1" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.702, 1.96951, -1.87446 )
 
+[node name="Pillow (large)" parent="Static Objects/Cabin 1/Bed 2" instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.288083, 0.204363, -1.05368 )
+
 [node name="Bed 3" parent="Static Objects/Cabin 1" instance=ExtResource( 4 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.68907, 0.891372, 2.01087 )
+
+[node name="Pillow (large)" parent="Static Objects/Cabin 1/Bed 3" instance=ExtResource( 52 )]
+transform = Transform( 0.779371, 0, -0.626563, 0, 1, 0, 0.626563, 0, 0.779371, -0.0920302, 0.18329, -0.719104 )
+
+[node name="Pillow (small)" parent="Static Objects/Cabin 1/Bed 3" instance=ExtResource( 53 )]
+transform = Transform( 0.860831, 0, 0.508891, 0, 1, 0, -0.508891, 0, 0.860831, -0.345811, 0.167281, -1.02224 )
+
+[node name="Pillow (small)2" parent="Static Objects/Cabin 1/Bed 3" instance=ExtResource( 53 )]
+transform = Transform( 0.243361, 0, 0.969936, 0, 1, 0, -0.969936, 0, 0.243361, -0.20604, 1.25515, -0.961079 )
 
 [node name="Bed 4" parent="Static Objects/Cabin 1" instance=ExtResource( 5 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.72138, 1.96951, 1.97682 )
@@ -130,6 +161,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14896, 1.35445, 0.224277 )
 [node name="Cabin Ladder 2" parent="Static Objects/Cabin 1" instance=ExtResource( 8 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.14591, 1.35999, -0.0697708 )
 
+[node name="Pillow (small)" parent="Static Objects/Cabin 1" instance=ExtResource( 53 )]
+transform = Transform( 0.488789, 0, 0.872402, 0, 1, 0, -0.872402, 0, 0.488789, 0.738439, 0.0991443, 0.97299 )
+
 [node name="Cabin 2" type="Node" parent="Static Objects"]
 
 [node name="Bed 1" parent="Static Objects/Cabin 2" instance=ExtResource( 4 )]
@@ -141,8 +175,14 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.69281, 1.96951, -1.87446 )
 [node name="Bed 3" parent="Static Objects/Cabin 2" instance=ExtResource( 4 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.30174, 0.891372, 2.01087 )
 
+[node name="Pillow (small)" parent="Static Objects/Cabin 2/Bed 3" instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.404496, 0.16728, -0.715894 )
+
 [node name="Bed 4" parent="Static Objects/Cabin 2" instance=ExtResource( 5 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.26943, 1.96951, 1.97682 )
+
+[node name="Pillow (large)" parent="Static Objects/Cabin 2/Bed 4" instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.376375, 0.206612, -0.91381 )
 
 [node name="Locker 1" parent="Static Objects/Cabin 2" instance=ExtResource( 6 )]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 3.2835, 0.837688, -1.75018 )
@@ -174,6 +214,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.13977, 1.35445, 0.224277 )
 [node name="Cabin Ladder 2" parent="Static Objects/Cabin 2" instance=ExtResource( 8 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.8449, 1.35999, -0.0697708 )
 
+[node name="Pillow (small)" parent="Static Objects/Cabin 2" instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.43948, 2.18004, -1.51234 )
+
+[node name="Pillow (small)2" parent="Static Objects/Cabin 2" instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.92457, 1.04146, -1.51234 )
+
+[node name="Pillow (small)3" parent="Static Objects/Cabin 2" instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, -0.99037, -0.138447, 0, 0.138447, -0.99037, 4.76156, 0.15108, -1.51234 )
+
 [node name="Captain\'s Quarters" type="Node" parent="Static Objects"]
 
 [node name="Captains Bed" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 5 )]
@@ -196,6 +245,15 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.81104
 
 [node name="Lockbox" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1438, 0.16877, -2.37191 )
+
+[node name="Captains Hat" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 51 )]
+transform = Transform( 0.834963, 0, 0.550306, 0, 1, 0, -0.550306, 0, 0.834963, 11.5526, 0.82782, -1.55377 )
+
+[node name="Pillow (large)" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 52 )]
+transform = Transform( 0.834963, 0, 0.550306, 0, 1, 0, -0.550306, 0, 0.834963, 11.4882, 0.826422, -3.04618 )
+
+[node name="Pillow (large)2" parent="Static Objects/Captain\'s Quarters" instance=ExtResource( 52 )]
+transform = Transform( 0.834963, 0, 0.550306, 0, 1, 0, -0.550306, 0, 0.834963, 11.4882, 0.826422, -3.04618 )
 
 [node name="Kitchen Dining" type="Node" parent="Static Objects"]
 
@@ -245,6 +303,29 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.439 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490377, 0.430972 )
 
 [node name="Booths" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="Booth Seat" parent="Static Objects/Kitchen Dining/Booths" instance=ExtResource( 54 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5856, 0.449552, -0.465927 )
+
+[node name="Booth Seat2" parent="Static Objects/Kitchen Dining/Booths" instance=ExtResource( 54 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5856, 0.449552, -3.80497 )
+
+[node name="Booth Seat3" parent="Static Objects/Kitchen Dining/Booths" instance=ExtResource( 54 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16.3881, 0.449552, -0.465927 )
+
+[node name="Booth Seat4" parent="Static Objects/Kitchen Dining/Booths" instance=ExtResource( 54 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16.3881, 0.449552, -3.80497 )
+
+[node name="Misc" type="Node" parent="Static Objects/Kitchen Dining"]
+
+[node name="NewsPaper" parent="Static Objects/Kitchen Dining/Misc" instance=ExtResource( 43 )]
+transform = Transform( -0.526808, 0, 0.849985, 0, 1, 0, -0.849985, 0, -0.526808, 17.2735, 0.589836, -3.88369 )
+
+[node name="Mug" parent="Static Objects/Kitchen Dining/Misc" instance=ExtResource( 42 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1722, 0.641534, 0.441232 )
+
+[node name="Mug2" parent="Static Objects/Kitchen Dining/Misc" instance=ExtResource( 42 )]
+transform = Transform( -0.526808, 0, 0.849985, 0, 1, 0, -0.849985, 0, -0.526808, 11.9013, 0.830602, 1.84694 )
 
 [node name="Helm" type="Node" parent="Static Objects"]
 
@@ -317,6 +398,65 @@ transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.7484
 
 [node name="Pipe Group (Straight) 7" parent="Static Objects/Observation Deck/Pipe Group 1" instance=ExtResource( 28 )]
 transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 2.27556, -7.60775 )
+
+[node name="Pipe Group 2" type="Node" parent="Static Objects/Observation Deck"]
+
+[node name="Pipe Group (Straight) 1" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -4.43125, 0.930674 )
+
+[node name="Pipe Group (Straight) 2" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -3.30407, 0.930674 )
+
+[node name="Pipe Group (Straight) 3" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -2.18808, 0.930674 )
+
+[node name="Pipe Group (Straight) 4" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -1.0775, 0.930674 )
+
+[node name="Pipe Group (Straight) 5" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 0.0307548, 0.930674 )
+
+[node name="Pipe Group (Straight) 6" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 1.14895, 0.930674 )
+
+[node name="Pipe Group (Straight) 7" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 2.27556, 0.930674 )
+
+[node name="Pipe Group 3" type="Node" parent="Static Objects/Observation Deck"]
+
+[node name="Pipe Group (Straight) 1" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -4.43125, -6.36946 )
+
+[node name="Pipe Group (Straight) 2" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -3.30407, -6.36946 )
+
+[node name="Pipe Group (Straight) 3" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -2.18808, -6.36946 )
+
+[node name="Pipe Group (Straight) 4" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -1.0775, -6.36946 )
+
+[node name="Pipe Group (Straight) 5" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 0.0307548, -6.36946 )
+
+[node name="Pipe Group (Straight) 6" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 1.14895, -6.36946 )
+
+[node name="Pipe Group (Straight) 7" parent="Static Objects/Observation Deck/Pipe Group 3" instance=ExtResource( 28 )]
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, 2.27556, -6.36946 )
+
+[node name="Pipe Group 4" type="Node" parent="Static Objects/Observation Deck"]
+
+[node name="Misc" type="Node" parent="Static Objects/Observation Deck"]
+
+[node name="NewsPaper" parent="Static Objects/Observation Deck/Misc" instance=ExtResource( 43 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4115, -3.6137, 0.453386 )
+
+[node name="NewsPaper2" parent="Static Objects/Observation Deck/Misc" instance=ExtResource( 43 )]
+transform = Transform( 0.466464, 0, -0.88454, 0, 1, 0, 0.88454, 0, 0.466464, 27.8342, -3.6137, 0.453386 )
+
+[node name="Mug" parent="Static Objects/Observation Deck/Misc" instance=ExtResource( 42 )]
+transform = Transform( 0.466464, 0, -0.88454, 0, 1, 0, 0.88454, 0, 0.466464, 27.1694, -3.562, 0.894036 )
 
 [node name="Torpedo Bay" type="Node" parent="Static Objects"]
 
@@ -395,6 +535,9 @@ transform = Transform( 0.843026, 0.360103, -0.399542, 0, 0.742818, 0.669494, 0.5
 [node name="Barrel (Oil)" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 27 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26336, -4.57162, -5.25062 )
 
+[node name="Barrel (Oil)2" parent="Static Objects/Cargo Bay/Barrels" instance=ExtResource( 27 )]
+transform = Transform( -0.00200404, 0.973068, -0.230508, -0.999998, -0.0020595, 0, -0.000474732, 0.230508, 0.97307, -5.3734, -4.64521, 3.59945 )
+
 [node name="Misc" type="Node" parent="Static Objects/Cargo Bay"]
 
 [node name="Mechanical Arm" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 36 )]
@@ -405,6 +548,51 @@ transform = Transform( 0.573116, -0.80921, -0.129294, 0.798311, 0.515697, 0.3110
 
 [node name="Oar 2" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 37 )]
 transform = Transform( 0.972687, -0.232121, 0, 0.232121, 0.972687, 0, 0, 0, 1, -0.924555, -3.75432, -6.39686 )
+
+[node name="Mug" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 42 )]
+transform = Transform( -0.620915, -6.85288e-08, -0.783878, 0, -1, 8.74228e-08, -0.783878, 5.42821e-08, 0.620915, 5.06552, -3.5466, 2.23512 )
+
+[node name="Screwdriver 1" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 49 )]
+transform = Transform( -0.620915, -6.85288e-08, -0.783878, 0, -1, 8.74228e-08, -0.783878, 5.42821e-08, 0.620915, 5.4818, -4.96416, 2.30981 )
+
+[node name="Torus 1" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21892, -3.54235, 1.47424 )
+
+[node name="Torus 2" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.925501, 0, 0.378746, 0, 1, 0, -0.378746, 0, 0.925501, 3.51834, -4.92738, 0.0382487 )
+
+[node name="Torus 5" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.538168, 0, 0.842838, 0, 1, 0, -0.842838, 0, 0.538168, 2.9653, -4.8489, 0.0382487 )
+
+[node name="Torus 3" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.389381, 0, 0.921077, 0, 1, 0, -0.921077, 0, 0.389381, 3.03145, -4.92738, 0.0382488 )
+
+[node name="Torus 6" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.389381, 0, 0.921077, 0, 1, 0, -0.921077, 0, 0.389381, 3.15568, -4.92738, -0.458875 )
+
+[node name="Torus 10" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.389381, 0, 0.921077, 0, 1, 0, -0.921077, 0, 0.389381, 3.15568, -4.92738, -0.458875 )
+
+[node name="Torus 11" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.389381, 0, 0.921077, 0, 1, 0, -0.921077, 0, 0.389381, 5.79301, -4.92738, -3.36912 )
+
+[node name="Torus 12" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.209942, 0.164724, 0.963738, -0.757392, 0.650743, 0.0537656, -0.618289, -0.741215, 0.261379, 3.07252, -4.79062, -4.24165 )
+
+[node name="Torus 4" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( 0.389381, 0, 0.921077, 0, 1, 0, -0.921077, 0, 0.389381, 3.44648, -4.85366, 0.0382488 )
+
+[node name="Torus 7" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( -0.230848, 0, 0.97299, 0, 1, 0, -0.97299, 0, -0.230848, 3.5624, -4.76955, 0.0382488 )
+
+[node name="Torus 8" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( -0.934104, -0.0662042, -0.350809, -0.0619776, 0.997806, -0.0232761, 0.35158, 0, -0.936158, 3.17758, -4.73495, 0.0382488 )
+
+[node name="Torus 9" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 50 )]
+transform = Transform( -0.926352, 0.144356, -0.347898, 0.13514, 0.989526, 0.0507528, 0.35158, 0, -0.936158, 3.40348, -4.67113, 0.0382488 )
+
+[node name="Screwdriver" parent="Static Objects/Cargo Bay/Misc" instance=ExtResource( 49 )]
+transform = Transform( 0.794075, 0, -0.607819, 0, 1, 0, 0.607819, 0, 0.794075, -0.211593, -4.96417, -6.73561 )
 
 [node name="Crates" type="Node" parent="Static Objects/Cargo Bay"]
 
@@ -479,6 +667,269 @@ transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, 
 
 [node name="Clutter" type="Node" parent="Static Objects"]
 
+[node name="Paper" type="Node" parent="Static Objects/Clutter"]
+
+[node name="Paper1" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.98051, 0.0115941, -3.8638 )
+
+[node name="Paper2" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, -11.5461, 0.0115941, -2.05753 )
+
+[node name="Paper3" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, -9.17113, 0.0115941, -4.08743 )
+
+[node name="Paper4" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, -11.3555, 0.0115941, -1.8339 )
+
+[node name="Paper5" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, -9.49039, 0.0115941, -1.8339 )
+
+[node name="Paper21" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, -9.04796, 0.0115941, -0.805427 )
+
+[node name="Paper22" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, -6.21102, 0.0115941, 3.45698 )
+
+[node name="Paper23" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, -9.51781, 0.0115941, 2.89216 )
+
+[node name="Paper36" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.97685, -4.95737, -3.86139 )
+
+[node name="Paper37" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, -11.5461, -4.95737, -2.05753 )
+
+[node name="Paper38" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, -9.16747, -4.95737, -4.08502 )
+
+[node name="Paper39" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, -11.3555, -4.95737, -1.8339 )
+
+[node name="Paper40" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, -9.49039, -4.95737, -1.8339 )
+
+[node name="Paper41" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, -9.04796, -4.95737, -0.805427 )
+
+[node name="Paper44" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, 2.5041, -4.95737, -2.05753 )
+
+[node name="Paper45" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, 2.69471, -4.95737, -1.8339 )
+
+[node name="Paper46" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 4.5598, -4.95737, -1.8339 )
+
+[node name="Paper47" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, 5.00224, -4.95737, -0.805427 )
+
+[node name="Paper48" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.813537, 0, 0.581513, 0, 1, 0, -0.581513, 0, -0.813537, 2.50498, -4.95737, -4.58859 )
+
+[node name="Paper49" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.907668, 0, 0.41969, 0, 1, 0, -0.41969, 0, -0.907668, 2.79819, -4.95737, -4.60789 )
+
+[node name="Paper50" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.140556, 0, 0.990073, 0, 1, 0, -0.990073, 0, -0.140556, 3.91224, -4.95737, -6.1037 )
+
+[node name="Paper51" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.552475, 0, -0.833529, 0, 1, 0, 0.833529, 0, -0.552475, 5.00136, -4.95737, -5.84421 )
+
+[node name="Paper52" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.984124, 0, 0.17748, 0, 1, 0, -0.17748, 0, -0.984124, 9.30305, -4.95737, -0.970981 )
+
+[node name="Paper53" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.999959, 0, -0.00905815, 0, 1, 0, 0.00905815, 0, -0.999959, 9.55981, -4.95737, -1.11389 )
+
+[node name="Paper54" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.550685, 0, 0.834713, 0, 1, 0, -0.834713, 0, -0.550685, 9.92667, -4.95737, -2.94254 )
+
+[node name="Paper56" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.550685, 0, 0.834713, 0, 1, 0, -0.834713, 0, -0.550685, 5.59695, -4.95737, -3.64168 )
+
+[node name="Paper55" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.142681, 0, -0.989769, 0, 1, 0, 0.989769, 0, -0.142681, 11.0221, -4.95737, -3.17403 )
+
+[node name="Paper57" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.396683, 0, -0.917956, 0, 1, 0, 0.917956, 0, 0.396683, 21.4185, -4.95737, 3.51117 )
+
+[node name="Paper58" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.779721, 0, -0.626128, 0, 1, 0, 0.626128, 0, -0.779721, 20.5214, -4.95737, 2.22622 )
+
+[node name="Paper59" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.779721, 0, -0.626128, 0, 1, 0, 0.626128, 0, -0.779721, 17.6999, -4.95737, -2.79936 )
+
+[node name="Paper42" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, -6.21102, -4.95737, 3.45698 )
+
+[node name="Paper43" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, -9.51781, -4.95737, 2.89216 )
+
+[node name="Paper24" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.92668, 0, 0.375852, 0, 1, 0, -0.375852, 0, -0.92668, -9.27758, 0.0115941, 3.07688 )
+
+[node name="Paper17" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.989127, 0, -0.147067, 0, 1, 0, 0.147067, 0, -0.989127, -9.31038, 0.0115941, -2.86106 )
+
+[node name="Paper18" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.310311, 0, 0.950635, 0, 1, 0, -0.950635, 0, -0.310311, -11.625, 0.0115941, -4.96134 )
+
+[node name="Paper19" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.944382, 0, -0.32885, 0, 1, 0, 0.32885, 0, -0.944382, -9.11292, 0.0115941, -3.07867 )
+
+[node name="Paper20" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.78902, 0, 0.614368, 0, 1, 0, -0.614368, 0, -0.78902, -9.35107, 0.0115941, -4.9285 )
+
+[node name="Paper6" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, -9.4932, 0.0115941, -3.94907 )
+
+[node name="Paper7" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.912406, 0, -0.409286, 0, 1, 0, 0.409286, 0, 0.912406, -13.1765, 0.0115941, -2.61716 )
+
+[node name="Paper8" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.931221, 0, 0.364454, 0, 1, 0, -0.364454, 0, 0.931221, -11.6789, 0.0115941, -4.60731 )
+
+[node name="Paper9" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.811309, 0, 0.584618, 0, 1, 0, -0.584618, 0, 0.811309, -8.85461, 0.0115941, -5.12908 )
+
+[node name="Paper10" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.811309, 0, 0.584618, 0, 1, 0, -0.584618, 0, 0.811309, -11.1479, 0.0115941, -6.03094 )
+
+[node name="Paper11" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0650199, 0, 0.997884, 0, 1, 0, -0.997884, 0, 0.0650199, -11.1479, 0.0115941, -5.76202 )
+
+[node name="Paper12" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.640458, 0, 0.767993, 0, 1, 0, -0.767993, 0, -0.640458, -14.5672, 0.0115941, -1.20701 )
+
+[node name="Paper13" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.999984, 0, -0.00561993, 0, 1, 0, 0.00561993, 0, -0.999984, -14.299, 0.0115941, -1.226 )
+
+[node name="Paper14" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.144753, 0, -0.989468, 0, 1, 0, 0.989468, 0, -0.144753, -14.299, 0.0115941, -4.92741 )
+
+[node name="Paper15" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.144753, 0, -0.989468, 0, 1, 0, 0.989468, 0, -0.144753, -15.6411, 0.0115941, -3.45352 )
+
+[node name="Paper16" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.144753, 0, -0.989468, 0, 1, 0, 0.989468, 0, -0.144753, -10.8004, 0.0115941, -3.90271 )
+
+[node name="Paper60" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.313794, 0, 0.949491, 0, 1, 0, -0.949491, 0, 0.313794, -13.74, 0.0115941, -4.74904 )
+
+[node name="Paper61" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.131322, 0, 0.99134, 0, 1, 0, -0.99134, 0, 0.131322, -14.0121, 0.0115941, -4.63822 )
+
+[node name="Paper62" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.170743, 0, -0.985316, 0, 1, 0, 0.985316, 0, -0.170743, -12.8914, 0.0115941, -4.12118 )
+
+[node name="Paper63" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0158993, 0, -0.999874, 0, 1, 0, 0.999874, 0, 0.0158993, -13.0361, 0.0115941, -4.37695 )
+
+[node name="Paper64" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.830926, 0, -0.556383, 0, 1, 0, 0.556383, 0, -0.830926, -14.8672, 0.0115941, -4.7313 )
+
+[node name="Paper65" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.445729, 0, 0.895168, 0, 1, 0, -0.895168, 0, -0.445729, -13.9818, 0.0115941, -4.28901 )
+
+[node name="Paper66" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.894068, 0, -0.447931, 0, 1, 0, 0.447931, 0, 0.894068, -14.348, 0.0115941, -3.03328 )
+
+[node name="Paper67" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.313794, 0, 0.949491, 0, 1, 0, -0.949491, 0, 0.313794, -13.74, 0.0115941, -6.10919 )
+
+[node name="Paper68" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.131322, 0, 0.99134, 0, 1, 0, -0.99134, 0, 0.131322, -14.0121, 0.0115941, -5.99837 )
+
+[node name="Paper69" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.170743, 0, -0.985316, 0, 1, 0, 0.985316, 0, -0.170743, -12.8914, 0.0115941, -5.48133 )
+
+[node name="Paper70" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0158993, 0, -0.999874, 0, 1, 0, 0.999874, 0, 0.0158993, -13.0361, 0.0115941, -5.7371 )
+
+[node name="Paper71" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.830926, 0, -0.556383, 0, 1, 0, 0.556383, 0, -0.830926, -14.8672, 0.0115941, -6.09145 )
+
+[node name="Paper72" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.445729, 0, 0.895168, 0, 1, 0, -0.895168, 0, -0.445729, -13.9818, 0.0115941, -5.64916 )
+
+[node name="Paper73" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.894068, 0, -0.447931, 0, 1, 0, 0.447931, 0, 0.894068, -14.348, 0.0115941, -4.39343 )
+
+[node name="Paper74" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.313794, 0, 0.949491, 0, 1, 0, -0.949491, 0, 0.313794, -11.2241, 0.0115941, -2.52681 )
+
+[node name="Paper75" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.131322, 0, 0.99134, 0, 1, 0, -0.99134, 0, 0.131322, -11.4963, 0.0115941, -2.41599 )
+
+[node name="Paper76" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.170743, 0, -0.985316, 0, 1, 0, 0.985316, 0, -0.170743, -10.3755, 0.0115941, -1.89895 )
+
+[node name="Paper77" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0158993, 0, -0.999874, 0, 1, 0, 0.999874, 0, 0.0158993, -10.5202, 0.0115941, -2.15472 )
+
+[node name="Paper78" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.830926, 0, -0.556383, 0, 1, 0, 0.556383, 0, -0.830926, -12.3513, 0.0115941, -2.50906 )
+
+[node name="Paper79" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.445729, 0, 0.895168, 0, 1, 0, -0.895168, 0, -0.445729, -11.466, 0.0115941, -2.06677 )
+
+[node name="Paper80" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.894068, 0, -0.447931, 0, 1, 0, 0.447931, 0, 0.894068, -11.8321, 0.0115941, -0.811046 )
+
+[node name="Paper81" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.984783, 0, 0.173786, 0, 1, 0, -0.173786, 0, 0.984783, -9.83129, 0.0115941, -4.94535 )
+
+[node name="Paper82" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.935135, 0, 0.354291, 0, 1, 0, -0.354291, 0, 0.935135, -10.0579, 0.0115941, -5.13246 )
+
+[node name="Paper83" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.948517, 0, -0.316725, 0, 1, 0, 0.316725, 0, -0.948517, -9.98188, 0.0115941, -3.90055 )
+
+[node name="Paper84" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.872862, 0, -0.487966, 0, 1, 0, 0.487966, 0, -0.872862, -9.82524, 0.0115941, -4.14917 )
+
+[node name="Paper85" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.883782, 0, 0.467899, 0, 1, 0, -0.467899, 0, -0.883782, -10.3812, 0.0115941, -5.92945 )
+
+[node name="Paper86" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.576917, 0, 0.816803, 0, 1, 0, -0.816803, 0, 0.576917, -10.351, 0.0115941, -4.94023 )
+
+[node name="Paper87" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0294046, 0, -0.999568, 0, 1, 0, 0.999568, 0, 0.0294046, -11.6303, 0.0115941, -4.6674 )
+
+[node name="Paper25" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.310311, 0, 0.950635, 0, 1, 0, -0.950635, 0, -0.310311, 9.45589, 0.0115941, -4.96134 )
+
+[node name="Paper26" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.931221, 0, 0.364454, 0, 1, 0, -0.364454, 0, 0.931221, 9.40199, 0.0115941, -4.60731 )
+
+[node name="Paper27" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.811309, 0, 0.584618, 0, 1, 0, -0.584618, 0, 0.811309, 9.93298, 0.0115941, -6.03094 )
+
+[node name="Paper28" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0650199, 0, 0.997884, 0, 1, 0, -0.997884, 0, 0.0650199, 9.93298, 0.0115941, -5.76202 )
+
+[node name="Paper29" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.144753, 0, -0.989468, 0, 1, 0, 0.989468, 0, -0.144753, 10.2805, 0.0115941, -3.90271 )
+
+[node name="Paper30" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.143838, 0, 0.989601, 0, 1, 0, -0.989601, 0, 0.143838, 9.31779, 0.0115941, -2.61616 )
+
+[node name="Paper31" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.788365, 0, -0.615208, 0, 1, 0, 0.615208, 0, 0.788365, 10.3647, 0.0115941, -3.03117 )
+
+[node name="Paper32" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.143838, 0, 0.989601, 0, 1, 0, -0.989601, 0, 0.143838, 13.1804, 0.0115941, -2.61616 )
+
+[node name="Paper33" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.998452, 0, 0.0556297, 0, 1, 0, -0.0556297, 0, 0.998452, 14.2273, 0.0115941, -3.03117 )
+
+[node name="Paper34" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.851901, 0, -0.523704, 0, 1, 0, 0.523704, 0, 0.851901, 14.2273, 0.0115941, 2.17888 )
+
+[node name="Paper35" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.384344, 0, -0.92319, 0, 1, 0, 0.92319, 0, -0.384344, 16.6312, 0.0115941, 0.735847 )
+
 [node name="Pipes" type="Node" parent="Static Objects"]
 
 [node name="Engine Room" type="Node" parent="Static Objects"]
@@ -524,3 +975,131 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.795
 
 [node name="Console 2" parent="Static Objects/Engine Room" instance=ExtResource( 23 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.21942, -3.587, 0.0209945 )
+
+[node name="Power Sign" parent="Static Objects/Engine Room" instance=ExtResource( 46 )]
+transform = Transform( 0.0141542, -0.9999, 0, 0.696232, 0.00985556, -0.71775, 0.717678, 0.0101591, 0.696301, -11.1887, -3.70855, 2.94031 )
+
+[node name="Ceiling Bit 1" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6727, -2.29601, -3.03344 )
+
+[node name="Ceiling Bit 2" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.627, -2.29601, -3.03344 )
+
+[node name="Ceiling Bit 3" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5399, -2.29601, -3.03344 )
+
+[node name="Ceiling Bit 4" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.47949, -2.29601, -3.03344 )
+
+[node name="Ceiling Bit 5" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.36331, -2.29601, -3.03344 )
+
+[node name="Ceiling Bit 6" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.32469, -2.29601, -3.03344 )
+
+[node name="Screwdriver" parent="Static Objects/Engine Room" instance=ExtResource( 49 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3187, -4.30533, -2.7667 )
+
+[node name="Screwdriver2" parent="Static Objects/Engine Room" instance=ExtResource( 49 )]
+transform = Transform( 0.0884423, 0, 0.996081, 0, 1, 0, -0.996081, 0, 0.0884423, -4.11875, -4.11685, -1.44347 )
+
+[node name="Lighting" type="Node" parent="Static Objects"]
+
+[node name="Warning" type="Node" parent="Static Objects/Lighting"]
+
+[node name="Warning Light 1" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -11.15, 2.09798, 2.82825 )
+
+[node name="Warning Light 2" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, 2.82825 )
+
+[node name="Warning Light 3" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.82709, 2.09798, -5.03997 )
+
+[node name="Warning Light 4" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0.134362, 2.09798, -8.176 )
+
+[node name="Warning Light 5" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 5.18611, 2.09798, -8.176 )
+
+[node name="Warning Light 6" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 10.0009, 2.09798, -8.176 )
+
+[node name="Warning Light 7" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 19.1736, 2.09798, -2.05176 )
+
+[node name="Warning Light 8" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 14.367, 2.09798, 4.16599 )
+
+[node name="Warning Light 9" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 21.8558, 2.09798, 4.16599 )
+
+[node name="Warning Light 10" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, 23.0374, -1.33312, -2.47767 )
+
+[node name="Warning Light 11" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 19.0362, -2.93629, 4.17015 )
+
+[node name="Warning Light 12" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 9.66617, -2.93629, 6.1422 )
+
+[node name="Warning Light 14" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 13.1783, -2.93629, -4.48332 )
+
+[node name="Warning Light 15" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -1.86667, -2.93629, -2.19614 )
+
+[node name="Warning Light 16" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 4.37114e-08, 1, -8.74228e-08, 1, -4.37114e-08, 0, -3.82137e-15, -8.74228e-08, -1, -11.1662, -2.93629, 2.79232 )
+
+[node name="Warning Light 13" parent="Static Objects/Lighting/Warning" instance=ExtResource( 45 )]
+transform = Transform( 1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.725217, -2.93629, 6.15212 )
+
+[node name="Default" type="Node" parent="Static Objects/Lighting"]
+
+[node name="Light Fixture 1" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.2459, 2.63873, -1.99877 )
+
+[node name="Light Fixture 15" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( -4.37114e-08, 8.74228e-08, -1, 0, -1, -8.74228e-08, -1, -3.82137e-15, 4.37114e-08, 25.0433, 2.37332, -1.98107 )
+
+[node name="Light Fixture 10" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 18.9492, -2.33107, -1.99877 )
+
+[node name="Light Fixture 11" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 6.27434, -2.33107, -3.07846 )
+
+[node name="Light Fixture 12" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, 2.96926 )
+
+[node name="Light Fixture 14" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 19.0434, -2.33107, 2.96926 )
+
+[node name="Light Fixture 13" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, -1.68581 )
+
+[node name="Light Fixture 2" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.52569, 2.63873, 2.48675 )
+
+[node name="Light Fixture 3" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 4.90896, 2.63873, 0.114963 )
+
+[node name="Light Fixture 4" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -0.0552677, 2.63873, 0.114963 )
+
+[node name="Light Fixture 5" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, -7.02871 )
+
+[node name="Light Fixture 8" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -4.1891, 2.63873, 3.15026 )
+
+[node name="Light Fixture 9" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -12.6018, 2.63873, -3.10353 )
+
+[node name="Light Fixture 6" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 15.0358, 2.63873, -7.02871 )
+
+[node name="Light Fixture 7" parent="Static Objects/Lighting/Default" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.95304, 2.63873, -2.35572 )
+
+[node name="interactable Objects" type="Node" parent="."]

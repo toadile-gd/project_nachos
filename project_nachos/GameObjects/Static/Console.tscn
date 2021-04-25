@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=25]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=26]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Console"
 surfaces/0 = {
 "aabb": AABB( -0.79356, -1.413, -2.55741, 1.58712, 2.826, 5.11483 ),
@@ -12,12 +12,20 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 36,
-"material": SubResource( 25 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 24
 }
 
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( -0.7936, -1.413, 2.5574, -0.7936, 1.413, -2.5574, -0.7936, 1.413, 2.5574, -0.7936, -1.413, 2.5574, -0.7936, -1.413, -2.5574, -0.7936, 1.413, -2.5574, -0.7936, -1.413, -2.5574, 0.7936, 1.413, -2.5574, -0.7936, 1.413, -2.5574, -0.7936, -1.413, -2.5574, 0.7936, -1.413, -2.5574, 0.7936, 1.413, -2.5574, 0.7936, -1.413, -2.5574, 0.7936, 1.413, 2.5574, 0.7936, 1.413, -2.5574, 0.7936, -1.413, -2.5574, 0.7936, -1.413, 2.5574, 0.7936, 1.413, 2.5574, 0.7936, -1.413, 2.5574, -0.7936, 1.413, 2.5574, 0.7936, 1.413, 2.5574, 0.7936, -1.413, 2.5574, -0.7936, -1.413, 2.5574, -0.7936, 1.413, 2.5574, -0.7936, -1.413, -2.5574, 0.7936, -1.413, 2.5574, 0.7936, -1.413, -2.5574, -0.7936, -1.413, -2.5574, -0.7936, -1.413, 2.5574, 0.7936, -1.413, 2.5574, 0.7936, 1.413, -2.5574, -0.7936, 1.413, 2.5574, -0.7936, 1.413, -2.5574, 0.7936, 1.413, -2.5574, 0.7936, 1.413, 2.5574, -0.7936, 1.413, 2.5574 )
+
 [node name="Console" type="MeshInstance"]
-mesh = SubResource( 26 )
+mesh = SubResource( 2 )
 material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 3 )
