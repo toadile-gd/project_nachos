@@ -19,7 +19,7 @@ var skybox_color
 
 var ambient_light_intensity
 
-var global_lighting_offset = 0.02
+var global_lighting_offset = 0.01
 
 var current_time = 0
 
