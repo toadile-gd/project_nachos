@@ -33,17 +33,21 @@ func _physics_process(delta):
 	# INVENTORY
 	var switch = false
 	if Input.is_action_just_pressed("1"):
-		item = items.none if item == items.wrench else items.wrench
-		switch = true
+		if GameManager.check_item("WRENCH"):
+			item = items.none if item == items.wrench else items.wrench
+			switch = true
 	elif Input.is_action_just_pressed("2"):
-		item = items.none if item == items.fire else items.fire
-		switch = true
+		if GameManager.check_item("FIRE_EXTINGUISHER"):
+			item = items.none if item == items.fire else items.fire
+			switch = true
 	elif Input.is_action_just_pressed("3"):
-		item = items.none if item == items.foam else items.foam
-		switch = true
+		if GameManager.check_item("FOAM"):
+			item = items.none if item == items.foam else items.foam
+			switch = true
 	elif Input.is_action_just_pressed("4"):
-		item = items.none if item == items.iron else items.iron
-		switch = true
+		if GameManager.check_item("IRON"):
+			item = items.none if item == items.iron else items.iron
+			switch = true
 	if (switch):
 		print(item)
 		$aim/cam/arms/right_arm/fire/particle.restart()
@@ -75,10 +79,11 @@ func _physics_process(delta):
 	# INTERACT
 	if Input.is_action_just_pressed("interact"):
 		print("interact!")
-		if $aim/look_ray.is_colliding():
-			print("bingo")
-			print($aim/look_ray.get_collider())
-			$aim/look_ray.get_collider().activate()
+		if $aim/cam/look_ray.is_colliding():
+			print($aim/cam/look_ray.get_collider())
+			$aim/cam/look_ray.get_collider().activate()
+	
+	# TOOLS
 	if Input.is_action_pressed("click"):
 		match item:
 			items.none:

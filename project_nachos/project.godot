@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "ArrayUtils",
+"language": "GDScript",
+"path": "res://addons/SIsilicon.3d.text/array_utils.gd"
+} ]
+_global_script_class_icons={
+"ArrayUtils": ""
+}
+
 [application]
 
 config/name="project_nachos"
@@ -26,6 +36,10 @@ window/size/width=640
 window/size/height=360
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/SIsilicon.3d.text/plugin.cfg" )
 
 [input]
 
