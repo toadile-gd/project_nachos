@@ -25,3 +25,4 @@ func blink_light():
 	light.show()
 	yield(get_tree().create_timer(2), "timeout")
 	light.hide()
+

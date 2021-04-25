@@ -5,6 +5,20 @@ extends Node
 # var a = 2
 # var b = "text"
 
+enum inventory {
+	KEYA = 0,
+	KEYB = 0,
+	KEYC = 0,
+	MANUAL = 0,
+	TORPEDO = 0
+	}
+
+enum win_conditions {
+	VICTORY,
+	DEFEAT
+}
+
+
 export var total_time = 10
 
 var skybox_color
@@ -18,15 +32,6 @@ var current_time = 0
 var minute_multiplier= 60
 
 var depth_percentage = 0
-
-var leaks_total = 15 
-
-var leaks_repaired = 0 
-
-var pipes_total = 8 
-
-var pipes_repaired = 0 
-
 
 
 # Called when the node enters the scene tree for the first time.
@@ -59,7 +64,6 @@ func _on_depth_timer_timeout():
 func increment_depth_percentage():
 		current_time += 1
 		depth_percentage = float (current_time) / total_time
-		current_time = total_time
 		print("Depth percentage: ", depth_percentage)
 
 func get_depth_precentage():
@@ -78,12 +82,24 @@ func darken_skybox():
 	ambient_light_intensity -= global_lighting_offset
 	GlobalLightingUtils.set_ambient_light_intensity(ambient_light_intensity)
 	
-func get_leaks_remaining():
-	return leaks_total - leaks_repaired
-	
-func get_pipes_remaining():
-	return pipes_total - pipes_repaired
+func add_item(item):
+	for name in inventory.values():
+		if (str(name) == item):
+			inventory.name = 1
+			
+			## update UI
 
-func end_game():
-	pass
+func check_item(item):
+	for name in inventory.values():
+		if ((str(name) == item) and (name == true)):
+			return true
+	return false
+
+func end_game(condition):
+	if (condition == win_conditions.VICTORY):
+		## victory screen
+		pass
+	else:
+		get_tree().change_scene("res://Scenes/title_screen.tscn")
+		pass
 

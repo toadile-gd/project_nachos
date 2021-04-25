@@ -201,12 +201,14 @@ light_type = 3
 
 [node name="Light Fixture 12" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, 2.96926 )
+light_type = 2
 
 [node name="Light Fixture 14" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 19.0434, -2.33107, 2.96926 )
 
 [node name="Light Fixture 13" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, -1.68581 )
+light_type = 3
 
 [node name="Light Fixture 2" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 9.52569, 2.63873, 2.48675 )
