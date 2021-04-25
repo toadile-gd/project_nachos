@@ -76,6 +76,31 @@ func _physics_process(delta):
 			_:
 				pass
 	
+	if $aim/cam/look_ray.is_colliding():
+		Tooltip.uprint("Press F to interact with "+$aim/cam/look_ray.get_collider().interactible_name)
+	elif $aim/effect.get_overlapping_areas().size() > 0:
+		var damage = $aim/effect.get_overlapping_areas()[0].name
+		if "fire" in damage:
+			if GameManager.check_item("FIRE_EXTINGUISHER"):
+				Tooltip.uprint("Use fire extinguisher (2) to put out fire")
+			else:
+				Tooltip.uprintb("Need to find a fire extinguisher", 1)
+		elif "steam" in damage:
+			if GameManager.check_item("WRENCH"):
+				Tooltip.uprint("Use wrench (1) to fix steam pressure leak")
+			else:
+				Tooltip.uprintb("Need to find a wrench", 1)
+		elif "leak" in damage:
+			if GameManager.check_item("FOAM"):
+				Tooltip.uprint("Use cementing foam (3) to fix water leak in hull")
+			else:
+				Tooltip.uprintb("Need to find a can of cementing foam",1)
+		elif "circuit" in damage:
+			if GameManager.check_item("IRON"):
+				Tooltip.uprint("Use soldering iron (4) to fix electrical equipment")
+			else:
+				Tooltip.uprintb("Need to find a soldering iron",1)
+	
 	# INTERACT
 	if Input.is_action_just_pressed("interact"):
 		print("interact!")

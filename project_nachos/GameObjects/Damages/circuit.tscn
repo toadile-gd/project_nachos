@@ -46,6 +46,7 @@ shape = SubResource( 1 )
 amount = 10
 lifetime = 0.8
 explosiveness = 0.9
+visibility_aabb = AABB( -0.900683, -1.11504, -1.11757, 1.80137, 2.23009, 2.23514 )
 local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )

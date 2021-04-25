@@ -16,8 +16,8 @@ curve = SubResource( 2 )
 [sub_resource type="ParticlesMaterial" id=4]
 direction = Vector3( 0, 1, 0 )
 spread = 20.0
-gravity = Vector3( 0, 2, 0 )
-initial_velocity = 0.5
+gravity = Vector3( 0, 0.5, 0 )
+initial_velocity = 1.5
 angular_velocity = 600.0
 angular_velocity_random = 1.0
 scale = 0.5
@@ -46,6 +46,7 @@ script = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Particles" type="Particles" parent="."]
+visibility_aabb = AABB( -0.432166, -1.05698, -0.44629, 0.864332, 2.11396, 0.89258 )
 local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )

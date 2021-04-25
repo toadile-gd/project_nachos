@@ -360,11 +360,12 @@ albedo_color = Color( 0.592157, 0.168627, 0.168627, 1 )
 material = SubResource( 27 )
 
 [sub_resource type="BoxShape" id=29]
-extents = Vector3( 0.271382, 0.342395, 0.691181 )
+extents = Vector3( 0.3142, 0.317988, 0.838585 )
 
 [node name="player" type="KinematicBody"]
 script = ExtResource( 1 )
 mov_speed = 2.5
+look_speed = 8.0
 
 [node name="col" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.875, 0 )
@@ -481,7 +482,7 @@ collision_layer = 8
 collision_mask = 8
 
 [node name="CollisionShape" type="CollisionShape" parent="aim/effect"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.255682 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.389713 )
 shape = SubResource( 29 )
 
 [node name="SpotLight" type="SpotLight" parent="aim"]
@@ -496,3 +497,31 @@ spot_angle = 45.9215
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0 )
 enabled = true
 cast_to = Vector3( 0, -0.3, 0 )
+
+[node name="pointer" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="pointer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="pointer/CenterContainer"]
+margin_left = 318.0
+margin_top = 178.0
+margin_right = 322.0
+margin_bottom = 182.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 4, 4 )
+rect_pivot_offset = Vector2( 2, 2 )
+mouse_filter = 2
+color = Color( 1, 1, 1, 0.576471 )
