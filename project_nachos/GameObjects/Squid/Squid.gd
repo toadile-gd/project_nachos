@@ -11,3 +11,8 @@ func _physics_process(delta):
 func _on_Area_body_entered(body):
 	$squid/anim.play("die")
 	dead = true
+
+
+func _on_Area_area_entered(area):
+	$squid/anim.play("die")
+	dead = true

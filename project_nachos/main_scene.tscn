@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -43,11 +43,15 @@
 [ext_resource path="res://GameObjects/Static/Engine Ladder.tscn" type="PackedScene" id=41]
 [ext_resource path="res://GameObjects/Squid/Squid.tscn" type="PackedScene" id=42]
 [ext_resource path="res://GameObjects/fishies/fishies.tscn" type="PackedScene" id=43]
+[ext_resource path="res://GameObjects/Torpedo/torpedo.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Environment/Door/doors.tscn" type="PackedScene" id=45]
 
 [node name="main_scene" type="Spatial"]
 
 [node name="Level" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000570297, 0, 0.0145578 )
+
+[node name="doors" parent="Level" instance=ExtResource( 45 )]
 
 [node name="Bubbles" type="Node" parent="."]
 
@@ -537,5 +541,8 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.795
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.21942, -3.587, 0.0209945 )
 
 [node name="Squid" parent="." instance=ExtResource( 42 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 110.67, -4.21704, 0.611972 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 110.67, -6.21704, -4.38803 )
 speed = 0.25
+
+[node name="torpedo" parent="." instance=ExtResource( 44 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19, -6.03478, -7 )

@@ -75,6 +75,10 @@ func _physics_process(delta):
 	# INTERACT
 	if Input.is_action_just_pressed("interact"):
 		print("interact!")
+		if $aim/look_ray.is_colliding():
+			print("bingo")
+			print($aim/look_ray.get_collider())
+			$aim/look_ray.get_collider().activate()
 	if Input.is_action_pressed("click"):
 		match item:
 			items.none:
