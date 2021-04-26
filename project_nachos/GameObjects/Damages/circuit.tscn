@@ -58,5 +58,7 @@ script = ExtResource( 3 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Audio"]
 stream = ExtResource( 1 )
+unit_db = -10.0
+max_distance = 3.0
 
 [node name="Timer" type="Timer" parent="Audio"]

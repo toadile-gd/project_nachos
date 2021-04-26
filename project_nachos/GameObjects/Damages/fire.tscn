@@ -63,4 +63,6 @@ shape = SubResource( 7 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource( 3 )
+unit_db = -5.0
 autoplay = true
+max_distance = 3.0

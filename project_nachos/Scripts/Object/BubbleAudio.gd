@@ -7,15 +7,16 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioStreamPlayer3D.set_unit_db(-30)
 	$AudioStreamPlayer3D.stream.set_loop(false)
-	$Timer.set_wait_time(2)
-	$Timer.connect("timeout", self, "spark")
-	yield(get_tree().create_timer(rand_range(.5, 5)), "timeout")
+	$Timer.set_wait_time(20)
+	$Timer.connect("timeout", self, "bubble")
+	yield(get_tree().create_timer(rand_range(1, 20)), "timeout")
 	$Timer.start()
 	$AudioStreamPlayer3D.play()
 
-func spark():
-	$AudioStreamPlayer3D.set_pitch_scale(rand_range(.5, 1.5))
+func bubble():
+	$AudioStreamPlayer3D.set_pitch_scale(rand_range(.8, 1.2))
 	$AudioStreamPlayer3D.play()
 
 

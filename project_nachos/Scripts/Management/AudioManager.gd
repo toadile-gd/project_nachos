@@ -42,9 +42,10 @@ func play_level_theme():
 	audio_stream.play()
 	
 func play_sound(sound):
-	var mp3 = load("res://Sounds/" + sound)
+	var mp3 = load("res://Sounds/" + sound + ".mp3")
 	mp3.set_loop(false)
 	fx_stream.set_stream(mp3)
+	fx_stream.set_volume_db(-10)
 	fx_stream.play()
 	
 

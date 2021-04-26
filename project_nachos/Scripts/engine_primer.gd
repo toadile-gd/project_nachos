@@ -13,4 +13,5 @@ func _ready():
 
 func activate():
 	starter.greenlight()
+	AudioManager.play_sound("button")
 	Tooltip.uprintb("Engine is primed", 2)

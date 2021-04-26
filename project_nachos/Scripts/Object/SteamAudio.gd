@@ -9,13 +9,12 @@ extends Node
 func _ready():
 	$AudioStreamPlayer3D.stream.set_loop(false)
 	$Timer.set_wait_time(2)
-	$Timer.connect("timeout", self, "spark")
+	$Timer.connect("timeout", self, "steam")
 	yield(get_tree().create_timer(rand_range(.5, 5)), "timeout")
 	$Timer.start()
 	$AudioStreamPlayer3D.play()
 
-func spark():
-	$AudioStreamPlayer3D.set_pitch_scale(rand_range(.5, 1.5))
+func steam():
 	$AudioStreamPlayer3D.play()
 
 

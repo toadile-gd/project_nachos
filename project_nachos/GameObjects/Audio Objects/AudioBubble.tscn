@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sounds/bubbles.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/Object/BubbleAudio.gd" type="Script" id=2]
+
+[node name="Bubble Audio" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35358, 1.67135, 5.18919 )
+stream = ExtResource( 1 )
+unit_db = -40.0
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]

@@ -41,6 +41,7 @@ func _ready():
 	start_depth_timer()
 
 func reset():
+	AudioManager.play_level_theme()
 	current_time = 0
 	depth_percentage = 0
 	inventory = []

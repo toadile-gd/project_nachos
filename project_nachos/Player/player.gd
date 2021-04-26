@@ -26,23 +26,10 @@ func _physics_process(delta):
 	
 	# PAUSING
 	if Input.is_action_just_pressed("pause"):
-		if not $escape/escape_menu.visible:
-			$escape/escape_menu.visible = true
-		else:
-			$escape/escape_menu.visible = false
-		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE and $manual_overlay/manual.visible == false:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and $manual_overlay/manual.visible == false:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		
-	# OPEN/CLOSE MANUAL
-	if Input.is_action_just_pressed("ui_focus_next"):
-		if not $manual_overlay/manual.visible:
-			$manual_overlay/manual.visible = true
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			$manual_overlay/manual.visible = false
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	# INVENTORY
 	var switch = false
@@ -116,14 +103,14 @@ func _physics_process(delta):
 				Tooltip.uprintb("Need to find a soldering iron",1)
 	
 	# INTERACT
-	if Input.is_action_just_pressed("interact") and not $manual_overlay/manual.visible:
-			print("interact!")
-			if $aim/cam/look_ray.is_colliding():
-				print($aim/cam/look_ray.get_collider())
-				$aim/cam/look_ray.get_collider().activate()
+	if Input.is_action_just_pressed("interact"):
+		print("interact!")
+		if $aim/cam/look_ray.is_colliding():
+			print($aim/cam/look_ray.get_collider())
+			$aim/cam/look_ray.get_collider().activate()
 	
 	# TOOLS
-	if Input.is_action_pressed("click") and not $manual_overlay/manual.visible:
+	if Input.is_action_pressed("click"):
 		match item:
 			items.none:
 				pass
@@ -133,10 +120,12 @@ func _physics_process(delta):
 			items.fire:
 				$aim/cam/arms/right_arm/anim.play("reach")
 				$aim/cam/arms/right_arm/fire/particle.emitting = true
+				AudioManager.play_sound("foam")
 				action("fire")
 			items.foam:
 				$aim/cam/arms/right_arm/anim.play("reach")
 				$aim/cam/arms/right_arm/foam/particle.emitting = true
+				AudioManager.play_sound("foam")
 				action("leak")
 			items.iron:
 				$aim/cam/arms/right_arm/anim.play("reach")
@@ -169,9 +158,7 @@ func _physics_process(delta):
 		mov_offset = 1
 		mov_vec *= 1.75
 	
-	if GameManager.failure:
-		$aim/cam/cam_anim.play("shake")
-	elif mov_vec.length_squared() > 0.1 and not $aim/cam/cam_anim.current_animation == "walk":
+	if mov_vec.length_squared() > 0.1 and not $aim/cam/cam_anim.current_animation == "walk":
 		$aim/cam/cam_anim.play("walk", 0.1, 1.5+mov_offset)
 	elif mov_vec.length_squared() < 0.1:
 		$aim/cam/cam_anim.play("idle", 0.5, 0.5)
@@ -181,7 +168,7 @@ func _physics_process(delta):
 		move_and_slide(-3*$ground_ray.get_collision_normal())
 	else:
 		velocity += gravity
-		velocity = move_and_slide(velocity)		
+		velocity = move_and_slide(velocity)
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
