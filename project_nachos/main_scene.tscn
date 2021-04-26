@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://GameObjects/Static/Oven.tscn" type="PackedScene" id=12]
 [ext_resource path="res://GameObjects/Static/Fridge.tscn" type="PackedScene" id=13]
 [ext_resource path="res://GameObjects/Static/Boiler.tscn" type="PackedScene" id=14]
-[ext_resource path="res://GameObjects/Static/Dial (small).tscn" type="PackedScene" id=15]
 [ext_resource path="res://GameObjects/Static/Dial (large).tscn" type="PackedScene" id=16]
 [ext_resource path="res://GameObjects/Static/Pipe (Cut).tscn" type="PackedScene" id=17]
 [ext_resource path="res://GameObjects/Static/Helm Chair.tscn" type="PackedScene" id=18]
@@ -45,7 +44,6 @@
 [ext_resource path="res://GameObjects/fishies/fishies.tscn" type="PackedScene" id=43]
 [ext_resource path="res://GameObjects/Torpedo/torpedo.tscn" type="PackedScene" id=44]
 [ext_resource path="res://Environment/Door/doors.tscn" type="PackedScene" id=45]
-[ext_resource path="res://GameObjects/Static/Power Sign.tscn" type="PackedScene" id=46]
 [ext_resource path="res://GameObjects/Static/Ceiling Bit.tscn" type="PackedScene" id=47]
 [ext_resource path="res://GameObjects/Static/Paper.tscn" type="PackedScene" id=48]
 [ext_resource path="res://GameObjects/Static/Screwdriver.tscn" type="PackedScene" id=49]
@@ -211,6 +209,7 @@ light_type = 2
 
 [node name="Light Fixture 14" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 19.0434, -2.33107, 2.96926 )
+light_type = 1
 
 [node name="Light Fixture 13" parent="Lighting/Default" instance=ExtResource( 74 )]
 transform = Transform( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -9.92978, -2.33107, -1.68581 )
@@ -444,11 +443,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.52839, 1.31102, 1.68947 )
 [node name="Boiler" parent="Static Objects/Kitchen Dining/Kitchen" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9649, 0.987755, 0.21288 )
 
-[node name="Dial (small)" parent="Static Objects/Kitchen Dining/Kitchen/Boiler" instance=ExtResource( 15 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.439 )
-
 [node name="Dial (large)" parent="Static Objects/Kitchen Dining/Kitchen/Boiler" instance=ExtResource( 16 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490377, 0.430972 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.490377, 0.449858 )
+
+[node name="Dial (large)2" parent="Static Objects/Kitchen Dining/Kitchen/Boiler" instance=ExtResource( 16 )]
+transform = Transform( 0.693, 0, 0, 0, 0.693, 0, 0, 0, 0.4851, 0, 0.090377, 0.449858 )
 
 [node name="Booths" type="Node" parent="Static Objects/Kitchen Dining"]
 
@@ -507,8 +506,59 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.02484, 0.849975, 3.73806 )
 
 [node name="Helm" type="Node" parent="Static Objects"]
 
+[node name="Dial (large)3" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -9.0351, 1.51955, -7.91625 )
+
+[node name="Dial (large)19" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -9.0351, 1.51955, -7.91625 )
+
+[node name="Dial (large)4" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.693, 0, 0, 0, 0.490025, 0.343017, 0, -0.490025, 0.343017, -9.0351, 1.23671, -7.63341 )
+
+[node name="Dial (large)5" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -8.66171, 1.51955, -7.91625 )
+
+[node name="Dial (large)6" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.693, 0, 0, 0, 0.490025, 0.343017, 0, -0.490025, 0.343017, -8.66171, 1.23671, -7.63341 )
+
+[node name="Dial (large)7" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -8.24367, 1.51955, -7.91625 )
+
+[node name="Dial (large)8" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.693, 0, 0, 0, 0.490025, 0.343017, 0, -0.490025, 0.343017, -8.24367, 1.23671, -7.63341 )
+
+[node name="Dial (large)9" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.0682416, 0.705458, -0.705458, 0, 0.707107, 0.707107, 0.997669, -0.0482541, 0.0482541, -6.93911, 1.51955, -6.99707 )
+
+[node name="Dial (large)10" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.047017, 0.538756, -0.303335, -0.00508693, 0.434595, 0.377838, 0.691385, -0.0334401, 0.0234081, -7.22129, 1.23671, -7.30295 )
+
+[node name="Dial (large)11" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.0134735, -0.707043, 0.707043, 0, 0.707107, 0.707107, -0.999909, 0.0095272, -0.00952721, -17.7847, 1.51955, -5.24837 )
+
+[node name="Dial (large)12" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.00933716, -0.48998, 0.342986, 0, 0.490025, 0.343017, -0.692937, 0.00660238, -0.00462166, -17.5019, 1.23671, -5.25218 )
+
+[node name="Dial (large)13" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.0134735, -0.707043, 0.707043, 0, 0.707107, 0.707107, -0.999909, 0.0095272, -0.00952721, -17.7898, 1.51955, -5.62172 )
+
+[node name="Dial (large)14" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.00933716, -0.48998, 0.342986, 0, 0.490025, 0.343017, -0.692937, 0.00660238, -0.00462166, -17.507, 1.23671, -5.62554 )
+
+[node name="Dial (large)15" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.0134735, -0.707043, 0.707043, 0, 0.707107, 0.707107, -0.999909, 0.0095272, -0.00952721, -17.7954, 1.51955, -6.03972 )
+
+[node name="Dial (large)16" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( -0.00933716, -0.48998, 0.342986, 0, 0.490025, 0.343017, -0.692937, 0.00660238, -0.00462166, -17.5126, 1.23671, -6.04353 )
+
+[node name="Dial (large)17" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.996659, -0.0577547, 0.0577548, 0, 0.707107, 0.707107, -0.0816775, -0.704744, 0.704744, -16.8939, 1.51955, -7.35656 )
+
+[node name="Dial (large)18" parent="Static Objects/Helm" instance=ExtResource( 16 )]
+transform = Transform( 0.690688, -0.040696, 0.0274929, -0.00508693, 0.434595, 0.377838, -0.0563282, -0.538256, 0.302993, -17.1959, 1.23671, -7.07028 )
+
 [node name="Terminal 1" parent="Static Objects/Helm" instance=ExtResource( 21 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6588, 1.25787, -0.368579 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2588, 1.25787, -0.268579 )
 
 [node name="Terminal 3" parent="Static Objects/Helm" instance=ExtResource( 21 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.0158, 1.25787, -7.65839 )
@@ -523,7 +573,10 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.6932
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.63877, 1.32548, -4.13959 )
 
 [node name="Console 2" parent="Static Objects/Helm" instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3324, 1.32548, -2.35318 )
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -17.3324, 1.32548, -2.35318 )
+
+[node name="Console 3" parent="Static Objects/Helm" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -15.3324, 1.32548, 0.64682 )
 
 [node name="Floor Hatch" parent="Static Objects/Helm" instance=ExtResource( 24 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9796, 0.086198, -3.51948 )
@@ -1166,8 +1219,8 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.795
 [node name="Console 2" parent="Static Objects/Engine Room" instance=ExtResource( 23 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.21942, -3.587, 0.0209945 )
 
-[node name="Power Sign" parent="Static Objects/Engine Room" instance=ExtResource( 46 )]
-transform = Transform( 0.0141542, -0.9999, 0, 0.696232, 0.00985556, -0.71775, 0.717678, 0.0101591, 0.696301, -11.1887, -3.70855, 2.94031 )
+[node name="Caution Sign" parent="Static Objects/Engine Room" instance=ExtResource( 30 )]
+transform = Transform( 0.0141542, -0.999899, -4.80213e-09, 0.715792, 0.0101324, -0.69824, 0.69817, 0.00988296, 0.715863, -11.2001, -3.72518, 2.94616 )
 
 [node name="Ceiling Bit 1" parent="Static Objects/Engine Room" instance=ExtResource( 47 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6727, -2.29601, -3.03344 )
@@ -1192,6 +1245,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3187, -4.30533, -2.7667 )
 
 [node name="Screwdriver2" parent="Static Objects/Engine Room" instance=ExtResource( 49 )]
 transform = Transform( 0.0884423, 0, 0.996081, 0, 1, 0, -0.996081, 0, 0.0884423, -4.11875, -4.11685, -1.44347 )
+
+[node name="Dial (large)19" parent="Static Objects/Engine Room" instance=ExtResource( 16 )]
+transform = Transform( 0.996751, -0.0801765, 0.00764097, 0.0256847, 0.406355, 0.913354, -0.0763345, -0.910191, 0.407094, -11.1487, -4.06667, -3.36417 )
+
+[node name="Dial (large)20" parent="Static Objects/Engine Room" instance=ExtResource( 16 )]
+transform = Transform( 0.996751, -0.0801765, 0.00764097, 0.0256847, 0.406355, 0.913354, -0.0763345, -0.910191, 0.407094, -10.787, -4.06667, -3.36417 )
 
 [node name="Vents" type="Node" parent="Static Objects"]
 
@@ -1250,7 +1309,7 @@ transform = Transform( 0.0050439, 0, 0.999987, 0, 1, 0, -0.999987, 0, 0.0050439,
 [node name="Consoles" type="Node" parent="interactable Objects"]
 
 [node name="Steering" parent="interactable Objects/Consoles" instance=ExtResource( 58 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0545, 1.62647, -8.17941 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9545, 1.62647, -8.17941 )
 
 [node name="Valves" type="Node" parent="interactable Objects"]
 
@@ -1330,7 +1389,7 @@ item_name = "KEY_C"
 [node name="Keyboards" type="Node" parent="interactable Objects"]
 
 [node name="Keyboard" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6489, 0.9509, -0.818203 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2489, 0.9509, -0.718203 )
 
 [node name="Keyboard3" parent="interactable Objects/Keyboards" instance=ExtResource( 63 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.0152, 0.9509, -7.21496 )

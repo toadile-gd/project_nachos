@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=101]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=102]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Plates (Stacked)"
 surfaces/0 = {
 "aabb": AABB( -0.136507, -0.136507, -0.0464908, 0.273014, 0.273014, 0.0949597 ),
@@ -12,12 +12,15 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 810,
-"material": SubResource( 101 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 520
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+params_cull_mode = 2
+
 [node name="Plates (Stacked)" type="MeshInstance"]
-mesh = SubResource( 102 )
-material/0 = null
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )

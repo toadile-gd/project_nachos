@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
@@ -18,6 +18,9 @@ surfaces/0 = {
 "vertex_count": 196
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 0.431373, 0.611765, 1 )
+
 [node name="Captains Hat" type="MeshInstance"]
 mesh = SubResource( 2 )
-material/0 = null
+material/0 = SubResource( 3 )
