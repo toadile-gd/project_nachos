@@ -19,7 +19,7 @@ var skybox_color
 
 var ambient_light_intensity
 
-var global_lighting_offset = 0.007
+var global_lighting_offset = 0.5
 
 var current_time = 0
 
@@ -49,6 +49,7 @@ func reset():
 	failure = false
 	game_done = false
 	GlobalLightingUtils.reset()
+	skybox_color = null
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

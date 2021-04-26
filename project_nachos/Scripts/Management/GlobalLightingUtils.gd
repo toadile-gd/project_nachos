@@ -10,13 +10,17 @@ var base_ambient_light_intensity
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("ready")
 	set_environment(base_env)
 	base_color = get_skybox_color()
 	base_ambient_light_intensity = get_ambient_light_intensity()
 
 func reset():
+	print("reset")
 	set_skybox_color(base_color)
 	set_ambient_light_intensity(base_ambient_light_intensity)
+	set_environment(base_env)
+	print("done")
 
 func get_skybox_color():
 	return environment.get_bg_color()
