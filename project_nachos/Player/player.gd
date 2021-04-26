@@ -189,6 +189,8 @@ func _physics_process(delta):
 		else:
 			velocity += gravity
 			velocity = move_and_slide(velocity)
+	else:
+		$aim/cam/cam_anim.play("idle")
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:

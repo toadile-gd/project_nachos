@@ -26,6 +26,7 @@ func start_blink_timer():
 
 func blink_light():
 	light.show()
+	$AudioStreamPlayer3D.play()
 	yield(get_tree().create_timer(2), "timeout")
 	light.hide()
 
