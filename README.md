@@ -10,13 +10,14 @@ Stranded on a sinking submarine, the player must repair and resurface the submar
 
 ### Toadile
 - Core Game Mechanics
-- Score
+- Music
 - Level Design
 - Player Items
 
 ### ArcaneLemon
 - Environment Assets
-- Implementing Sound Effects
+- Audio Manager
+- Depth Timer Logic
 
 ### Kalash
 - Title Screen
