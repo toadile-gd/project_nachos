@@ -1383,15 +1383,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6681, -3.44, -0.82 )
 [node name="Keys" type="Node" parent="interactable Objects"]
 
 [node name="Key_a" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18411, 1.16897, -0.699623 )
+transform = Transform( 0.763696, -0.046723, 0.643883, 0.061066, 0.998134, 0, -0.642682, 0.0393194, 0.765124, 1.37804, 1.00771, -1.21379 )
 
 [node name="Key_b" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
 transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 17.2445, 0.598522, 0.82804 )
 item_name = "KEY_B"
+pickup_message = "You picked up a key to the captain's quarters"
 
 [node name="Key_c" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
 transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 8.58414, 1.14072, -2.4708 )
 item_name = "KEY_C"
+pickup_message = "You picked up a master key"
 
 [node name="Keyboards" type="Node" parent="interactable Objects"]
 
@@ -1537,10 +1539,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5066, 0.065395, 3.27855 )
 [node name="Tools" type="Node" parent="interactable Objects"]
 
 [node name="fire_exinguisher" parent="interactable Objects/Tools" instance=ExtResource( 78 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7447, 0, 2.05787 )
+transform = Transform( 0.788998, 0, 0.614395, 0, 1, 0, -0.614395, 0, 0.788998, 12.7447, 0, 2.05787 )
 
 [node name="wrench" parent="interactable Objects/Tools" instance=ExtResource( 79 )]
-transform = Transform( 0.519206, 0, 0.854649, 0, 1, 0, -0.854649, 0, 0.519206, -1, 0.0101809, -1 )
+transform = Transform( -0.691147, 0, 0.722714, 0, 1, 0, -0.722714, 0, -0.691147, 5, 0.0101809, 0 )
 
 [node name="iron" parent="interactable Objects/Tools" instance=ExtResource( 81 )]
 transform = Transform( 1, 0, 0, 0, 0.945944, -0.32433, 0, 0.32433, 0.945944, -10.4451, -4.19559, -3.03373 )
@@ -1667,6 +1669,15 @@ script = ExtResource( 15 )
 [node name="area_hint" parent="AreaHints" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5248, 0.0881734, 2.45982 )
 hint_text = "That giant squid could pose a threat. Need to repel it somehow..."
+
+[node name="area_hint5" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2623, -4.58791, -1.26758 )
+hint_text = "Looks  like the engine needs repairs..."
+
+[node name="area_hint6" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.98506, 0.548575, -0.835394 )
+hint_text = "Once this submarine is repaired I can probably leave through that exit ladder..."
+hint_time = 4
 
 [node name="area_hint2" parent="AreaHints" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69664, 0.531603, -2.3604 )
