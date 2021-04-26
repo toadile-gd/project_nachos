@@ -20,6 +20,7 @@ func _on_Area_body_entered(body):
 
 
 func _on_Area_area_entered(area):
+	AudioManager.play_sound("explosion")
 	$squid/anim.play("die")
 	dead = true
 	speed = 0.00
