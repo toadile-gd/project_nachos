@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spray_foam.mp3-f212e4adee029b15ab8ea0b514da7196.mp3str"
+
+[deps]
+
+source_file="res://Sounds/spray_foam.mp3"
+dest_files=[ "res://.import/spray_foam.mp3-f212e4adee029b15ab8ea0b514da7196.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
