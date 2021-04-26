@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://escape_menu.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Buttons/controls.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Buttons/exit_game.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/controls_menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Buttons/main_menu_button.tscn" type="PackedScene" id=5]
 
 [node name="escape_menu" type="Control"]
 script = ExtResource( 1 )
@@ -19,10 +20,10 @@ __meta__ = {
 }
 
 [node name="buttons" type="VBoxContainer" parent="menu_container"]
-margin_left = 275.0
+margin_left = 265.0
 margin_top = 143.0
-margin_right = 371.0
-margin_bottom = 194.0
+margin_right = 375.0
+margin_bottom = 211.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 __meta__ = {
@@ -30,13 +31,19 @@ __meta__ = {
 }
 
 [node name="controls" parent="menu_container/buttons" instance=ExtResource( 2 )]
-margin_right = 96.0
+margin_right = 110.0
 scene_to_load = "res://Scenes/controls_menu.tscn"
 
-[node name="exit_game" parent="menu_container/buttons" instance=ExtResource( 3 )]
+[node name="menu_button" parent="menu_container/buttons" instance=ExtResource( 5 )]
 margin_top = 24.0
-margin_right = 96.0
+margin_right = 110.0
 margin_bottom = 44.0
+scene_to_load = "res://Scenes/title_screen.tscn"
+
+[node name="exit_game" parent="menu_container/buttons" instance=ExtResource( 3 )]
+margin_top = 48.0
+margin_right = 110.0
+margin_bottom = 68.0
 scene_to_load = "EXIT_GAME"
 
 [node name="controls_menu" parent="." instance=ExtResource( 4 )]

@@ -25,6 +25,7 @@ func _ready():
 	$page_7_8/to_page_5_6.connect("pressed", self, "_on_button_pressed", ["page_5_6"])
 
 func _on_button_pressed(left_right):
+	AudioManager.play_sound("page_turn")
 	if left_right == "cover":
 		$page_1_2.visible = false
 		$cover.visible = true

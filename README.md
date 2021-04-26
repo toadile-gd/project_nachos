@@ -22,3 +22,6 @@ Stranded on a sinking submarine, the player must repair and resurface the submar
 - Title Screen
 - Game Menu
 - Submarine Manual
+
+### Other
+Additional sound effects obtained via ZapSplat and SoundBible

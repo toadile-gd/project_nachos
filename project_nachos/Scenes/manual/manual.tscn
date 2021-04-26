@@ -12,7 +12,7 @@
 size = 12
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 7
 extra_spacing_top = -7
 font_data = ExtResource( 6 )
@@ -46,17 +46,6 @@ margin_left = -0.420471
 margin_right = 399.58
 margin_bottom = 300.0
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="to_page_7_8" type="Button" parent="page_7_8"]
-margin_left = 350.0
-margin_top = 265.0
-margin_right = 392.0
-margin_bottom = 301.0
-icon = ExtResource( 2 )
-flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -100,7 +89,7 @@ margin_right = 188.0
 margin_bottom = 261.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "
 
@@ -173,7 +162,7 @@ margin_right = 189.0
 margin_bottom = 261.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "
 
