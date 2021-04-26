@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "ArrayUtils",
 "language": "GDScript",
 "path": "res://addons/SIsilicon.3d.text/array_utils.gd"
+}, {
+"base": "Node",
+"class": "VictoryConditions",
+"language": "GDScript",
+"path": "res://Scripts/VictoryConditions.gd"
 } ]
 _global_script_class_icons={
-"ArrayUtils": ""
+"ArrayUtils": "",
+"VictoryConditions": ""
 }
 
 [application]

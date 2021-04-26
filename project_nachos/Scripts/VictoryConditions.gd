@@ -1,25 +1,23 @@
 extends Node
 
+class_name VictoryConditions
+
 var engine_damages : Node
 var engine_running = false
 var damages : Node
 var total_damage
-var squid
+var squid_dead = false
 
 func _ready():
 	engine_damages = get_parent().find_node("engine_room")
 	damages = get_parent().find_node("Damages")
 	total_damage = get_all_damage()
-	squid = get_parent().find_node("Squid")
 
 func check_engine():
-	return engine_damages.get_child_count() == 0 and engine_running
-
-func check_squid():
-	return squid == null
+	return engine_damages.get_child_count() == 0
 
 func check_ready_for_victory():
-	return check_squid() and check_engine() and check_damages()
+	return squid_dead and engine_running and check_damages()
 
 func check_damages():
 	var still_damage = false
