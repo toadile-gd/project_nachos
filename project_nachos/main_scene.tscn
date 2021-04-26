@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -80,6 +80,9 @@
 [ext_resource path="res://GameObjects/interactable/Foam.tscn" type="PackedScene" id=80]
 [ext_resource path="res://GameObjects/interactable/Iron.tscn" type="PackedScene" id=81]
 [ext_resource path="res://Environment/Flooding/electric_water.tscn" type="PackedScene" id=82]
+[ext_resource path="res://Environment/Damages.tscn" type="PackedScene" id=83]
+[ext_resource path="res://Environment/fusebox/Fusebox.tscn" type="PackedScene" id=84]
+[ext_resource path="res://GameObjects/interactable/DrainValve.tscn" type="PackedScene" id=85]
 
 [node name="main_scene" type="Spatial"]
 
@@ -1427,7 +1430,7 @@ transform = Transform( -0.336142, 0, 0.941811, 0, 1, 0, -0.941811, 0, -0.336142,
 transform = Transform( 0.898878, 0, 0.438199, 0, 1, 0, -0.438199, 0, 0.898878, 17.5692, -4.09105, -5.69252 )
 
 [node name="Torpedo Button" parent="interactable Objects/Torpedo" instance=ExtResource( 57 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5071, -4.56201, -5.4333 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5071, -4.4931, -5.42935 )
 
 [node name="Misc" type="Node" parent="interactable Objects"]
 
@@ -1639,3 +1642,11 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19, -6.
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 76 )
+
+[node name="Damages" parent="." instance=ExtResource( 83 )]
+
+[node name="fusebox" parent="." instance=ExtResource( 84 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.2344, -5.22369, -0.124245 )
+
+[node name="DrainValve" parent="." instance=ExtResource( 85 )]
+transform = Transform( 1.85077, 0, 0, 0, 1.09119, 1.3923, 0, -1.3923, 1.09119, 18.499, -4.05754, -5.58597 )

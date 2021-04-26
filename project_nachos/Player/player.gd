@@ -19,6 +19,7 @@ var item = items.none
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$aim/cam/arms/right_arm.visible = false
+	GameManager.reset()
 	pass
 
 func _physics_process(delta):
