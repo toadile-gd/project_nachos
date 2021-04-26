@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Player/player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Material_001.material" type="Material" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Player/pressure_dial.gd" type="Script" id=8]
 [ext_resource path="res://Images/splash.png" type="Texture" id=9]
 [ext_resource path="res://Images/smoke.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/manual/manual.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/escape_menu.tscn" type="PackedScene" id=12]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.25
@@ -525,3 +527,13 @@ rect_min_size = Vector2( 4, 4 )
 rect_pivot_offset = Vector2( 2, 2 )
 mouse_filter = 2
 color = Color( 1, 1, 1, 0.576471 )
+
+[node name="manual_overlay" type="CanvasLayer" parent="."]
+
+[node name="manual" parent="manual_overlay" instance=ExtResource( 11 )]
+visible = false
+
+[node name="escape" type="CanvasLayer" parent="."]
+
+[node name="escape_menu" parent="escape" instance=ExtResource( 12 )]
+visible = false

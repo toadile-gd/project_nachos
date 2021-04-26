@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://escape_menu.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Buttons/menu_exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Buttons/menu_controls.tscn" type="PackedScene" id=3]
+
+[node name="escape_menu" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu_container" type="Control" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttons" type="VBoxContainer" parent="menu_container"]
+margin_left = 275.0
+margin_top = 143.0
+margin_right = 371.0
+margin_bottom = 194.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="controls" parent="menu_container/buttons" instance=ExtResource( 3 )]
+margin_right = 96.0
+
+[node name="exit_game" parent="menu_container/buttons" instance=ExtResource( 2 )]
+margin_top = 24.0
+margin_right = 96.0
+margin_bottom = 44.0
+size_flags_horizontal = 1
+align = 0
+scene_to_load = "EXIT_GAME"

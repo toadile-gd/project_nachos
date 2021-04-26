@@ -1,0 +1,580 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Images/manual_cover.png" type="Texture" id=1]
+[ext_resource path="res://Images/pg_right.png" type="Texture" id=2]
+[ext_resource path="res://Images/pg_left.png" type="Texture" id=3]
+[ext_resource path="res://Images/manual_inside.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/manual/manual.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Bohemian Typewriter.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Images/manual_map.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 7
+extra_spacing_top = -7
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 11
+font_data = ExtResource( 6 )
+
+[node name="manual" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.44545
+margin_bottom = 0.445435
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_7_8" type="Control" parent="."]
+visible = false
+margin_left = 123.0
+margin_top = 30.0
+margin_right = 516.0
+margin_bottom = 330.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page" type="TextureRect" parent="page_7_8"]
+margin_left = -0.420471
+margin_right = 399.58
+margin_bottom = 300.0
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_7_8" type="Button" parent="page_7_8"]
+margin_left = 350.0
+margin_top = 265.0
+margin_right = 392.0
+margin_bottom = 301.0
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_5_6" type="Button" parent="page_7_8"]
+margin_top = 265.0
+margin_right = 42.0
+margin_bottom = 301.0
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_contents" type="HBoxContainer" parent="page_7_8"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 387.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_1" type="VBoxContainer" parent="page_7_8/page_contents"]
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_7_8/page_contents/page_1"]
+margin_right = 188.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MAP - Upper Level"
+align = 1
+
+[node name="body" type="Label" parent="page_7_8/page_contents/page_1"]
+margin_top = 18.0
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+
+
+
+
+                Observation Deck
+                    
+					
+					
+					
+                     Mess Hall
+
+
+
+
+
+                     Capt.             Kitchen
+                     Qtrs
+
+
+
+
+
+
+
+
+                     Bunk Room B
+					
+					
+                   
+				
+				
+				
+
+
+                     Bunk Room A
+					
+					
+					
+					
+					
+
+
+
+
+
+
+                  Bridge"
+autowrap = true
+
+[node name="page_2" type="VBoxContainer" parent="page_7_8/page_contents"]
+margin_left = 192.0
+margin_right = 381.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_7_8/page_contents/page_2"]
+margin_right = 189.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MAP - Lower Level"
+align = 1
+
+[node name="body" type="Label" parent="page_7_8/page_contents/page_2"]
+margin_top = 18.0
+margin_right = 189.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "
+
+                         
+						
+						
+                      Observation Deck
+					
+					
+
+
+
+
+
+
+        Torpedo Bay
+		
+		
+		
+		
+		
+		
+		
+                       
+					
+					
+					
+					
+					
+					
+					
+					
+					
+                         Cargo Hold
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Engine Room"
+autowrap = true
+
+[node name="page_5_6" type="Control" parent="."]
+visible = false
+margin_left = 123.0
+margin_top = 30.0
+margin_right = 516.0
+margin_bottom = 330.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page" type="TextureRect" parent="page_5_6"]
+margin_left = -0.420471
+margin_right = 399.58
+margin_bottom = 300.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_7_8" type="Button" parent="page_5_6"]
+margin_left = 350.0
+margin_top = 265.0
+margin_right = 392.0
+margin_bottom = 301.0
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_3_4" type="Button" parent="page_5_6"]
+margin_top = 265.0
+margin_right = 42.0
+margin_bottom = 301.0
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_contents" type="HBoxContainer" parent="page_5_6"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 387.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_1" type="VBoxContainer" parent="page_5_6/page_contents"]
+margin_right = 188.0
+margin_bottom = 271.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_5_6/page_contents/page_1"]
+margin_right = 188.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TORPEDO BAY"
+align = 1
+
+[node name="body" type="Label" parent="page_5_6/page_contents/page_1"]
+margin_top = 18.0
+margin_right = 188.0
+margin_bottom = 271.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "The torpedo bay can be found on the lower level near the observation deck.
+
+To fire torpedos, ensure that the electrical subsystem linked to it is active.
+
+Water in and around the torpedo tubes may cause malfunctions. Please ensure the torpedo bay is reasonably dry before firing."
+autowrap = true
+
+[node name="page_2" type="VBoxContainer" parent="page_5_6/page_contents"]
+margin_left = 192.0
+margin_right = 381.0
+margin_bottom = 271.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_5_6/page_contents/page_2"]
+margin_right = 189.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ENGINE"
+align = 1
+
+[node name="body" type="Label" parent="page_5_6/page_contents/page_2"]
+margin_top = 18.0
+margin_right = 189.0
+margin_bottom = 271.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "The engine runs the propeller and the ballast tanks. 
+
+To start, prime the engine using the priming switch, then press the ignition
+
+NOTICE:
+Fires in the vicinity of the engine when starting can cause catastrophic damage
+
+Pipe pressure must be maintained for proper  operation. Ensure there are no leaking pipes."
+autowrap = true
+
+[node name="page_3_4" type="Control" parent="."]
+visible = false
+margin_left = 123.0
+margin_top = 30.0
+margin_right = 516.0
+margin_bottom = 330.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page" type="TextureRect" parent="page_3_4"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_5_6" type="Button" parent="page_3_4"]
+margin_left = 350.0
+margin_top = 265.0
+margin_right = 392.0
+margin_bottom = 301.0
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_1_2" type="Button" parent="page_3_4"]
+margin_top = 265.0
+margin_right = 42.0
+margin_bottom = 301.0
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_contents" type="HBoxContainer" parent="page_3_4"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 387.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_1" type="VBoxContainer" parent="page_3_4/page_contents"]
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_3_4/page_contents/page_1"]
+margin_right = 188.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "COMMON HAZARDS"
+align = 1
+
+[node name="body" type="Label" parent="page_3_4/page_contents/page_1"]
+margin_top = 18.0
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Fire:
+Fire can pose a health risk to crew and damage the integrity of the ship. 
+
+Electrical:
+Electricity in the vicinity of water can cause death. Turn off fuses to this section of the ship for safe accessibility
+
+Sea Life:
+Large sea animals can pose a serious threat to the ability "
+autowrap = true
+
+[node name="page_2" type="VBoxContainer" parent="page_3_4/page_contents"]
+margin_left = 192.0
+margin_right = 381.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_3_4/page_contents/page_2"]
+margin_right = 189.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+
+[node name="body" type="Label" parent="page_3_4/page_contents/page_2"]
+margin_top = 18.0
+margin_right = 189.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "of the ship to stay afloat. Torpedos are an effective means of dispatching these threats."
+autowrap = true
+
+[node name="page_1_2" type="Control" parent="."]
+visible = false
+margin_left = 123.0
+margin_top = 30.0
+margin_right = 516.0
+margin_bottom = 330.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page" type="TextureRect" parent="page_1_2"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_3_4" type="Button" parent="page_1_2"]
+margin_left = 350.0
+margin_top = 265.0
+margin_right = 392.0
+margin_bottom = 301.0
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_cover" type="Button" parent="page_1_2"]
+margin_top = 265.0
+margin_right = 42.0
+margin_bottom = 301.0
+icon = ExtResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_contents" type="HBoxContainer" parent="page_1_2"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 387.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="page_1" type="VBoxContainer" parent="page_1_2/page_contents"]
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_1_2/page_contents/page_1"]
+margin_right = 188.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOOLS GUIDE"
+align = 1
+
+[node name="body" type="Label" parent="page_1_2/page_contents/page_1"]
+margin_top = 18.0
+margin_right = 188.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Pipe Wrench:
+The pipe wrench can be used to fix leaks in pipes.
+
+Cementing Foam:
+Use the cementing foam for emergency hull repair.
+
+Fire Extinguisher:
+Puts out fires.
+
+Soldering Iron:
+Fix electrical junctions by using the soldering iron."
+autowrap = true
+
+[node name="page_2" type="VBoxContainer" parent="page_1_2/page_contents"]
+margin_left = 192.0
+margin_right = 381.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="header" type="Label" parent="page_1_2/page_contents/page_2"]
+margin_right = 189.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CRUSH DEPTH"
+align = 1
+
+[node name="body" type="Label" parent="page_1_2/page_contents/page_2"]
+margin_top = 18.0
+margin_right = 189.0
+margin_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Take care to note the depth of your submarine. Getting below a certain depth (noted on the depth gauge in red) will cause severe hull damage and death.
+
+Controlling the depth of your vessel can be done at the bridge. Ensure hull integrity and functionality of all main subsystems (ballasts, electrical, etc.) before attempting depth change."
+autowrap = true
+
+[node name="cover" type="Control" parent="."]
+margin_left = 220.0
+margin_top = 30.0
+margin_right = 420.0
+margin_bottom = 330.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cover_background" type="TextureRect" parent="cover"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="to_page_1_2" type="Button" parent="cover"]
+margin_left = 155.0
+margin_top = 265.0
+margin_right = 197.0
+margin_bottom = 301.0
+icon = ExtResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

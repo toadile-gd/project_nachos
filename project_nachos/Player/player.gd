@@ -26,10 +26,23 @@ func _physics_process(delta):
 	
 	# PAUSING
 	if Input.is_action_just_pressed("pause"):
-			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		if not $escape/escape_menu.visible:
+			$escape/escape_menu.visible = true
+		else:
+			$escape/escape_menu.visible = false
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE and $manual_overlay/manual.visible == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and $manual_overlay/manual.visible == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	# OPEN/CLOSE MANUAL
+	if Input.is_action_just_pressed("ui_focus_next"):
+		if not $manual_overlay/manual.visible:
+			$manual_overlay/manual.visible = true
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			$manual_overlay/manual.visible = false
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 	# INVENTORY
 	var switch = false
@@ -103,14 +116,14 @@ func _physics_process(delta):
 				Tooltip.uprintb("Need to find a soldering iron",1)
 	
 	# INTERACT
-	if Input.is_action_just_pressed("interact"):
-		print("interact!")
-		if $aim/cam/look_ray.is_colliding():
-			print($aim/cam/look_ray.get_collider())
-			$aim/cam/look_ray.get_collider().activate()
+	if Input.is_action_just_pressed("interact") and not $manual_overlay/manual.visible:
+			print("interact!")
+			if $aim/cam/look_ray.is_colliding():
+				print($aim/cam/look_ray.get_collider())
+				$aim/cam/look_ray.get_collider().activate()
 	
 	# TOOLS
-	if Input.is_action_pressed("click"):
+	if Input.is_action_pressed("click") and not $manual_overlay/manual.visible:
 		match item:
 			items.none:
 				pass
@@ -168,7 +181,7 @@ func _physics_process(delta):
 		move_and_slide(-3*$ground_ray.get_collision_normal())
 	else:
 		velocity += gravity
-		velocity = move_and_slide(velocity)
+		velocity = move_and_slide(velocity)		
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:

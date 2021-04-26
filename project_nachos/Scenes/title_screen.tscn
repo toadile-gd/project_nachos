@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Bohemian Typewriter.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Bohemian Typewriter.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/floor_industrial.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Buttons/new_game.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Buttons/controls.tscn" type="PackedScene" id=4]
@@ -58,7 +58,7 @@ margin_right = 540.0
 margin_bottom = 79.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Submortis"
+text = "Submortem"
 align = 1
 
 [node name="button_container" type="HBoxContainer" parent="menu"]
