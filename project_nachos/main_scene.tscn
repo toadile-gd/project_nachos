@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=2]
+[gd_scene load_steps=89 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -87,6 +87,7 @@
 [ext_resource path="res://GameObjects/interactable/DrainValve.tscn" type="PackedScene" id=85]
 [ext_resource path="res://Scenes/Sounds.tscn" type="PackedScene" id=86]
 [ext_resource path="res://Environment/area_hint.tscn" type="PackedScene" id=87]
+[ext_resource path="res://Scripts/Warnings.gd" type="Script" id=88]
 
 [node name="main_scene" type="Spatial"]
 
@@ -144,6 +145,7 @@ transform = Transform( -0.999969, 0, -0.00792391, 0, 1, 0, 0.00792391, 0, -0.999
 [node name="Lighting" type="Node" parent="."]
 
 [node name="Warning" type="Node" parent="Lighting"]
+script = ExtResource( 88 )
 
 [node name="Warning Light 1" parent="Lighting/Warning" instance=ExtResource( 72 )]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -11.15, 2.09798, 2.82825 )
