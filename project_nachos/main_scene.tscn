@@ -138,7 +138,6 @@ transform = Transform( -0.60414, 0, -0.796878, 0, 1, 0, 0.796878, 0, -0.60414, 4
 transform = Transform( -0.999969, 0, -0.00792391, 0, 1, 0, 0.00792391, 0, -0.999969, 7.41323, -7.26312, 11.1092 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
-mov_speed = 4.0
 
 [node name="Lighting" type="Node" parent="."]
 
