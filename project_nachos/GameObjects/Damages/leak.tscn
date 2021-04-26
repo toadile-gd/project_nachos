@@ -57,13 +57,14 @@ local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Node" type="Spatial" parent="."]
 script = ExtResource( 4 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node"]
 stream = ExtResource( 3 )
-unit_db = -5.0
+unit_db = -3.0
+unit_size = 3.0
 autoplay = true
-max_distance = 3.0
+max_distance = 5.0
 
 [node name="Timer" type="Timer" parent="Node"]

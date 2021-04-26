@@ -10,6 +10,7 @@ script = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.35358, 1.67135, 5.18919 )
 stream = ExtResource( 1 )
 unit_db = -40.0
+unit_size = 5.0
 autoplay = true
 
 [node name="Timer" type="Timer" parent="."]
