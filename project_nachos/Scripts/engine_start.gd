@@ -13,8 +13,10 @@ func greenlight():
 	greenlit = true
 
 func activate():
+	AudioManager.play_sound("button")
 	if greenlit and victory.check_engine():
 		victory.engine_running = true
+		$AudioStreamPlayer3D.play()
 		Tooltip.uprintb("Engine started", 3)
 	elif greenlit:
 		Tooltip.uprintb("The engine is too damaged to start", 2)

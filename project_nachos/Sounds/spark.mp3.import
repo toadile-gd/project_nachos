@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spark.mp3-4ab11a4ab0d254d7381df58b3388fb8d.mp3str"
+
+[deps]
+
+source_file="res://Sounds/spark.mp3"
+dest_files=[ "res://.import/spark.mp3-4ab11a4ab0d254d7381df58b3388fb8d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

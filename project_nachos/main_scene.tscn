@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -85,11 +85,12 @@
 [ext_resource path="res://Environment/Damages.tscn" type="PackedScene" id=83]
 [ext_resource path="res://Environment/fusebox/Fusebox.tscn" type="PackedScene" id=84]
 [ext_resource path="res://GameObjects/interactable/DrainValve.tscn" type="PackedScene" id=85]
+[ext_resource path="res://Scenes/Sounds.tscn" type="PackedScene" id=86]
 
 [node name="main_scene" type="Spatial"]
 
 [node name="Level" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00441456, 0.00946379, -0.00859217 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00132615, 0.00946378, -0.0112803 )
 
 [node name="doors" parent="Level" instance=ExtResource( 45 )]
 
@@ -1657,3 +1658,5 @@ transform = Transform( 1.85077, 0, 0, 0, 1.09119, 1.3923, 0, -1.3923, 1.09119, 1
 
 [node name="VictoryConditions" type="Node" parent="."]
 script = ExtResource( 15 )
+
+[node name="Sounds" parent="." instance=ExtResource( 86 )]

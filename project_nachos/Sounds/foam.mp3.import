@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/foam.mp3-b16f01053ad8b85ff3e9e02a5e3a97a3.mp3str"
+
+[deps]
+
+source_file="res://Sounds/foam.mp3"
+dest_files=[ "res://.import/foam.mp3-b16f01053ad8b85ff3e9e02a5e3a97a3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
