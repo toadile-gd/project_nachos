@@ -42,12 +42,12 @@ func _ready():
 
 func reset():
 	AudioManager.play_level_theme()
+	##AudioManager.play_sound("power_off")
 	current_time = 0
 	depth_percentage = 0
 	inventory = []
 	failure = false
 	game_done = false
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
