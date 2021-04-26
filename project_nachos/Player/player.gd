@@ -26,10 +26,26 @@ func _physics_process(delta):
 	
 	# PAUSING
 	if Input.is_action_just_pressed("pause"):
-			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
-				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		if not $escape/escape_menu.visible:
+			$escape/escape_menu.visible = true
+			$escape/escape_menu/controls_menu.visible = false
+		else:
+			$escape/escape_menu.visible = false
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE and $manual_overlay/manual.visible == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		elif Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and $manual_overlay/manual.visible == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	# OPEN/CLOSE MANUAL
+	if Input.is_action_just_pressed("ui_focus_next"):
+		if not $manual_overlay/manual.visible:
+			$manual_overlay/manual.visible = true
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and $escape/escape_menu.visible == false:
 				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE and $escape/escape_menu.visible == false:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			$manual_overlay/manual.visible = false
 	
 	# INVENTORY
 	var switch = false

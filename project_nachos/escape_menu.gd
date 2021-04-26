@@ -8,5 +8,5 @@ func _ready():
 func _on_button_pressed(scene_to_load):
 	if scene_to_load == "EXIT_GAME":
 		get_tree().quit()
-	else:
-		get_tree().change_scene(scene_to_load)
+	elif scene_to_load == "res://Scenes/controls_menu.tscn":
+		$controls_menu.visible = true

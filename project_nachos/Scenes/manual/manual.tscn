@@ -12,7 +12,7 @@
 size = 12
 font_data = ExtResource( 6 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=4]
 size = 7
 extra_spacing_top = -7
 font_data = ExtResource( 6 )
@@ -100,7 +100,7 @@ margin_right = 188.0
 margin_bottom = 261.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "
 
@@ -173,7 +173,7 @@ margin_right = 189.0
 margin_bottom = 261.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "
 
