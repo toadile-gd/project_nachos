@@ -139,7 +139,7 @@ transform = Transform( -0.607723, 0, 0.794149, 0, 1, 0, -0.794149, 0, -0.607723,
 transform = Transform( -0.60414, 0, -0.796878, 0, 1, 0, 0.796878, 0, -0.60414, 40.2364, -7.71887, 2.74932 )
 
 [node name="fishies3" parent="Bubbles" instance=ExtResource( 43 )]
-transform = Transform( -0.999969, 0, -0.00792391, 0, 1, 0, 0.00792391, 0, -0.999969, 7.41323, -7.26312, 11.1092 )
+transform = Transform( -0.952433, 0, -0.304748, 0, 1, 0, 0.304748, 0, -0.952433, 7.41323, -7.26312, 12.4682 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 mov_speed = 3.0
