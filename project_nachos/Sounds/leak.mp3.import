@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/leak.mp3-f3a756b1ef79b00f95c520497adac76f.mp3str"
+
+[deps]
+
+source_file="res://Sounds/leak.mp3"
+dest_files=[ "res://.import/leak.mp3-f3a756b1ef79b00f95c520497adac76f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

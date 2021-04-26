@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
+[ext_resource path="res://Sounds/spark.mp3" type="AudioStream" id=1]
 [ext_resource path="res://GameObjects/Damages/fire.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Object/CircuitAudio.gd" type="Script" id=3]
 
 [sub_resource type="SphereShape" id=1]
 radius = 0.2
@@ -50,3 +52,11 @@ visibility_aabb = AABB( -0.900683, -1.11504, -1.11757, 1.80137, 2.23009, 2.23514
 local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )
+
+[node name="Audio" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Audio"]
+stream = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="Audio"]

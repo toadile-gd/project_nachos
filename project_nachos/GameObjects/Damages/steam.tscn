@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Images/steam.png" type="Texture" id=1]
 [ext_resource path="res://GameObjects/Damages/fire.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/hiss.mp3" type="AudioStream" id=3]
 
 [sub_resource type="SphereShape" id=1]
 radius = 0.2
@@ -50,3 +51,8 @@ visibility_aabb = AABB( -0.432166, -1.05698, -0.44629, 0.864332, 2.11396, 0.8925
 local_coords = false
 process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 3 )
+unit_db = -19.794
+autoplay = true
