@@ -31,10 +31,11 @@ var depth_percentage = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	convert_time_to_minutes()
-	AudioManager.start_song("Main Menu")
+	
+	## AudioManager.start_song("Main Menu")
 	##
-	yield(get_tree().get_current_scene(), "asfdasdf")
-	AudioManager.start_song("Theme")
+	## yield(get_tree().get_current_scene(), "asfdasdf")
+	## AudioManager.start_song("Theme")
 	convert_time_to_minutes()
 	start_depth_timer()
 

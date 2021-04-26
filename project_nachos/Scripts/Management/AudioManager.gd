@@ -12,7 +12,7 @@ func _ready():
 	
 
 func _start_song(song):
-	
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
