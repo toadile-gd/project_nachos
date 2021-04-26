@@ -1,7 +1,7 @@
 extends Area
 
-export var interactible_name = "exit"
+export var interactible_name = "ladder"
 
 func activate():
-	pass #check that all objectives are done
+	Tooltip.uprintb("You need to ascend to the surface first.", 2)
 
