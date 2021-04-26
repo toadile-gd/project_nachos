@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=88 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -86,6 +86,7 @@
 [ext_resource path="res://Environment/fusebox/Fusebox.tscn" type="PackedScene" id=84]
 [ext_resource path="res://GameObjects/interactable/DrainValve.tscn" type="PackedScene" id=85]
 [ext_resource path="res://Scenes/Sounds.tscn" type="PackedScene" id=86]
+[ext_resource path="res://Environment/area_hint.tscn" type="PackedScene" id=87]
 
 [node name="main_scene" type="Spatial"]
 
@@ -1660,3 +1661,23 @@ transform = Transform( 1.85077, 0, 0, 0, 1.09119, 1.3923, 0, -1.3923, 1.09119, 1
 script = ExtResource( 15 )
 
 [node name="Sounds" parent="." instance=ExtResource( 86 )]
+
+[node name="AreaHints" type="Node" parent="."]
+
+[node name="area_hint" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5248, 0.0881734, 2.45982 )
+hint_text = "That giant squid could pose a threat. Need to repel it somehow..."
+
+[node name="area_hint2" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69664, 0.531603, -2.3604 )
+hint_text = "Looks like the captain had a master key..."
+
+[node name="area_hint3" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0380259, 0.531603, -5.68589 )
+hint_text = "Sounds like the sub is heavily damaged. The cabin may lose pressure soon."
+hint_time = 6
+
+[node name="area_hint4" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5489, 0.531603, -6.73472 )
+hint_text = "I should be able to access my manual (tab) to see how I can fix the sub."
+hint_time = 6
