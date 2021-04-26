@@ -10,3 +10,4 @@ func _ready():
 func activate():
 	$sub_door/anim.play("open")
 	AudioManager.play_sound("door")
+	AudioManager.play_sound("unlock")
