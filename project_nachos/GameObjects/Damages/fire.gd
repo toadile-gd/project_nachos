@@ -1,6 +1,6 @@
 extends Area
 
-export var health = 30
+export var health = 10
 
 func activate():
 	health -= 1

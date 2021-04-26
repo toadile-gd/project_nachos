@@ -19,7 +19,7 @@ var skybox_color
 
 var ambient_light_intensity
 
-var global_lighting_offset = 0.005
+var global_lighting_offset = 0.007
 
 var current_time = 0
 
@@ -27,12 +27,25 @@ var minute_multiplier= 60
 
 var depth_percentage = 0
 
+var game_done = false
+
+var failure = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	## AudioManager.start_song("Main Menu")
+	##
+	## yield(get_tree().get_current_scene(), "asfdasdf")
+	## AudioManager.start_song("Theme")
 	convert_time_to_minutes()
-	yield(get_tree().create_timer(2), "timeout")
 	start_depth_timer()
+
+func reset():
+	current_time = 0
+	depth_percentage = 0
+	inventory = []
+	failure = false
+	game_done = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -60,6 +73,8 @@ func increment_depth_percentage():
 		current_time += 1
 		depth_percentage = float (current_time) / total_time
 		print("Depth percentage: ", depth_percentage)
+	else:
+		end_game(win_conditions.DEFEAT)
 
 func get_depth_precentage():
 	return depth_percentage
@@ -88,10 +103,24 @@ func check_item(item):
 	return inventory.has(item)
 
 func end_game(condition):
+	if game_done:
+		return
+	game_done = true
 	if (condition == win_conditions.VICTORY):
-		## victory screen
+		game_done = false
+		Tooltip.uprintb("Repair successful. Ascending to surface.", 5)
+		yield(get_tree().create_timer(5), "timeout")
+		## TODO victory screen
+		get_tree().call_deferred("change_scene", "res://Scenes/title_screen.tscn")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		pass
 	else:
-		get_tree().change_scene("res://Scenes/title_screen.tscn")
+		failure = true
+		Tooltip.uprintb("You have failed.", 5)
+		yield(get_tree().create_timer(5), "timeout")
+		game_done = false
+		failure = false
+		get_tree().call_deferred("change_scene", "res://Scenes/title_screen.tscn")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		pass
 

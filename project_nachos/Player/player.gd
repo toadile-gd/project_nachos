@@ -19,6 +19,7 @@ var item = items.none
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$aim/cam/arms/right_arm.visible = false
+	GameManager.reset()
 	pass
 
 func _physics_process(delta):
@@ -168,7 +169,9 @@ func _physics_process(delta):
 		mov_offset = 1
 		mov_vec *= 1.75
 	
-	if mov_vec.length_squared() > 0.1 and not $aim/cam/cam_anim.current_animation == "walk":
+	if GameManager.failure:
+		$aim/cam/cam_anim.play("shake")
+	elif mov_vec.length_squared() > 0.1 and not $aim/cam/cam_anim.current_animation == "walk":
 		$aim/cam/cam_anim.play("walk", 0.1, 1.5+mov_offset)
 	elif mov_vec.length_squared() < 0.1:
 		$aim/cam/cam_anim.play("idle", 0.5, 0.5)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
@@ -18,14 +18,17 @@ surfaces/0 = {
 "vertex_count": 35
 }
 
-[sub_resource type="ConcavePolygonShape" id=3]
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.156863, 0.156863, 0.156863, 1 )
+
+[sub_resource type="ConcavePolygonShape" id=4]
 data = PoolVector3Array( 0.6567, -1, -0.4464, 0.6567, 1, -0.1374, 0.6567, 1, -0.4464, 0.6567, -1, -0.4464, 0.6567, -1, -0.1374, 0.6567, 1, -0.1374, 0.6567, -1, -0.1374, 0.4059, 1, 0.3626, 0.6567, 1, -0.1374, 0.6567, -1, -0.1374, 0.4059, -1, 0.3626, 0.4059, 1, 0.3626, 0.4059, -1, 0.3626, 0, 1, 0.4422, 0.4059, 1, 0.3626, 0.4059, -1, 0.3626, 0, -1, 0.4422, 0, 1, 0.4422, 0, -1, 0.4422, -0.4059, 1, 0.3626, 0, 1, 0.4422, 0, -1, 0.4422, -0.4059, -1, 0.3626, -0.4059, 1, 0.3626, -0.4059, -1, 0.3626, -0.6567, 1, -0.1374, -0.4059, 1, 0.3626, -0.4059, -1, 0.3626, -0.6567, -1, -0.1374, -0.6567, 1, -0.1374, -0.6567, -1, -0.1374, -0.6567, 1, -0.4464, -0.6567, 1, -0.1374, -0.6567, -1, -0.1374, -0.6567, -1, -0.4464, -0.6567, 1, -0.4464, -0.6567, 1, -0.4464, 0.6567, 1, -0.1374, -0.6567, 1, -0.1374, -0.6567, 1, -0.4464, 0.6567, 1, -0.4464, 0.6567, 1, -0.1374, 0.4059, 1, 0.3626, -0.6567, 1, -0.1374, 0.6567, 1, -0.1374, 0.4059, 1, 0.3626, -0.4059, 1, 0.3626, -0.6567, 1, -0.1374, 0, 1, 0.4422, -0.4059, 1, 0.3626, 0.4059, 1, 0.3626 )
 
 [node name="Boiler" type="MeshInstance"]
 mesh = SubResource( 2 )
-material/0 = null
+material/0 = SubResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-shape = SubResource( 3 )
+shape = SubResource( 4 )
