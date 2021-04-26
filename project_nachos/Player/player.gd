@@ -140,12 +140,12 @@ func _physics_process(delta):
 				items.fire:
 					$aim/cam/arms/right_arm/anim.play("reach")
 					$aim/cam/arms/right_arm/fire/particle.emitting = true
-					AudioManager.play_sound("foam")
+					AudioManager.play_sound("spray_foam")
 					action("fire")
 				items.foam:
 					$aim/cam/arms/right_arm/anim.play("reach")
 					$aim/cam/arms/right_arm/foam/particle.emitting = true
-					AudioManager.play_sound("foam")
+					AudioManager.play_sound_volume("foam", -25)
 					action("leak")
 				items.iron:
 					$aim/cam/arms/right_arm/anim.play("reach")
