@@ -12,4 +12,8 @@ func activate():
 	print(victory.get_damage_percentage())
 	if victory.check_ready_for_victory():
 		GameManager.end_game(GameManager.win_conditions.VICTORY)
+	elif not victory.check_damages():
+		Tooltip.uprintb("The submarine is not repaired yet...", 3)
+	elif not victory.squid_dead:
+		Tooltip.uprintb("I need to take care of that squid...", 3)
 

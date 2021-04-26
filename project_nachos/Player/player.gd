@@ -66,7 +66,6 @@ func _physics_process(delta):
 			item = items.none if item == items.iron else items.iron
 			switch = true
 	if (switch):
-		print(item)
 		$aim/cam/arms/right_arm/fire/particle.restart()
 		$aim/cam/arms/right_arm/foam/particle.restart()
 		$aim/cam/arms/right_arm/iron/particle.restart()
@@ -122,7 +121,6 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("interact"):
 		print("interact!")
 		if $aim/cam/look_ray.is_colliding():
-			print($aim/cam/look_ray.get_collider())
 			$aim/cam/look_ray.get_collider().activate()
 	
 	# TOOLS

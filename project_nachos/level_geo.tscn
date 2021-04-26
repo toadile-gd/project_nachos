@@ -1447,7 +1447,7 @@ mesh = SubResource( 16 )
 material/0 = SubResource( 17 )
 
 [node name="SubExit" parent="sub_layout" instance=ExtResource( 8 )]
-transform = Transform( -0.424264, 0, 0.424264, 0, 0.8, 0, -0.424264, 0, -0.424264, -10.4096, 0, 3.40147 )
+transform = Transform( 0.258694, 0, 0.541366, 0, 0.8, 0, -0.541366, 0, 0.258694, -15.1118, 0, -5.16017 )
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3694, -1.46445, -2.4547 )
