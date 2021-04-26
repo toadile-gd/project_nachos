@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=27]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=28]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Valve 2"
 surfaces/0 = {
 "aabb": AABB( -0.116935, -0.0969191, -0.0641403, 0.233663, 0.193471, 0.111873 ),
@@ -12,12 +12,16 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 714,
-"material": SubResource( 27 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 466
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+params_cull_mode = 2
+albedo_color = Color( 0.0156863, 0.203922, 0.0313726, 1 )
+
 [node name="Valve 2" type="MeshInstance"]
-mesh = SubResource( 28 )
-material/0 = null
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
