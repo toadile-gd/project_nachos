@@ -86,5 +86,7 @@ omni_range = 8.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 540.0
+one_shot = true
+autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
