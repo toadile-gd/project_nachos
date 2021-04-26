@@ -27,7 +27,7 @@ func _ready():
 		start_flicker_timer("flicker_light_inverse")
 
 func start_flicker_timer(callback):
-	$Timer.set_wait_time(randi()%20)
+	$Timer.set_wait_time(rand_range(3, 15))
 	$Timer.connect("timeout", self, callback)
 	$Timer.start()
 
