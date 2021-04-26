@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=92 format=2]
 
 [ext_resource path="res://level_geo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Environment/bubbles.tscn" type="PackedScene" id=2]
@@ -89,6 +89,8 @@
 [ext_resource path="res://Environment/area_hint.tscn" type="PackedScene" id=87]
 [ext_resource path="res://Scripts/Warnings.gd" type="Script" id=88]
 [ext_resource path="res://addons/SIsilicon.3d.text/label_3d.gd" type="Script" id=89]
+[ext_resource path="res://GameObjects/interactable/Interactable Pipe (Straight) .tscn" type="PackedScene" id=90]
+[ext_resource path="res://GameObjects/interactable/Interactable Pipe (Corner).tscn" type="PackedScene" id=91]
 
 [node name="main_scene" type="Spatial"]
 
@@ -96,6 +98,639 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00132615, 0.00946378, -0.0112803 )
 
 [node name="doors" parent="Level" instance=ExtResource( 45 )]
+
+[node name="Interactable Pipe (Straight) " parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.6251, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 2" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.0031, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 3" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.3207, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 4" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.6987, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 5" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.055, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 6" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.4331, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 7" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.7506, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 8" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.1287, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 9" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.5031, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 10" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.8812, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 11" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.1987, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 12" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.5768, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 13" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.9172, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 14" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.2952, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 15" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.6128, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 16" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.9908, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 17" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.0469, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 18" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.4249, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 19" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.7425, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 20" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.1205, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 21" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.4768, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 22" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.8549, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 23" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.1724, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 24" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.5505, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 25" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.9249, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 26" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.303, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 27" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.6205, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 28" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.9986, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 29" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.339, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 30" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.717, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 31" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.0346, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 32" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.4126, 0.0921931, 4.00322 )
+
+[node name="Interactable Pipe (Straight) 33" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.32521, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 34" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.70328, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 35" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.02081, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 36" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.39889, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 37" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.75513, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 38" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.13321, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 39" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.45073, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 40" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.82881, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 41" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.2033, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 42" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.5814, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 43" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.8989, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 44" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.277, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 45" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.6173, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 46" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.9954, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 47" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.3129, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 48" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.691, 0.0921931, -5.17847 )
+
+[node name="Interactable Pipe (Straight) 49" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.87941, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 50" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.25749, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 51" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.57502, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 52" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.9531, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 53" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.30934, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 54" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.68742, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 55" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.0049, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 56" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.383, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 57" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.7575, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 58" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.1356, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 59" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.4531, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 60" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.8312, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 61" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.1715, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 62" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5496, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 63" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.8671, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 64" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.2452, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 65" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.57955, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 66" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.95763, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 67" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.27515, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 68" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.65323, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 69" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.00947, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 70" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.38755, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 71" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.70507, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 72" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.08315, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 73" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.45763, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 74" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.8357, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 75" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.15323, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 76" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.53131, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 77" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.87165, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 78" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.24973, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 79" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.56725, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 80" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.94533, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 81" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.0779, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Corner)" parent="Level/Interactable Pipe (Straight) 81" instance=ExtResource( 91 )]
+transform = Transform( -0.00242604, -0.999997, 4.35995e-08, -0.999863, 0.00242572, 0.0163703, -0.0163703, 3.96715e-05, -0.999866, 0.00397587, 0.0681713, -0.283419 )
+
+[node name="Interactable Pipe (Corner)2" parent="Level/Interactable Pipe (Straight) 81" instance=ExtResource( 91 )]
+transform = Transform( 0.000233307, 0.991167, -0.132619, -0.999863, 0.00242572, 0.0163703, 0.0165474, 0.132597, 0.991032, 0.00397539, 0.0681713, 15.604 )
+
+[node name="Interactable Pipe (Straight) 183" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.842211, 0.539137, -0.00351148, 0.00364362, -0.000821249, -0.999993, -0.539136, -0.842218, -0.00127274, 10.69, 2.03556, 0.420366 )
+
+[node name="Interactable Pipe (Corner)" parent="Level/Interactable Pipe (Straight) 183" instance=ExtResource( 91 )]
+transform = Transform( -0.00242604, -0.999997, 4.35995e-08, -0.999863, 0.00242572, 0.0163703, -0.0163703, 3.96715e-05, -0.999866, 0.00397587, 0.0681713, -0.283419 )
+
+[node name="Interactable Pipe (Straight) " parent="Level/Interactable Pipe (Straight) 183/Interactable Pipe (Corner)" instance=ExtResource( 90 )]
+transform = Transform( -0.00431296, 0.0108863, 0.999934, 0.914459, 0.404683, -0.000462174, -0.404661, 0.914395, -0.0117001, -0.244485, -0.000490189, 0.0856662 )
+
+[node name="Interactable Pipe (Corner)2" parent="Level/Interactable Pipe (Straight) 183" instance=ExtResource( 91 )]
+transform = Transform( 0.000233307, 0.991167, -0.132619, -0.999863, 0.00242572, 0.0163703, 0.0165474, 0.132597, 0.991032, 0.00397539, 0.0681713, 15.604 )
+
+[node name="Interactable Pipe (Straight) 184" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.999045, -0.0435511, -0.0036044, 0.00364362, -0.000821249, -0.999993, 0.0435479, -0.999051, 0.000979148, 11.3933, 2.03556, 0.210473 )
+
+[node name="Interactable Pipe (Corner)" parent="Level/Interactable Pipe (Straight) 184" instance=ExtResource( 91 )]
+transform = Transform( -0.00242604, -0.999997, 4.35995e-08, -0.999863, 0.00242572, 0.0163703, -0.0163703, 3.96715e-05, -0.999866, 0.00397587, 0.0681713, -0.283419 )
+
+[node name="Interactable Pipe (Corner)2" parent="Level/Interactable Pipe (Straight) 184" instance=ExtResource( 91 )]
+transform = Transform( 0.000233307, 0.991167, -0.132619, -0.999863, 0.00242572, 0.0163703, 0.0165474, 0.132597, 0.991032, 0.00397539, 0.0681713, 15.604 )
+
+[node name="Interactable Pipe (Straight) 82" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.69982, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 83" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.3823, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 84" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.00422, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 85" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.647973, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 86" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.269895, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 87" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0476289, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 88" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.425707, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 89" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.800181, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 90" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.17826, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 91" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.49578, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 92" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.87386, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 93" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.2142, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 94" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.59228, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 95" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.90981, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 96" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.28788, 2.56976, -6.92705 )
+
+[node name="Interactable Pipe (Straight) 97" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.31534, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 98" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.93726, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 99" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.61974, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 100" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.24166, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 101" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.885417, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 102" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.507339, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 103" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.189815, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 104" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.188264, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 105" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.562737, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 106" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.940816, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 107" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.25834, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 108" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.63642, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 109" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.97676, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 110" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.35484, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 111" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.67236, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 112" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.05044, 0.10579, -5.2591 )
+
+[node name="Interactable Pipe (Corner)2" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 1.76568, -2.49332, -5.2582 )
+
+[node name="Interactable Pipe (Corner)3" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( 1, 0, 0, 0, -0.0309223, -0.999522, 0, 0.999522, -0.0309223, 7.73775, -2.49329, -5.26111 )
+
+[node name="Interactable Pipe (Straight) 113" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.07615, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 114" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.45423, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 115" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.77175, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 116" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.14983, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 117" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.50607, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 118" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.88415, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 119" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.20167, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 120" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.57975, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 121" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.95423, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 122" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.3323, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 123" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.64983, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 124" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.02791, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 125" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.36825, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 126" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.74633, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 127" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0.0309223, 0.999522, 1.35166e-09, -0.999522, 0.0309223, -4.36905e-08, 7.06385, -2.57834, -5.26465 )
+
+[node name="Interactable Pipe (Straight) 128" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.44193, -2.57844, -5.2591 )
+
+[node name="Interactable Pipe (Straight) 159" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -1.05957e-09, -0.999706, 0.0242402, 0.0309223, 0.0242286, 0.999228, -0.999522, 0.000749564, 0.0309132, 7.81774, -2.21968, -5.25355 )
+
+[node name="Interactable Pipe (Straight) 160" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -1.05957e-09, -0.999706, 0.0242402, -4.36985e-08, 0.0242402, 0.999706, -1, 0, -4.37114e-08, 1.69282, -2.21961, -5.2591 )
+
+[node name="Interactable Pipe (Corner)7" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 1.76568, -2.32022, 4.47923 )
+
+[node name="Interactable Pipe (Corner)8" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3.04292, -2.32022, 4.47923 )
+
+[node name="Interactable Pipe (Straight) 185" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.07615, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 186" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.45423, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 187" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.77175, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Corner)9" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( -1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 3.90228, -2.32022, 4.47923 )
+
+[node name="Interactable Pipe (Corner)10" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 5.17951, -2.32022, 4.47923 )
+
+[node name="Interactable Pipe (Straight) 189" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.21274, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 190" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.59082, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 191" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.90834, -2.40534, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 188" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -1.05957e-09, -0.999706, 0.0242402, -4.36985e-08, 0.0242402, 0.999706, -1, 0, -4.37114e-08, 1.69282, -2.04651, 4.47833 )
+
+[node name="Interactable Pipe (Straight) 129" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.83869, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 130" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.46061, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 131" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.14309, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 132" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.76501, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 145" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.30527, -4.02722, 1.90006 )
+
+[node name="Interactable Pipe (Straight) 146" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.93105, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 147" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.61352, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 148" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.23544, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 153" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( 0.999953, 0, -0.00972134, 0, 1, 0, 0.00972134, 0, 0.999953, -8.88768, -4.02722, 1.58908 )
+
+[node name="Interactable Pipe (Straight) 155" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( 0.999953, 0, -0.00972134, 0, 1, 0, 0.00972134, 0, 0.999953, -8.87328, -4.02722, 0.122564 )
+
+[node name="Interactable Pipe (Straight) 156" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( 0.999953, 0, -0.00972134, 0, 1, 0, 0.00972134, 0, 0.999953, -8.87706, -4.02722, 0.496769 )
+
+[node name="Interactable Pipe (Straight) 157" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( 0.999953, 0, -0.00972134, 0, 1, 0, 0.00972134, 0, 0.999953, -8.88015, -4.02722, 0.814278 )
+
+[node name="Interactable Pipe (Straight) 158" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( 0.999953, 0, -0.00972134, 0, 1, 0, 0.00972134, 0, 0.999953, -8.88383, -4.02722, 1.19234 )
+
+[node name="Interactable Pipe (Corner)" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( 0.0254441, 0, -0.999676, 0, 1, 0, 0.999676, 0, 0.0254441, -8.7892, -4.04215, 1.81973 )
+
+[node name="Interactable Pipe (Straight) 149" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.30913, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 154" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.53242, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 150" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.93105, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 151" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.61352, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 152" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.23544, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 133" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.40876, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 134" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.03069, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 135" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.71316, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 136" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.33209, -4.02722, 1.90953 )
+
+[node name="Interactable Pipe (Straight) 137" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.96061, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 138" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.58253, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 139" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.26501, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 140" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.88693, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 141" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.54659, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 142" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.16851, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 143" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.85098, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Straight) 144" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.47291, -4.02722, 1.90021 )
+
+[node name="Interactable Pipe (Corner)4" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( -0.00740013, -0.0176963, 0.999816, 0.999973, -0.000130871, 0.00739897, -8.74091e-08, 0.999843, 0.0176968, 23.3454, 1.5763, -0.0595367 )
+
+[node name="Interactable Pipe (Corner)5" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( 0.00740013, 0.0486045, 0.998791, -0.999973, 0.00035969, 0.00739138, 0, -0.998818, 0.0486058, 23.3895, -4.3956, -0.0566223 )
+
+[node name="Interactable Pipe (Straight) 161" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4328, 1.26647, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 162" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4356, 0.888404, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 163" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4379, 0.57089, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 164" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4407, 0.192822, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 165" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4434, -0.163411, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 166" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4462, -0.541477, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 167" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4485, -0.858994, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 168" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4513, -1.23706, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 169" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4541, -1.61152, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 170" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4569, -1.98959, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 171" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4592, -2.30711, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 172" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.462, -2.68518, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 173" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4645, -3.02551, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 174" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4673, -3.40358, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 175" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0486045, -0.998791, 0.00740013, -0.000359646, -0.00739138, -0.999973, 0.998818, -0.0486058, 4.36597e-08, 23.4695, -3.7211, -0.051585 )
+
+[node name="Interactable Pipe (Straight) 176" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.4725, -4.09916, -0.0571296 )
+
+[node name="Interactable Pipe (Straight) 177" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0486044, -0.0316089, -0.998318, -0.000359688, 0.9995, -0.0316288, 0.998818, -0.00117822, -0.0485915, 23.1167, -4.47762, -0.0690258 )
+
+[node name="Interactable Pipe (Straight) 178" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.0316337, -0.999343, -0.000130957, 0.999499, -0.0316364, 0.999843, -0.000428974, -0.0176916, 23.0712, 1.64713, -0.0634792 )
+
+[node name="Interactable Pipe (Corner)6" parent="Level" instance=ExtResource( 91 )]
+transform = Transform( -0.00740013, -0.0176963, 0.999816, 0.999973, -0.000130871, 0.00739897, -8.74091e-08, 0.999843, 0.0176968, 23.1897, -3.87802, -3.36975 )
+
+[node name="Interactable Pipe (Straight) 179" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.2771, -4.18785, -3.36734 )
+
+[node name="Interactable Pipe (Straight) 181" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.2771, -4.59272, -3.36734 )
+
+[node name="Interactable Pipe (Straight) 182" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.999816, 0.00740013, -0.000130915, -0.00739897, -0.999973, 0.999843, -0.0176968, 4.37045e-08, 23.2771, -4.90955, -3.36734 )
+
+[node name="Interactable Pipe (Straight) 180" parent="Level" instance=ExtResource( 90 )]
+transform = Transform( -0.0176963, -0.0316337, -0.999343, -0.000130957, 0.999499, -0.0316364, 0.999843, -0.000428974, -0.0176916, 22.9155, -3.80719, -3.37369 )
+
+[node name="RigidBody" parent="Level" instance=ExtResource( 49 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.75283, 0.2, -7.16535 )
+
+[node name="RigidBody2" parent="Level" instance=ExtResource( 49 )]
+transform = Transform( -0.216695, 0, -0.976239, 0, 1, 0, 0.976239, 0, -0.216695, -13.4542, 0.2, -2.85916 )
+
+[node name="RigidBody" parent="Level/RigidBody2" instance=ExtResource( 49 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.71585, 1.19209e-07, -8.55567 )
 
 [node name="Bubbles" type="Node" parent="."]
 
@@ -662,7 +1297,7 @@ transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.7484
 transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -3.30407, 0.930674 )
 
 [node name="Pipe Group (Straight) 3" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
-transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -2.18808, 0.930674 )
+transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2293, -2.18808, 0.918452 )
 
 [node name="Pipe Group (Straight) 4" parent="Static Objects/Observation Deck/Pipe Group 2" instance=ExtResource( 28 )]
 transform = Transform( -2, 1.74846e-07, 0, 7.64274e-15, 8.74228e-08, -2, -1.74846e-07, -2, -8.74228e-08, 23.2353, -1.0775, 0.930674 )
@@ -851,7 +1486,7 @@ transform = Transform( 0.794075, 0, -0.607819, 0, 1, 0, 0.607819, 0, 0.794075, -
 [node name="Crates" type="Node" parent="Static Objects/Cargo Bay"]
 
 [node name="Crate (medium) 1" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 35 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.396163, -3.92838, -1.3817 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.399138, -3.92838, -1.37775 )
 
 [node name="Crate (medium) 2" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 35 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.37829, -3.92838, -6.97782 )
@@ -919,6 +1554,9 @@ transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, 
 [node name="Crate (long) 6" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 34 )]
 transform = Transform( 0.999973, 0.00734788, -3.21185e-10, 0, -4.37114e-08, -1, -0.00734788, 0.999973, -4.37102e-08, 3.10407, -4.26796, 1.41637 )
 
+[node name="Crate (small) 14" parent="Static Objects/Cargo Bay/Crates" instance=ExtResource( 26 )]
+transform = Transform( 0.980498, 0, -0.196528, 0, 1, 0, 0.196528, 0, 0.980498, 24.1286, -4.33171, -4.88206 )
+
 [node name="Clutter" type="Node" parent="Static Objects"]
 
 [node name="Paper" type="Node" parent="Static Objects/Clutter"]
@@ -946,6 +1584,150 @@ transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571,
 
 [node name="Paper23" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
 transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, -9.51781, 0.0115941, 2.89216 )
+
+[node name="Paper88" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.3525, -4.93131, -6.91615 )
+
+[node name="Paper89" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, -10.9181, -4.93131, -5.10988 )
+
+[node name="Paper90" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, -8.54312, -4.93131, -7.13978 )
+
+[node name="Paper91" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, -10.7275, -4.93131, -4.88625 )
+
+[node name="Paper92" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, -8.86238, -4.93131, -4.88625 )
+
+[node name="Paper93" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, -8.41995, -4.93131, -3.85778 )
+
+[node name="Paper143" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.428272, 0, 0.903649, 0, 1, 0, -0.903649, 0, 0.428272, 24.691, -4.93131, -7.29837 )
+
+[node name="Paper144" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.911855, 0, 0.410512, 0, 1, 0, -0.410512, 0, -0.911855, 25.2248, -4.93131, -4.20565 )
+
+[node name="Paper145" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.150536, 0, 0.988604, 0, 1, 0, -0.988604, 0, -0.150536, 26.3237, -4.93131, -5.71264 )
+
+[node name="Paper146" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.544039, 0, -0.83906, 0, 1, 0, 0.83906, 0, -0.544039, 27.4154, -4.93131, -5.46414 )
+
+[node name="Paper147" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.428272, 0, 0.903649, 0, 1, 0, -0.903649, 0, 0.428272, 24.691, -4.93131, -4.76539 )
+
+[node name="Paper148" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.911855, 0, 0.410512, 0, 1, 0, -0.410512, 0, -0.911855, 25.2248, -4.93131, -1.67267 )
+
+[node name="Paper149" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.150536, 0, 0.988604, 0, 1, 0, -0.988604, 0, -0.150536, 26.3237, -4.93131, -3.17966 )
+
+[node name="Paper150" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.544039, 0, -0.83906, 0, 1, 0, 0.83906, 0, -0.544039, 27.4154, -4.93131, -2.93117 )
+
+[node name="Paper94" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, -5.58301, -4.93131, 0.404628 )
+
+[node name="Paper95" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, -8.8898, -4.93131, -0.160192 )
+
+[node name="Paper96" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.27817, -4.93131, -6.91615 )
+
+[node name="Paper97" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, 1.71258, -4.93131, -5.10988 )
+
+[node name="Paper98" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, 4.08755, -4.93131, -7.13978 )
+
+[node name="Paper99" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, 1.90318, -4.93131, -4.88625 )
+
+[node name="Paper100" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 3.76829, -4.93131, -4.88625 )
+
+[node name="Paper101" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, 4.21072, -4.93131, -3.85778 )
+
+[node name="Paper102" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, 7.04766, -4.93131, 0.404628 )
+
+[node name="Paper103" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, 3.74087, -4.93131, -0.160192 )
+
+[node name="Paper104" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.23905, -4.93131, -0.973241 )
+
+[node name="Paper105" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, 4.67346, -4.93131, 0.833029 )
+
+[node name="Paper106" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, 7.04843, -4.93131, -1.19687 )
+
+[node name="Paper107" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, 4.86406, -4.93131, 1.05666 )
+
+[node name="Paper108" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 6.72917, -4.93131, 1.05666 )
+
+[node name="Paper109" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, 7.1716, -4.93131, 2.08513 )
+
+[node name="Paper110" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, 10.0085, -4.93131, 6.34754 )
+
+[node name="Paper111" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, 6.70175, -4.93131, 5.78272 )
+
+[node name="Paper112" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.6244, -4.93131, -0.973241 )
+
+[node name="Paper113" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, 7.05882, -4.93131, 0.833029 )
+
+[node name="Paper114" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, 9.43378, -4.93131, -1.19687 )
+
+[node name="Paper115" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, 7.24941, -4.93131, 1.05666 )
+
+[node name="Paper116" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 9.11452, -4.93131, 1.05666 )
+
+[node name="Paper117" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, 9.55695, -4.93131, 2.08513 )
+
+[node name="Paper118" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, 12.3939, -4.93131, 6.34754 )
+
+[node name="Paper119" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, 9.0871, -4.93131, 5.78272 )
+
+[node name="Paper120" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1717, -4.93131, -3.79131 )
+
+[node name="Paper121" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.0195639, 0, 0.999809, 0, 1, 0, -0.999809, 0, -0.0195639, 8.60607, -4.93131, -1.98504 )
+
+[node name="Paper122" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, 10.981, -4.93131, -4.01494 )
+
+[node name="Paper123" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.205572, 0, 0.978642, 0, 1, 0, -0.978642, 0, -0.205572, 8.79667, -4.93131, -1.76141 )
+
+[node name="Paper124" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 10.6618, -4.93131, -1.76141 )
+
+[node name="Paper125" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.998498, 0, -0.0547935, 0, 1, 0, 0.0547935, 0, -0.998498, 11.1042, -4.93131, -0.732939 )
+
+[node name="Paper126" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.0608571, 0, -0.998147, 0, 1, 0, 0.998147, 0, 0.0608571, 13.9412, -4.93131, 3.52947 )
+
+[node name="Paper127" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.840614, 0, -0.541635, 0, 1, 0, 0.541635, 0, -0.840614, 10.6344, -4.93131, 2.96465 )
 
 [node name="Paper36" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.97685, -4.95737, -3.86139 )
@@ -1142,6 +1924,24 @@ transform = Transform( -0.948517, 0, -0.316725, 0, 1, 0, 0.316725, 0, -0.948517,
 [node name="Paper84" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
 transform = Transform( -0.872862, 0, -0.487966, 0, 1, 0, 0.487966, 0, -0.872862, -9.82524, 0.0115941, -4.14917 )
 
+[node name="Paper128" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.982476, 0, 0.186387, 0, 1, 0, -0.186387, 0, 0.982476, 2.30804, 0.0115941, -6.24042 )
+
+[node name="Paper129" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.310311, 0, 0.950635, 0, 1, 0, -0.950635, 0, -0.310311, -0.145833, 0.0115941, -7.11433 )
+
+[node name="Paper130" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.710087, 0, 0.704114, 0, 1, 0, -0.704114, 0, 0.710087, 1.98597, 0.0115941, -6.10206 )
+
+[node name="Paper131" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.984783, 0, 0.173786, 0, 1, 0, -0.173786, 0, 0.984783, 1.64788, 0.0115941, -7.09834 )
+
+[node name="Paper132" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.948517, 0, -0.316725, 0, 1, 0, 0.316725, 0, -0.948517, 1.49729, 0.0115941, -6.05354 )
+
+[node name="Paper133" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.872862, 0, -0.487966, 0, 1, 0, 0.487966, 0, -0.872862, 1.65393, 0.0115941, -6.30216 )
+
 [node name="Paper85" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
 transform = Transform( -0.883782, 0, 0.467899, 0, 1, 0, -0.467899, 0, -0.883782, -10.3812, 0.0115941, -5.92945 )
 
@@ -1183,6 +1983,75 @@ transform = Transform( 0.851901, 0, -0.523704, 0, 1, 0, 0.523704, 0, 0.851901, 1
 
 [node name="Paper35" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
 transform = Transform( -0.384344, 0, -0.92319, 0, 1, 0, 0.92319, 0, -0.384344, 16.6312, 0.0115941, 0.735847 )
+
+[node name="Paper134" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.788365, 0, -0.615208, 0, 1, 0, 0.615208, 0, 0.788365, 10.3647, 0.0115941, -5.5354 )
+
+[node name="Paper135" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.143838, 0, 0.989601, 0, 1, 0, -0.989601, 0, 0.143838, 13.1804, 0.0115941, -5.12039 )
+
+[node name="Paper136" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.998452, 0, 0.0556297, 0, 1, 0, -0.0556297, 0, 0.998452, 14.2273, 0.0115941, -5.5354 )
+
+[node name="Paper137" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.851901, 0, -0.523704, 0, 1, 0, 0.523704, 0, 0.851901, 14.2273, 0.0115941, -0.325354 )
+
+[node name="Paper138" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.384344, 0, -0.92319, 0, 1, 0, 0.92319, 0, -0.384344, 16.6312, 0.0115941, -1.76839 )
+
+[node name="Paper139" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.851901, 0, -0.523704, 0, 1, 0, 0.523704, 0, 0.851901, 4.70719, 0.0115941, -0.325354 )
+
+[node name="Paper140" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.384344, 0, -0.92319, 0, 1, 0, 0.92319, 0, -0.384344, 7.11109, 0.0115941, -1.76839 )
+
+[node name="Paper141" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( 0.851901, 0, -0.523704, 0, 1, 0, 0.523704, 0, 0.851901, 4.70719, 0.0115941, -6.18438 )
+
+[node name="Paper142" parent="Static Objects/Clutter/Paper" instance=ExtResource( 48 )]
+transform = Transform( -0.384344, 0, -0.92319, 0, 1, 0, 0.92319, 0, -0.384344, 7.11109, 0.0115941, -7.62741 )
+
+[node name="Mechanical Arm" parent="Static Objects/Clutter" instance=ExtResource( 36 )]
+transform = Transform( 0.685742, 0, -0.727845, 0, 1, 0, 0.727845, 0, 0.685742, 8.2564, 0.104811, -6.19838 )
+
+[node name="Torus" parent="Static Objects/Clutter/Mechanical Arm" instance=ExtResource( 50 )]
+transform = Transform( 0.703602, 0.47148, -0.53165, -0.679029, 0.666617, -0.307476, 0.209438, 0.577346, 0.789181, 3.7967, 0.198928, -6.35277 )
+
+[node name="Torus2" parent="Static Objects/Clutter/Mechanical Arm" instance=ExtResource( 50 )]
+transform = Transform( 0.884331, -0.0716356, -0.461334, 0.0869025, 0.996146, 0.011902, 0.458703, -0.0506164, 0.887147, 3.74361, 0.00174305, -3.69496 )
+
+[node name="Mug" parent="Static Objects/Clutter/Mechanical Arm" instance=ExtResource( 75 )]
+transform = Transform( 0.156279, 0.65126, -0.742588, -0.939044, -0.135125, -0.31613, -0.306225, 0.746727, 0.590445, 0.183316, -0.0415199, -2.3648 )
+
+[node name="Dial (large)" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.0279932, 0, 0.580249, 0, 0.47353, 0, -0.482307, 0, 0.0232681, 23.5161, -4.05528, 0.897405 )
+
+[node name="Valve 1" parent="Static Objects/Clutter" instance=ExtResource( 60 )]
+transform = Transform( 0.0679613, 0, 0.576311, 0, 0.47353, 0, -0.478315, 0, 0.0713885, 23.3375, -3.89115, -3.37925 )
+
+[node name="Valve 2" parent="Static Objects/Clutter" instance=ExtResource( 60 )]
+transform = Transform( 0.0154659, 0, 0.744532, 0, 0.607125, 0, -0.619227, 0, 0.00526738, 23.518, 1.58333, 0.895433 )
+
+[node name="Dial (large)3" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.371825, 1.11759e-08, 0.0322173, -0.0134415, 0.271931, 0.297771, -0.0150145, -0.243441, 0.332618, 6.836, 0.106583, -7.8583 )
+
+[node name="Dial (large)4" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.371825, 1.49012e-08, 0.0322173, -0.0134415, 0.271931, 0.297771, -0.0150145, -0.243441, 0.332618, 6.69855, 0.106582, -7.8583 )
+
+[node name="Dial (large)5" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.371825, 1.11759e-08, 0.0322173, -0.0134415, 0.271931, 0.297771, -0.0150145, -0.243441, 0.332618, 13.8592, 0.106583, -7.8583 )
+
+[node name="Dial (large)6" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.371825, 1.49012e-08, 0.0322173, -0.0134415, 0.271931, 0.297771, -0.0150145, -0.243441, 0.332618, 13.7218, 0.106582, -7.8583 )
+
+[node name="Valve 2" parent="Static Objects/Clutter/Dial (large)6" instance=ExtResource( 62 )]
+transform = Transform( 2.03563, 2.23517e-08, -7.45058e-09, 3.72529e-09, 2.03563, 2.38419e-07, -7.45058e-09, 1.19209e-07, 2.03563, 1.36388, 0.0219212, 0.0408831 )
+
+[node name="Valve 3" parent="Static Objects/Clutter" instance=ExtResource( 60 )]
+transform = Transform( 1.17758, 0, 0.102033, 0, 1.1559, 0, -0.0638221, 0, 1.41386, 17.9746, 2.46839, -7.96866 )
+
+[node name="Dial (large)2" parent="Static Objects/Clutter" instance=ExtResource( 16 )]
+transform = Transform( 0.0279932, 0, 0.580249, 0, 0.47353, 0, -0.482307, 0, 0.0232681, 23.5161, -4.26816, 0.897405 )
 
 [node name="Pipes" type="Node" parent="Static Objects"]
 
@@ -1459,7 +2328,7 @@ transform = Transform( -0.0261769, 0.999657, 0, -0.999657, -0.0261769, 0, 0, 0, 
 transform = Transform( -0.0224645, 0.857887, -0.513347, -0.999657, -0.0261769, 0, -0.0134378, 0.513171, 0.858181, 15.441, 0.0790215, -1.6621 )
 
 [node name="Soda9" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
-transform = Transform( -0.0224645, 0.857887, -0.513347, -0.999657, -0.0261769, 0, -0.0134378, 0.513171, 0.858181, 21.3263, 0.0790215, 2.26026 )
+transform = Transform( -0.0224645, 0.857887, -0.513347, -0.999657, -0.0261769, 0, -0.0134378, 0.513171, 0.858181, 21.3263, 0.0790215, 2.40405 )
 
 [node name="Soda10" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
 transform = Transform( 0.0149177, -0.569687, -0.821727, -0.999657, -0.0261769, 0, -0.0215103, 0.821445, -0.569882, 23.7444, -4.94504, -0.256302 )
@@ -1472,6 +2341,51 @@ transform = Transform( -0.0192155, 0.73381, -0.679083, -0.999657, -0.0261769, 0,
 
 [node name="Soda13" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
 transform = Transform( -0.0102471, 0.39132, 0.920198, -0.999657, -0.0261769, 0, 0.0240879, -0.919882, 0.391454, 11.3358, -4.94504, -0.513595 )
+
+[node name="Soda18" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0102471, 0.39132, 0.920198, -0.999657, -0.0261769, 0, 0.0240879, -0.919882, 0.391454, 9.62321, -4.94504, -2.00231 )
+
+[node name="Soda19" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0102471, 0.39132, 0.920198, -0.999657, -0.0261769, 0, 0.0240879, -0.919882, 0.391454, 24.5212, -4.94504, -2.00231 )
+
+[node name="Soda20" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( 0.0261741, -0.999548, -0.0147476, -0.999657, -0.0261769, 0, -0.000385991, 0.0147422, -0.999892, 25.5586, -4.94504, 2.0178 )
+
+[node name="Soda21" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, 9.38291, -4.94504, -2.8478 )
+
+[node name="Soda22" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, 23.6382, -4.94504, -7.17617 )
+
+[node name="Soda23" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( 0.0249329, -0.952149, -0.304615, -0.999657, -0.0261769, 0, -0.00797382, 0.30451, -0.952476, 25.7989, -4.94504, -3.6309 )
+
+[node name="Soda24" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, 0.241053, 0.172056, -2.8478 )
+
+[node name="Soda25" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, 14.4964, 0.172056, -7.17617 )
+
+[node name="Soda26" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( 0.0249329, -0.952149, -0.304615, -0.999657, -0.0261769, 0, -0.00797382, 0.30451, -0.952476, 16.6571, 0.172056, -3.6309 )
+
+[node name="Soda27" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, -6.11358, 0.172056, -2.8478 )
+
+[node name="Soda28" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( 0.0184944, -0.706272, -0.707699, -0.999657, -0.0261769, 0, -0.0185253, 0.707456, -0.706514, 9.91016, 0.172056, -6.51717 )
+
+[node name="Soda31" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.00712872, 0.272237, -0.962204, -0.999657, -0.0261769, 0, -0.0251875, 0.961874, 0.272331, -2.53706, 0.172056, -6.51717 )
+
+[node name="Soda32" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.00712872, 0.272237, -0.962204, -0.999657, -0.0261769, 0, -0.0251875, 0.961874, 0.272331, -3.5481, 0.172056, -4.54472 )
+
+[node name="Soda30" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( -0.0028067, 0.107182, 0.994236, -0.999657, -0.0261769, 0, 0.026026, -0.993894, 0.107218, 8.14174, 0.172056, -7.17617 )
+
+[node name="Soda29" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
+transform = Transform( 0.0249329, -0.952149, -0.304615, -0.999657, -0.0261769, 0, -0.00797382, 0.30451, -0.952476, 10.3024, 0.172056, -3.6309 )
 
 [node name="Soda14" parent="interactable Objects/Misc/Soda" instance=ExtResource( 65 )]
 transform = Transform( 0.0149331, -0.570274, -0.821319, -0.999657, -0.0261769, 0, -0.0214996, 0.821037, -0.57047, 7.9479, -4.94504, -5.32884 )
@@ -1642,8 +2556,893 @@ transform = Transform( 0.99959, 0, 0.0286196, 0, 1, 0, -0.0286196, 0, 0.99959, 1
 [node name="Pipe Group (Straight)18" parent="Pipes" instance=ExtResource( 28 )]
 transform = Transform( 0.99959, 0, 0.0286196, 0, 1, 0, -0.0286196, 0, 0.99959, 11.0748, 2.45361, -4.51935 )
 
+[node name="Pipe Group (Straight)143" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74227e-08, 0, 1, 0, 8.74227e-08, 0, -1, 8.97926, 2.45361, -5.56571 )
+
+[node name="Pipe Group (Straight)144" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74227e-08, 0, 1, 0, 8.74227e-08, 0, -1, 8.97926, 2.45361, -5.01221 )
+
+[node name="Pipe Group (Straight)164" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74227e-08, 0, 1, 0, 8.74227e-08, 0, -1, 8.97926, 2.45361, -4.51935 )
+
 [node name="Pipe Group (Straight)16" parent="Pipes" instance=ExtResource( 28 )]
 transform = Transform( -0.0288462, 0, -0.999584, 0, 1, 0, 0.999584, 0, -0.0288462, 11.3738, 2.45361, -5.95588 )
+
+[node name="Pipe Group (Straight)29" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.7537, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)30" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.2234, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)31" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.8088, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)32" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.3738, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)33" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.8371, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)34" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.3068, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)35" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.88437, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)36" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.44937, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)37" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.89648, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)169" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.1595, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)170" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.6292, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)171" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.2146, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)178" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.6406, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)179" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.1103, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)180" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.6957, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)172" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.7796, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)173" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.2429, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)174" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.7126, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)175" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.2902, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)176" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.8552, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)177" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.3023, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)38" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.36618, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)39" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.95158, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)40" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.51658, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)41" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.96297, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)42" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.43267, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)43" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.01807, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)44" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.58307, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)45" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.02313, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)46" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.49283, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)47" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.07823, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)48" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.64323, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)49" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.08843, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)50" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.55813, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)51" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.14353, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)52" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.70853, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)53" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.15373, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)54" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.623426, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)67" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.05374, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)68" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.60734, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)90" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.13764, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)91" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.55224, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)92" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.98724, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)93" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.54718, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)94" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.07748, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)95" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.49208, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)96" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.92708, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)97" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.48188, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)98" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.01218, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)99" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.42678, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)100" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.86178, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)105" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.28507, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)106" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.81537, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)107" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.22997, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)108" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.66497, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)109" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.21977, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)110" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.75007, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)111" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.16467, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)112" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.59967, 2.45361, 1.81855 )
+
+[node name="Pipe Group (Straight)113" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.92669, 2.45361, 1.53871 )
+
+[node name="Pipe Group (Straight)114" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.92669, 2.45361, 0.987488 )
+
+[node name="Pipe Group (Straight)115" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.92669, 2.45361, 0.467116 )
+
+[node name="Pipe Group (Straight)116" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 1.53871 )
+
+[node name="Pipe Group (Straight)117" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 0.987488 )
+
+[node name="Pipe Group (Straight)118" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 0.467116 )
+
+[node name="Pipe Group (Straight)119" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 3.17954 )
+
+[node name="Pipe Group (Straight)120" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 2.62832 )
+
+[node name="Pipe Group (Straight)121" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 2.10795 )
+
+[node name="Pipe Group (Straight)124" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.0566, 2.45361, 3.70804 )
+
+[node name="Pipe Group (Straight)101" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.41659, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)102" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.94689, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)103" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.506, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)295" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.9389, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)296" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.42678, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)297" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.86178, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)298" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.41659, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)299" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.94689, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)300" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.506, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)314" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.7267, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)301" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 3.77392 )
+
+[node name="Pipe Group (Straight)315" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 3.25304 )
+
+[node name="Pipe Group (Straight)316" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 2.74121 )
+
+[node name="Pipe Group (Straight)317" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 2.27642 )
+
+[node name="Pipe Group (Straight)320" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 1.75554 )
+
+[node name="Pipe Group (Straight)321" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 1.24371 )
+
+[node name="Pipe Group (Straight)322" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 0.718283 )
+
+[node name="Pipe Group (Straight)323" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -0.997996, 0, -0.0632781, 0, 1, 0, 0.0632781, 0, -0.997996, -11.0148, -2.60486, 0.553901 )
+
+[node name="Pipe Group (Straight)302" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.45798, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)303" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.89298, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)304" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.44779, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)305" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.97809, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)306" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.53717, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)307" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.97006, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)308" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.42086, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)309" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.85586, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)310" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.41066, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)311" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.94096, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)312" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.50004, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)313" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.93293, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)318" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.44977, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)319" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.88266, -2.60486, 4.02822 )
+
+[node name="Pipe Group (Straight)104" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.506, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)122" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10.506, 2.45361, 4.02822 )
+
+[node name="Pipe Group (Straight)55" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.208826, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)56" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.226174, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)57" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.75014, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)58" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.28044, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)59" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.69504, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)60" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.12572, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)61" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.65914, 2.45361, -8.07523 )
+
+[node name="Pipe Group (Straight)145" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.36618, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)163" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.70903, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)146" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.95158, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)147" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.51658, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)148" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.96297, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)149" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.43267, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)150" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.24169, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)151" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02355, 2.45361, -5.59861 )
+
+[node name="Pipe Group (Straight)152" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02355, 2.45361, -5.04977 )
+
+[node name="Pipe Group (Straight)153" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02355, 2.45361, -4.54167 )
+
+[node name="Pipe Group (Straight)154" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.89838, 2.45361, -5.59861 )
+
+[node name="Pipe Group (Straight)161" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.89838, 2.45361, -5.04977 )
+
+[node name="Pipe Group (Straight)162" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.89838, 2.45361, -4.54167 )
+
+[node name="Pipe Group (Straight)277" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03097, 2.45361, -5.59861 )
+
+[node name="Pipe Group (Straight)278" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03097, 2.45361, -5.04977 )
+
+[node name="Pipe Group (Straight)279" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03097, 2.45361, -4.54167 )
+
+[node name="Pipe Group (Straight)280" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0942, 2.45361, -5.59861 )
+
+[node name="Pipe Group (Straight)281" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0942, 2.45361, -5.04977 )
+
+[node name="Pipe Group (Straight)282" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.0942, 2.45361, -4.54167 )
+
+[node name="Pipe Group (Straight)155" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.64323, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)156" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.08843, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)157" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.55813, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)158" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.14353, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)159" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.70853, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)160" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.15373, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)165" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.28044, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)166" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.69504, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)167" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.12572, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)168" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.65914, 2.45361, -5.98965 )
+
+[node name="Pipe Group (Straight)62" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.18593, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)63" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.60053, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)64" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.03553, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)65" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.51651, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)66" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.04681, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)69" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.51651, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)70" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.04681, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)71" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -8.08594 )
+
+[node name="Pipe Group (Straight)72" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -7.54838 )
+
+[node name="Pipe Group (Straight)73" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -6.99592 )
+
+[node name="Pipe Group (Straight)74" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -6.43355 )
+
+[node name="Pipe Group (Straight)75" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -5.88109 )
+
+[node name="Pipe Group (Straight)76" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -5.32676 )
+
+[node name="Pipe Group (Straight)77" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -4.7743 )
+
+[node name="Pipe Group (Straight)78" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -4.24851 )
+
+[node name="Pipe Group (Straight)79" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -3.69605 )
+
+[node name="Pipe Group (Straight)80" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -3.13368 )
+
+[node name="Pipe Group (Straight)81" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -2.58122 )
+
+[node name="Pipe Group (Straight)82" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -2.02689 )
+
+[node name="Pipe Group (Straight)84" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -0.967451 )
+
+[node name="Pipe Group (Straight)85" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -0.405081 )
+
+[node name="Pipe Group (Straight)86" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, 0.147379 )
+
+[node name="Pipe Group (Straight)87" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, 0.701703 )
+
+[node name="Pipe Group (Straight)88" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, 1.22749 )
+
+[node name="Pipe Group (Straight)89" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, 1.70223 )
+
+[node name="Pipe Group (Straight)83" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.04681, 2.45361, -1.47443 )
+
+[node name="Pipe Group (Straight)123" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93295, 2.45361, -5.88109 )
+
+[node name="Pipe Group (Straight)125" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93295, 2.45361, -5.32676 )
+
+[node name="Pipe Group (Straight)126" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93295, 2.45361, -4.7743 )
+
+[node name="Pipe Group (Straight)127" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93295, 2.45361, -4.24851 )
+
+[node name="Pipe Group (Straight)128" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -3.70346 )
+
+[node name="Pipe Group (Straight)129" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -3.14109 )
+
+[node name="Pipe Group (Straight)130" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -2.58863 )
+
+[node name="Pipe Group (Straight)131" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -2.03431 )
+
+[node name="Pipe Group (Straight)132" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -0.974863 )
+
+[node name="Pipe Group (Straight)133" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -0.412493 )
+
+[node name="Pipe Group (Straight)134" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 0.145823 )
+
+[node name="Pipe Group (Straight)135" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 0.700148 )
+
+[node name="Pipe Group (Straight)136" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 1.22593 )
+
+[node name="Pipe Group (Straight)138" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 1.76464 )
+
+[node name="Pipe Group (Straight)139" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 2.31352 )
+
+[node name="Pipe Group (Straight)140" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 2.83931 )
+
+[node name="Pipe Group (Straight)141" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9343, 2.46097, 3.37801 )
+
+[node name="Pipe Group (Straight)142" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93295, 2.45361, 3.94622 )
+
+[node name="Pipe Group (Straight)137" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93026, 2.46097, -1.48185 )
+
+[node name="Pipe Group (Straight)181" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0074, 2.45361, -5.32676 )
+
+[node name="Pipe Group (Straight)182" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0058, 2.45361, -4.76698 )
+
+[node name="Pipe Group (Straight)183" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0074, 2.45361, -4.24851 )
+
+[node name="Pipe Group (Straight)184" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -3.70346 )
+
+[node name="Pipe Group (Straight)185" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -3.14109 )
+
+[node name="Pipe Group (Straight)198" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0074, 2.45361, -8.0676 )
+
+[node name="Pipe Group (Straight)199" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0074, 2.45361, -7.51514 )
+
+[node name="Pipe Group (Straight)200" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0074, 2.45361, -6.98934 )
+
+[node name="Pipe Group (Straight)201" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -6.44429 )
+
+[node name="Pipe Group (Straight)202" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -5.88192 )
+
+[node name="Pipe Group (Straight)186" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -2.58863 )
+
+[node name="Pipe Group (Straight)187" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -2.03431 )
+
+[node name="Pipe Group (Straight)188" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -0.974863 )
+
+[node name="Pipe Group (Straight)189" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -0.412493 )
+
+[node name="Pipe Group (Straight)190" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.006, 2.46097, 0.145823 )
+
+[node name="Pipe Group (Straight)191" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.006, 2.46097, 0.700148 )
+
+[node name="Pipe Group (Straight)192" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.006, 2.46097, 1.22593 )
+
+[node name="Pipe Group (Straight)193" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.006, 2.46097, 1.76464 )
+
+[node name="Pipe Group (Straight)194" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.286, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)195" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.8182, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)196" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.3555, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)203" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.8877, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)204" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.4364, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)205" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21.9686, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)206" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.4661, 2.46097, 2.0669 )
+
+[node name="Pipe Group (Straight)288" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 22.9794, 2.1813, 2.24164 )
+
+[node name="Pipe Group (Straight)289" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 22.9794, 1.65063, 2.24164 )
+
+[node name="Pipe Group (Straight)290" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 22.9794, 1.13259, 2.24164 )
+
+[node name="Pipe Group (Straight)291" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 22.9794, 0.567374, 2.24164 )
+
+[node name="Pipe Group (Straight)292" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 22.9794, 0.268527, 2.24164 )
+
+[node name="Pipe Group (Straight)197" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.01, 2.46097, -1.48185 )
+
+[node name="Pipe Group (Straight)207" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 12.7537, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)208" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 12.2234, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)209" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 11.8088, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)210" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 11.3738, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)211" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 10.8371, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)212" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 10.3068, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)213" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 9.88437, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)214" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 9.44937, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)215" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 8.89648, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)216" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 17.1595, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)217" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 16.6292, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)293" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 16.1744, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)294" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 16.1744, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)218" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 18.6406, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)219" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 18.1103, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)220" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 17.6957, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)221" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 15.7796, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)222" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 15.2429, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)223" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 14.7126, 0.0883815, -8.0274 )
+
+[node name="Pipe Group (Straight)224" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 14.2902, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)225" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 13.8552, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)226" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 13.3023, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)227" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 8.36618, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)228" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 7.95158, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)229" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 7.51658, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)230" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 6.96297, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)231" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 6.43267, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)232" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 6.01807, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)233" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 5.58307, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)234" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 5.02313, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)235" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 4.49283, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)236" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 4.07823, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)237" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 3.64323, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)238" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 3.08843, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)239" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 2.55813, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)240" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 2.14353, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)241" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 1.70853, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)242" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 1.15373, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)243" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.623426, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)244" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.208826, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)245" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.226174, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)246" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.75014, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)247" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -1.28044, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)248" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -1.69504, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)249" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -2.12572, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)250" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -2.65914, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)283" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -3.18722, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)284" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -3.71119, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)285" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -4.24149, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)286" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -4.65609, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)287" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -5.08676, 0.0883815, -8.01669 )
+
+[node name="Pipe Group (Straight)251" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0074, 0.0883815, -5.26822 )
+
+[node name="Pipe Group (Straight)252" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0058, 0.0883815, -4.70844 )
+
+[node name="Pipe Group (Straight)253" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0074, 0.0883815, -4.18997 )
+
+[node name="Pipe Group (Straight)254" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -3.64492 )
+
+[node name="Pipe Group (Straight)255" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -3.08255 )
+
+[node name="Pipe Group (Straight)256" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0074, 0.0883815, -8.00906 )
+
+[node name="Pipe Group (Straight)257" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0074, 0.0883815, -7.45659 )
+
+[node name="Pipe Group (Straight)258" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.0074, 0.0883815, -6.9308 )
+
+[node name="Pipe Group (Straight)259" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -6.38575 )
+
+[node name="Pipe Group (Straight)260" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -5.82338 )
+
+[node name="Pipe Group (Straight)261" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -2.53009 )
+
+[node name="Pipe Group (Straight)262" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -1.97577 )
+
+[node name="Pipe Group (Straight)263" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -0.916323 )
+
+[node name="Pipe Group (Straight)264" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -0.353953 )
+
+[node name="Pipe Group (Straight)265" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.006, 0.0957441, 0.204364 )
+
+[node name="Pipe Group (Straight)266" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.006, 0.0957441, 0.758688 )
+
+[node name="Pipe Group (Straight)267" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.006, 0.0957441, 1.28447 )
+
+[node name="Pipe Group (Straight)268" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.006, 0.0957441, 1.82318 )
+
+[node name="Pipe Group (Straight)269" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 19.286, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)270" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 19.8182, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)271" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 20.3555, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)272" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 20.8877, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)273" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 21.4364, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)274" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 21.9688, 0.0915239, 2.12899 )
+
+[node name="Pipe Group (Straight)275" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( 1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 22.4661, 0.0957441, 2.12544 )
+
+[node name="Pipe Group (Straight)276" parent="Pipes" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 19.01, 0.0957441, -1.42331 )
 
 [node name="Squid" parent="." instance=ExtResource( 42 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 149.67, -6.21704, -4.38803 )
@@ -1688,7 +3487,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69664, 0.531603, -2.3604 )
 hint_text = "Looks like the captain had a master key..."
 
 [node name="area_hint3" parent="AreaHints" instance=ExtResource( 87 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0380259, 0.531603, -5.68589 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00899859, 0.543399, -5.61882 )
 hint_text = "Sounds like the sub is heavily damaged. The cabin may lose pressure soon."
 hint_time = 6
 

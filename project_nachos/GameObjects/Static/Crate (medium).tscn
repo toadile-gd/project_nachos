@@ -18,7 +18,7 @@ surfaces/0 = {
 "vertex_count": 828
 }
 
-[sub_resource type="SpatialMaterial" id=5]
+[sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.105882, 0.356863, 0.32549, 1 )
 
 [sub_resource type="ConcavePolygonShape" id=4]
@@ -26,7 +26,7 @@ data = PoolVector3Array( 0, 1.0142, 0.6911, -0.562, 1.0142, 1.0142, -0.562, 1.01
 
 [node name="Crate (medium)" type="MeshInstance"]
 mesh = SubResource( 2 )
-material/0 = SubResource( 5 )
+material/0 = SubResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
 

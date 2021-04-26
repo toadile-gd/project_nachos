@@ -7,7 +7,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AudioStreamPlayer3D.set_unit_db(-30)
+	$AudioStreamPlayer3D.set_unit_db(-40)
 	$AudioStreamPlayer3D.stream.set_loop(false)
 	$Timer.set_wait_time(20)
 	$Timer.connect("timeout", self, "bubble")
