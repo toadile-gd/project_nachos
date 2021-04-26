@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=53]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=54]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Floor Hatch"
 surfaces/0 = {
 "aabb": AABB( -0.597282, -0.0901691, -0.597282, 1.19456, 0.212999, 1.19456 ),
@@ -12,12 +12,16 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 756,
-"material": SubResource( 53 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 492
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+params_cull_mode = 2
+albedo_color = Color( 0.407843, 0.407843, 0.407843, 1 )
+
 [node name="Floor Hatch" type="MeshInstance"]
-mesh = SubResource( 54 )
-material/0 = null
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )

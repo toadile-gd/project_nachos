@@ -30,9 +30,6 @@ transform = Transform( -0.650936, -0.758812, 0.0220391, -0.757915, 0.651262, 0.0
 [node name="circuit20" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.650936, -0.758812, 0.0220391, -0.757915, 0.651262, 0.0377228, -0.0429778, 0.00785138, -0.999045, 21.0873, -4.25909, -3.87228 )
 
-[node name="circuit21" parent="circuits" instance=ExtResource( 4 )]
-transform = Transform( -0.0429778, 0.00785141, -0.999045, -0.757915, 0.651262, 0.0377228, 0.650936, 0.758812, -0.0220391, 18.3901, -4.25909, -5.27615 )
-
 [node name="circuit22" parent="circuits" instance=ExtResource( 4 )]
 transform = Transform( -0.0429778, 0.00785141, -0.999045, -0.757915, 0.651262, 0.0377228, 0.650936, 0.758812, -0.0220391, 7.1568, -3.79445, -8.06305 )
 

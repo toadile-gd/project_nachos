@@ -1,7 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Images/grey_filler.png" type="Texture" id=1]
 
 [sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
+albedo_color = Color( 0.27451, 0.639216, 0.552941, 1 )
+albedo_texture = ExtResource( 1 )
 
 [sub_resource type="ArrayMesh" id=2]
 resource_name = "Bar"

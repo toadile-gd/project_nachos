@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[sub_resource type="SpatialMaterial" id=71]
+[sub_resource type="SpatialMaterial" id=1]
 vertex_color_use_as_albedo = true
 
-[sub_resource type="ArrayMesh" id=72]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "Mechanical Arm"
 surfaces/0 = {
 "aabb": AABB( -0.611486, -0.0953472, -0.238433, 1.01183, 0.190694, 0.681665 ),
@@ -12,12 +12,15 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 552,
-"material": SubResource( 71 ),
+"material": SubResource( 1 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 352
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+
 [node name="Mechanical Arm" type="MeshInstance"]
-mesh = SubResource( 72 )
-material/0 = null
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
