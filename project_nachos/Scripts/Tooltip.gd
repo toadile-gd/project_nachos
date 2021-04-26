@@ -5,6 +5,7 @@ var timedout = true
 
 func _ready():
 	$CenterContainer/Label.text = ""
+	uprintb("Use ASWD to move and Mouse to look",4)
 
 func uprint(msg : String):
 	if (timedout):

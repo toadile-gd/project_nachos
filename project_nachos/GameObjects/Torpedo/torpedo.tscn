@@ -14,6 +14,7 @@ extents = Vector3( 0.795743, 0.959799, 0.995078 )
 script = ExtResource( 3 )
 
 [node name="torpedo" type="MeshInstance" parent="."]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 mesh = ExtResource( 2 )
 material/0 = SubResource( 1 )
 

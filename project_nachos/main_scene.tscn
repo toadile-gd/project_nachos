@@ -1388,6 +1388,7 @@ transform = Transform( 0.763696, -0.046723, 0.643883, 0.061066, 0.998134, 0, -0.
 [node name="Key_b" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
 transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 17.2445, 0.598522, 0.82804 )
 item_name = "KEY_B"
+pickup_message = "You picked up a key to the captain's quarters"
 
 [node name="Key_c" parent="interactable Objects/Keys" instance=ExtResource( 77 )]
 transform = Transform( 0.66067, 0, -0.750676, 0, 1, 0, 0.750676, 0, 0.66067, 8.58414, 1.14072, -2.4708 )
@@ -1675,7 +1676,7 @@ hint_text = "Looks  like the engine needs repairs..."
 
 [node name="area_hint6" parent="AreaHints" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.98506, 0.548575, -0.835394 )
-hint_text = "Once this submarine is repaired I can probably leave on through that exit ladder..."
+hint_text = "Once this submarine is repaired I can probably leave through that exit ladder..."
 hint_time = 4
 
 [node name="area_hint2" parent="AreaHints" instance=ExtResource( 87 )]
