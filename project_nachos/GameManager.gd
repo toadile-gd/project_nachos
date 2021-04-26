@@ -48,6 +48,8 @@ func reset():
 	inventory = []
 	failure = false
 	game_done = false
+	GlobalLightingUtils.reset()
+	skybox_color = null
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

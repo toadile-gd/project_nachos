@@ -17,3 +17,7 @@ func activate():
 	elif not victory.squid_dead:
 		Tooltip.uprintb("I need to take care of that squid...", 3)
 
+
+
+func _on_Timer_timeout():
+	Tooltip.uprintb("The cabin won't stay pressurized much longer...", 4)

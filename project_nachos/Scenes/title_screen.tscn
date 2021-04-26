@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Bohemian Typewriter.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/floor_industrial.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/Buttons/controls.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Buttons/exit_game.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/title_screen.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/controls_menu.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 70
@@ -17,6 +18,9 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=2]
 size = 11
 outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 1 )
 
 [node name="title_screen" type="Control"]
@@ -79,6 +83,7 @@ size_flags_vertical = 3
 [node name="controls" parent="menu/button_container/buttons" instance=ExtResource( 4 )]
 margin_top = 24.0
 margin_bottom = 44.0
+scene_to_load = "CONTROLS"
 
 [node name="exit_game" parent="menu/button_container/buttons" instance=ExtResource( 5 )]
 margin_top = 48.0
@@ -97,6 +102,19 @@ custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 1
 text = "For Ludum Dare 48
 By: toadile, arcanelemon, & kalash"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="controls_menu" parent="." instance=ExtResource( 7 )]
+visible = false
+
+[node name="back" type="Button" parent="controls_menu"]
+margin_right = 50.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 3 )
+text = "Back to Title Screen"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

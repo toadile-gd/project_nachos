@@ -28,7 +28,6 @@ func _ready():
 	menu_theme.set_loop(true)
 	menu_theme.set_loop_offset(loop_offset)
 	level_theme.set_loop(true)
-	level_theme.set_loop_offset(loop_offset)
 	audio_stream.set_stream(menu_theme)
 	audio_stream.set_volume_db(-20)
 	background_fx.set_loop(false)
@@ -76,7 +75,18 @@ func play_sound(sound):
 		backup_fx_stream.set_stream(mp3)
 		backup_fx_stream.set_volume_db(-10)
 		backup_fx_stream.play()
-	
+
+func play_sound_volume(sound, volume):
+	var mp3 = load("res://Sounds/" + sound + ".mp3")
+	mp3.set_loop(false)
+	if(!fx_stream.is_playing()):
+		fx_stream.set_stream(mp3)
+		fx_stream.set_volume_db(volume)
+		fx_stream.play()
+	elif(!backup_fx_stream.is_playing()):
+		backup_fx_stream.set_stream(mp3)
+		backup_fx_stream.set_volume_db(volume)
+		backup_fx_stream.play()
 
 
 

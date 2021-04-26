@@ -124,5 +124,4 @@ custom_fonts/font = SubResource( 2 )
 text = "Open Doors/Interact: F
 Toggle Submarine Manual: TAB
 Toggle Game Menu: ESCAPE
-Exit This Menu: ESCAPE
 "
