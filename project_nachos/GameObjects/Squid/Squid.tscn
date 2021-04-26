@@ -201,7 +201,7 @@ extents = Vector3( 13.8128, 5.76993, 21.1625 )
 
 [node name="Squid" type="Spatial"]
 script = ExtResource( 3 )
-speed = 0.5
+speed = 10.0
 
 [node name="squid" type="Spatial" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 4 )
@@ -231,8 +231,8 @@ process_material = SubResource( 4 )
 draw_pass_1 = SubResource( 6 )
 
 [node name="Area" type="Area" parent="."]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 5
+collision_mask = 5
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 shape = SubResource( 7 )

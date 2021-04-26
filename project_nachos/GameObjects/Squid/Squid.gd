@@ -9,8 +9,8 @@ func _physics_process(delta):
 	translate_object_local(Vector3.FORWARD*delta*speed)
 
 func _on_Area_body_entered(body):
-	$squid/anim.play("die")
-	dead = true
+	GameManager.end_game(GameManager.win_conditions.DEFEAT)
+	speed = 0.01
 
 
 func _on_Area_area_entered(area):

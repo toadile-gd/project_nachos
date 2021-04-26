@@ -5,27 +5,31 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Position3D
 
-var complete = false;
+var complete = false
 
 func activate():
-	$StaticBody.queue_free()
+	if not complete:
+		$StaticBody.visible = not $StaticBody.visible
+		$StaticBody/CollisionShape.disabled = not $StaticBody/CollisionShape.disabled
 
 func drain():
-	$MeshInstance.queue_free()
-	complete = true
+	if not complete:
+		$StaticBody.queue_free()
+		$MeshInstance.queue_free()
+		complete = true
 "
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 4, 1, 4 )
 
-[sub_resource type="Curve" id=4]
+[sub_resource type="Curve" id=3]
 _data = [ Vector2( 0.535354, 1 ), 0.0, 0.1725, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=5]
+[sub_resource type="CurveTexture" id=4]
 width = 32
-curve = SubResource( 4 )
+curve = SubResource( 3 )
 
-[sub_resource type="ParticlesMaterial" id=6]
+[sub_resource type="ParticlesMaterial" id=5]
 direction = Vector3( 0, 1, 0 )
 spread = 120.0
 initial_velocity = 3.0
@@ -33,9 +37,9 @@ angular_velocity = -300.0
 angular_velocity_random = 1.0
 scale = 0.05
 scale_random = 0.1
-scale_curve = SubResource( 5 )
+scale_curve = SubResource( 4 )
 
-[sub_resource type="SpatialMaterial" id=7]
+[sub_resource type="SpatialMaterial" id=6]
 flags_unshaded = true
 params_blend_mode = 1
 params_billboard_mode = 3
@@ -44,10 +48,10 @@ particles_anim_v_frames = 1
 particles_anim_loop = false
 albedo_color = Color( 0.729412, 0.992157, 1, 0.462745 )
 
-[sub_resource type="QuadMesh" id=8]
-material = SubResource( 7 )
+[sub_resource type="QuadMesh" id=7]
+material = SubResource( 6 )
 
-[sub_resource type="PlaneMesh" id=3]
+[sub_resource type="PlaneMesh" id=8]
 
 [sub_resource type="VisualShaderNodeTexture" id=9]
 texture = ExtResource( 1 )
@@ -163,8 +167,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles2" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99969, 0, 1.22479 )
@@ -172,8 +176,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles3" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.55982, 0, 2.14438 )
@@ -181,8 +185,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles4" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.94208, 0, 0.578778 )
@@ -190,8 +194,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles5" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025739, 0, -0.712969 )
@@ -199,8 +203,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles6" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33633, 0, -1.29322 )
@@ -208,8 +212,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles7" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.117867, 0, 2.17468 )
@@ -217,8 +221,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles10" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56964, 0, 3.13585 )
@@ -226,8 +230,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles11" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82917, -9.53674e-07, -0.783699 )
@@ -235,8 +239,8 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="Particles12" type="Particles" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.936458, 0, 2.43947 )
@@ -244,10 +248,10 @@ amount = 10
 lifetime = 0.8
 explosiveness = 0.9
 local_coords = false
-process_material = SubResource( 6 )
-draw_pass_1 = SubResource( 8 )
+process_material = SubResource( 5 )
+draw_pass_1 = SubResource( 7 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 4, 0, 0, 0, 10, 0, 0, 0, 4, 0, 0.0237705, 0 )
-mesh = SubResource( 3 )
+mesh = SubResource( 8 )
 material/0 = SubResource( 18 )

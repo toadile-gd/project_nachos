@@ -27,12 +27,18 @@ var minute_multiplier= 60
 
 var depth_percentage = 0
 
+var game_done = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	convert_time_to_minutes()
 	yield(get_tree().create_timer(2), "timeout")
 	start_depth_timer()
+
+func reset():
+	current_time = 0
+	depth_percentage = 0
+	inventory = []
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -88,10 +94,19 @@ func check_item(item):
 	return inventory.has(item)
 
 func end_game(condition):
+	if game_done:
+		return
+	game_done = true
 	if (condition == win_conditions.VICTORY):
 		## victory screen
+		game_done = false
 		pass
 	else:
-		get_tree().change_scene("res://Scenes/title_screen.tscn")
+		print("done")
+		Tooltip.uprintb("You have failed.", 5)
+		yield(get_tree().create_timer(5), "timeout")
+		game_done = false
+		get_tree().call_deferred("change_scene", "res://Scenes/title_screen.tscn")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		pass
 

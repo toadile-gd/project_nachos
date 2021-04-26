@@ -319,10 +319,7 @@ transform = Transform( 0.105045, 0.3583, 0.927678, -0.271916, 0.907639, -0.31977
 transform = Transform( 0.759373, 0.650655, 0, -0.650655, 0.759373, 0, 0, 0, 1, 17.8968, -4.65375, 1.67433 )
 
 [node name="leak14" parent="leaks" instance=ExtResource( 3 )]
-transform = Transform( 0.91383, 0.00307375, -0.406086, -0.367945, 0.429426, -0.824748, 0.171849, 0.903097, 0.393553, 19.066, -4.76483, -0.412486 )
-
-[node name="leak20" parent="leaks" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 13.2, -3.3, 0 )
+transform = Transform( 0.91383, 0.00307375, -0.406086, -0.299503, 0.680414, -0.668831, 0.274251, 0.732822, 0.622703, 19.066, -5.13461, -0.412486 )
 
 [node name="leak21" parent="leaks" instance=ExtResource( 3 )]
 transform = Transform( -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10.2, -2.2, 1 )
