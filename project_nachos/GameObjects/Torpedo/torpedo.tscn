@@ -4,10 +4,10 @@
 [ext_resource path="res://GameObjects/Torpedo/torpedo.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://GameObjects/Torpedo/torpedo.tres.gd" type="Script" id=3]
 
-[sub_resource type="SpatialMaterial" id=2]
+[sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 1 )
 
-[sub_resource type="BoxShape" id=3]
+[sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.795743, 0.959799, 0.995078 )
 
 [node name="torpedo" type="Spatial"]
@@ -15,13 +15,13 @@ script = ExtResource( 3 )
 
 [node name="torpedo" type="MeshInstance" parent="."]
 mesh = ExtResource( 2 )
-material/0 = SubResource( 2 )
+material/0 = SubResource( 1 )
 
 [node name="Area" type="Area" parent="."]
 collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [connection signal="area_entered" from="Area" to="." method="_on_Area_area_entered"]
