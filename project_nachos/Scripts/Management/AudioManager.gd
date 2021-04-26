@@ -28,7 +28,6 @@ func _ready():
 	menu_theme.set_loop(true)
 	menu_theme.set_loop_offset(loop_offset)
 	level_theme.set_loop(true)
-	level_theme.set_loop_offset(loop_offset)
 	audio_stream.set_stream(menu_theme)
 	audio_stream.set_volume_db(-20)
 	background_fx.set_loop(false)

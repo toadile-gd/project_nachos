@@ -14,6 +14,10 @@ func _ready():
 	base_color = get_skybox_color()
 	base_ambient_light_intensity = get_ambient_light_intensity()
 
+func reset():
+	set_skybox_color(base_color)
+	set_ambient_light_intensity(base_ambient_light_intensity)
+
 func get_skybox_color():
 	return environment.get_bg_color()
 
