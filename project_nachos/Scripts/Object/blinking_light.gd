@@ -5,13 +5,16 @@ extends MeshInstance
 # var a = 2
 # var b = "text"
 
-onready var light = get_node("SpotLight")
+onready var light = $OmniLight
+export var green : Color
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	light.hide()
 	start_blink_timer()
 
+func turn_green():
+	light.light_color = green
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
