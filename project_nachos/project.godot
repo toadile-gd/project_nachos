@@ -26,9 +26,10 @@ _global_script_class_icons={
 
 [application]
 
-config/name="project_nachos"
+config/name="Submortem"
 run/main_scene="res://Scenes/title_screen.tscn"
-config/icon="res://icon.png"
+config/icon="res://icon_submortem.png"
+config/windows_native_icon="res://icon.ico"
 
 [autoload]
 
