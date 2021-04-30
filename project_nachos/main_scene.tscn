@@ -3473,6 +3473,15 @@ script = ExtResource( 15 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5248, 0.0881734, 2.45982 )
 hint_text = "That giant squid could pose a threat. Need to repel it somehow..."
 
+[node name="area_hint7" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -3.83657, -0.794639 )
+hint_text = "The water looks electrified... need to adjust the power somehow"
+hint_time = 4
+
+[node name="area_hint8" parent="AreaHints" instance=ExtResource( 87 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2281, -3.83657, -0.162662 )
+hint_text = "I wonder what I can use this fusebox for..."
+
 [node name="area_hint5" parent="AreaHints" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.2623, -4.58791, -1.26758 )
 hint_text = "Looks  like the engine needs repairs..."
